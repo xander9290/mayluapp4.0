@@ -1,5 +1,6 @@
 // Requirements
 const app = require("./app");
+const open = require("open");
 const { createConnection } = require("./database");
 
 // Port
@@ -10,5 +11,8 @@ app.listen(app.get("port"));
 console.log(
   ">Servidor iniciado en puerto: ",
   app.get("port"),
-  "\n>Ya puedes iniciar la aplicación."
+  "\n>Iniciando aplicación..."
 );
+(async () => {
+  await open(`http://localhost:${app.get("port")}`);
+})();

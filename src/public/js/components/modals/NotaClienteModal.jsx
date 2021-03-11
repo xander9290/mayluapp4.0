@@ -6,16 +6,6 @@ function NotaClienteModal(props) {
     const printContents = document.getElementById("comandaVista").innerHTML,
       w = window.open("", "PRINT", "height=600,width=700");
 
-    //       #logoContainer {
-    //         background-color: black;
-    //         color: white;
-    //         border-radius: 6px;
-    //         text-align: center;
-    //         width: 42%;
-    //         margin: 0 auto;
-    //         padding: 8px;
-    // }
-
     w.document.write(
       `
             <style>
@@ -28,18 +18,14 @@ function NotaClienteModal(props) {
                     padding: 0;
                 }
                 #logoContainer {
-                    width: 200px;
-                    height: 140px;
-                    margin: 0 auto;
-                    background-image: url("./logotipo.png");
-                    background-repeat: no-repeat;
-                    background-position: center;
-                }
-                #logoContainer >img {
-                  height: 100%;
-                  object-fit: cover;
-                  object-position: center center;
-                }
+                  background-color: black;
+                  color: white;
+                  border-radius: 6px;
+                  text-align: center;
+                  width: 42%;
+                  margin: 0 auto;
+                  padding: 8px;
+          }
                 #logoNameTitle {
                     font-size: 42px;
                 }
@@ -110,10 +96,10 @@ function NotaClienteModal(props) {
     >
       <div id="comandaVista">
         <div id="logoContainer">
-          {/* <div id="logo">
+          <div id="logo">
             <h3 id="logoNameTitle">maylu</h3>
             <h5 id="logoSubName">sushi</h5>
-          </div> */}
+          </div>
         </div>
         <div id="infoEmpresa">
           <p>manuel mena #3870</p>
