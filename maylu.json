@@ -2396,12 +2396,17 @@
         "calle": "miguel macias 3226 ",
         "cruces": "11 Y 13",
         "colonia": "p",
-        "obs": ""
+        "obs": "vive en una casa con puertas y ventanas"
       },
       "createdAt": "2020-11-16T05:38:47.636Z",
       "createdBy": "admin",
-      "lastEdit": "",
-      "id": "11edd088-9549-44d9-8f9a-e1f57ea1bd41"
+      "lastEdit": "2021-03-11T03:58:04.104Z",
+      "id": "11edd088-9549-44d9-8f9a-e1f57ea1bd41",
+      "calle": "miguel macias 3226 ",
+      "cruces": "11 Y 13",
+      "colonia": "p",
+      "obs": "vive en una casa con puertas y ventanas",
+      "codigo": 32406
     },
     {
       "name": "JAIME",
@@ -87113,6 +87118,107 @@
       "time": "2 horas",
       "fecha": "2021-03-09",
       "id": "fd8ae870-5391-4faa-94cf-f016825863f0"
+    },
+    {
+      "folio": 932,
+      "orden": 1,
+      "torreta": "IVONNE",
+      "personas": 1,
+      "servicio": "domicilio",
+      "cliente": {
+        "name": "IVONNE",
+        "tel": "36462711",
+        "address": {
+          "calle": "miguel macias 3226 ",
+          "cruces": "11 Y 13",
+          "colonia": "p",
+          "obs": "vive en una casa con puertas y ventanas"
+        },
+        "id": "11edd088-9549-44d9-8f9a-e1f57ea1bd41",
+        "codigo": 32406
+      },
+      "estado": "abierto",
+      "impreso": false,
+      "items": [],
+      "importe": 0,
+      "dscto": 0,
+      "total": 0,
+      "efectivo": 0,
+      "tarjeta": 0,
+      "cambio": 0,
+      "createdAt": "2021-03-11T03:58:05.074Z",
+      "createdBy": "admin",
+      "closedAt": null,
+      "time": "",
+      "fecha": "2021-03-10",
+      "id": "50ad35e7-2282-4e1d-8772-d986e6b55791"
+    },
+    {
+      "folio": 933,
+      "orden": 2,
+      "torreta": "JESSICA",
+      "personas": 1,
+      "servicio": "domicilio",
+      "cliente": {
+        "name": "JESSICA",
+        "tel": "3325528258",
+        "address": {
+          "calle": "cruz galvez #3708",
+          "cruces": "esq 11",
+          "colonia": "lopez portillo",
+          "obs": ""
+        },
+        "id": "6d056f0d-1c03-458e-a3c0-63f1a698422f"
+      },
+      "estado": "abierto",
+      "impreso": false,
+      "items": [],
+      "importe": 0,
+      "dscto": 0,
+      "total": 0,
+      "efectivo": 0,
+      "tarjeta": 0,
+      "cambio": 0,
+      "createdAt": "2021-03-11T04:01:27.596Z",
+      "createdBy": "admin",
+      "closedAt": null,
+      "time": "",
+      "fecha": "2021-03-10",
+      "id": "952dd0b3-155b-4553-aeef-61ee069da1b6"
+    },
+    {
+      "folio": 934,
+      "orden": 1,
+      "torreta": "mostrador",
+      "personas": 1,
+      "servicio": "pll",
+      "cliente": {
+        "name": "",
+        "tel": "",
+        "address": {
+          "calle": "",
+          "cruces": "",
+          "colonia": "",
+          "obs": ""
+        },
+        "codigo": null,
+        "id": null
+      },
+      "estado": "abierto",
+      "impreso": false,
+      "items": [],
+      "importe": 0,
+      "dscto": 0,
+      "total": 0,
+      "efectivo": 0,
+      "tarjeta": 0,
+      "cambio": 0,
+      "createdAt": "2021-03-11T06:06:09.778Z",
+      "createdBy": "admin",
+      "closedAt": null,
+      "time": "",
+      "fecha": "2021-03-11",
+      "id": "bf90e1bb-a649-4120-804a-3e087b5d10d4"
     }
   ],
   "logs": [
@@ -87444,6 +87550,34 @@
       "operador": "admin",
       "commit": "ha cerrado sesión",
       "id": "635d0352-8318-42e8-8f59-3796853d8221"
+    },
+    {
+      "createdAt": "2021-03-11T03:10:23.705Z",
+      "fecha": "2021-03-10",
+      "operador": "admin",
+      "commit": "ha hecho una consulta al monitor de ventas",
+      "id": "cc0d9bec-2d55-4292-aef9-cbae1b930bda"
+    },
+    {
+      "createdAt": "2021-03-11T03:10:49.566Z",
+      "fecha": "2021-03-10",
+      "operador": "admin",
+      "commit": "ha hecho una consulta al monitor de ventas",
+      "id": "3aa27886-3a14-4b25-8a7e-72962e7e677c"
+    },
+    {
+      "createdAt": "2021-03-11T03:46:21.575Z",
+      "fecha": "2021-03-10",
+      "operador": "admin",
+      "commit": "ha iniciado sesión",
+      "id": "99be62b5-545f-4b0e-8cce-e4310b6e4ec1"
+    },
+    {
+      "createdAt": "2021-03-11T04:02:07.643Z",
+      "fecha": "2021-03-10",
+      "operador": "admin",
+      "commit": "ha iniciado sesión",
+      "id": "1ee07452-774a-4ea3-a4aa-ac2f7b10038b"
     }
   ],
   "cajas": [

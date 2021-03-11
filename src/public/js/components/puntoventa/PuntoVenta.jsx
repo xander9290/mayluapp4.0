@@ -18,6 +18,7 @@ function PuntoVenta() {
   const [abrirComandaModal, setAbrirComandaModal] = useState(false);
   const [abrirPagarCuentaModal, setAbrirPagarCuentaModal] = useState(false);
   const [abrirMonitorModal, setAbrirMonitorModal] = useState(false);
+  const [abrirInfoModal, setAbrirInfoModal] = useState(false);
 
   useEffect(() => {
     if (cuenta.id) {
@@ -147,6 +148,14 @@ function PuntoVenta() {
     }
     if (cuenta.servicio === "comedor") setAbrirComedorModal(true);
     if (cuenta.servicio === "pll") setAbrirParallevarModal(true);
+  };
+
+  const openInfoCuenta = () => {
+    if (cuenta.id) {
+      setAbrirInfoModal(true);
+    } else {
+      alert("selecciona una cuenta para continuar".toUpperCase());
+    }
   };
 
   return (
@@ -389,6 +398,17 @@ function PuntoVenta() {
                 editar torreta
               </a>
             </li>
+            <li className="text-center">
+              <a
+                onClick={(e) => {
+                  e.preventDefault(), openInfoCuenta();
+                }}
+                className="dropdown-item text-uppercase h4 py-4"
+                href="#"
+              >
+                Ver Info
+              </a>
+            </li>
           </ul>
         </div>
         <button
@@ -449,6 +469,10 @@ function PuntoVenta() {
       <MonitorModal
         show={abrirMonitorModal}
         onHide={() => setAbrirMonitorModal(false)}
+      />
+      <InfoModal
+        show={abrirInfoModal}
+        onHide={() => setAbrirInfoModal(false)}
       />
     </div>
   );
