@@ -19,6 +19,7 @@ function PuntoVenta() {
   const [abrirPagarCuentaModal, setAbrirPagarCuentaModal] = useState(false);
   const [abrirMonitorModal, setAbrirMonitorModal] = useState(false);
   const [abrirInfoModal, setAbrirInfoModal] = useState(false);
+  const [abrirDescuentoModal, setAbrirDescuentoModal] = useState(false);
 
   useEffect(() => {
     if (cuenta.id) {
@@ -153,6 +154,15 @@ function PuntoVenta() {
   const openInfoCuenta = () => {
     if (cuenta.id) {
       setAbrirInfoModal(true);
+    } else {
+      alert("selecciona una cuenta para continuar".toUpperCase());
+    }
+  };
+
+  const openDescuento = () => {
+    if (cuenta.id) {
+      if (cuenta.impreso) return;
+      setAbrirDescuentoModal(true);
     } else {
       alert("selecciona una cuenta para continuar".toUpperCase());
     }
@@ -409,6 +419,17 @@ function PuntoVenta() {
                 Ver Info
               </a>
             </li>
+            <li className="text-center">
+              <a
+                onClick={(e) => {
+                  e.preventDefault(), openDescuento();
+                }}
+                className="dropdown-item text-uppercase h4 py-4"
+                href="#"
+              >
+                Aplicar Descuento
+              </a>
+            </li>
           </ul>
         </div>
         <button
@@ -473,6 +494,10 @@ function PuntoVenta() {
       <InfoModal
         show={abrirInfoModal}
         onHide={() => setAbrirInfoModal(false)}
+      />
+      <DescuendoModal
+        show={abrirDescuentoModal}
+        onHide={() => setAbrirDescuentoModal(false)}
       />
     </div>
   );

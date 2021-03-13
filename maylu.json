@@ -696,8 +696,10 @@
       "contable": true,
       "createdAt": "2020-11-15T06:29:53.016Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:32:20.933Z",
-      "id": "ac6a22a3-7d7f-42c4-aea5-815f3877e142"
+      "lastEdit": "2021-03-12T06:43:09.622Z",
+      "id": "ac6a22a3-7d7f-42c4-aea5-815f3877e142",
+      "area_nota": "area1",
+      "codigo": 10656
     },
     {
       "name": "arroz frito camaron",
@@ -706,8 +708,10 @@
       "contable": true,
       "createdAt": "2020-11-15T06:30:20.774Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:32:31.714Z",
-      "id": "4a585c7b-c265-407c-aabd-ad31207ac87e"
+      "lastEdit": "2021-03-12T06:43:14.054Z",
+      "id": "4a585c7b-c265-407c-aabd-ad31207ac87e",
+      "area_nota": "area1",
+      "codigo": 11517
     },
     {
       "name": "arroz frito pollo",
@@ -716,8 +720,10 @@
       "contable": true,
       "createdAt": "2020-11-15T06:30:30.385Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:32:39.088Z",
-      "id": "5e7af4e0-787b-4b3d-9aee-5746cdbbeb3e"
+      "lastEdit": "2021-03-12T06:43:17.782Z",
+      "id": "5e7af4e0-787b-4b3d-9aee-5746cdbbeb3e",
+      "area_nota": "area1",
+      "codigo": 29417
     },
     {
       "name": "arroz frito res",
@@ -726,8 +732,10 @@
       "contable": true,
       "createdAt": "2020-11-15T06:30:42.771Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:32:45.635Z",
-      "id": "42e1b6e4-96c4-4484-bd69-1cfb3bfe0000"
+      "lastEdit": "2021-03-12T06:43:21.000Z",
+      "id": "42e1b6e4-96c4-4484-bd69-1cfb3bfe0000",
+      "area_nota": "area1",
+      "codigo": 21967
     },
     {
       "name": "arroz frito mixto",
@@ -736,8 +744,10 @@
       "contable": true,
       "createdAt": "2020-11-15T06:30:54.695Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:32:53.828Z",
-      "id": "3c4a3b3a-a173-4566-9bbd-1af5222bf70c"
+      "lastEdit": "2021-03-12T06:43:23.903Z",
+      "id": "3c4a3b3a-a173-4566-9bbd-1af5222bf70c",
+      "area_nota": "area1",
+      "codigo": 26520
     },
     {
       "name": "extra philadelphia",
@@ -746,8 +756,10 @@
       "contable": true,
       "createdAt": "2020-11-15T06:32:28.361Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:37:17.353Z",
-      "id": "0b226c78-e465-45e3-bbab-9378ebc75c31"
+      "lastEdit": "2021-03-12T06:39:42.370Z",
+      "id": "0b226c78-e465-45e3-bbab-9378ebc75c31",
+      "area_nota": "area1",
+      "codigo": 43131
     },
     {
       "name": "extra aguacate",
@@ -756,8 +768,10 @@
       "contable": true,
       "createdAt": "2020-11-15T06:32:51.543Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:37:28.682Z",
-      "id": "28866954-7c56-4fe2-ba3c-4af0b677f46e"
+      "lastEdit": "2021-03-12T06:39:44.403Z",
+      "id": "28866954-7c56-4fe2-ba3c-4af0b677f46e",
+      "area_nota": "area1",
+      "codigo": 47358
     },
     {
       "name": "extra cangrejo",
@@ -766,8 +780,10 @@
       "contable": true,
       "createdAt": "2020-11-15T06:33:00.159Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:37:34.701Z",
-      "id": "27b07406-09a8-4797-b32a-f96ee47dfd83"
+      "lastEdit": "2021-03-12T06:39:46.404Z",
+      "id": "27b07406-09a8-4797-b32a-f96ee47dfd83",
+      "area_nota": "area1",
+      "codigo": 57832
     },
     {
       "name": "extra cam 75gr",
@@ -776,8 +792,10 @@
       "contable": true,
       "createdAt": "2020-11-15T06:33:57.600Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-11T21:22:11.190Z",
-      "id": "a007b4fa-be72-4c23-a503-476466cb9328"
+      "lastEdit": "2021-03-12T06:39:50.151Z",
+      "id": "a007b4fa-be72-4c23-a503-476466cb9328",
+      "area_nota": "area1",
+      "codigo": 85748
     },
     {
       "name": "extra pollo 75gr",
@@ -786,8 +804,10 @@
       "contable": true,
       "createdAt": "2020-11-15T06:34:06.662Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-11T21:21:00.746Z",
-      "id": "2d145164-f230-4ea8-b8c7-3174ba34edb2"
+      "lastEdit": "2021-03-12T06:39:52.424Z",
+      "id": "2d145164-f230-4ea8-b8c7-3174ba34edb2",
+      "area_nota": "area1",
+      "codigo": 46709
     },
     {
       "name": "extra res 75gr",
@@ -796,8 +816,10 @@
       "contable": true,
       "createdAt": "2020-11-15T06:34:14.465Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-11T21:21:13.998Z",
-      "id": "7eb66415-2a19-4f64-86bd-25ff4c83478e"
+      "lastEdit": "2021-03-12T06:39:55.500Z",
+      "id": "7eb66415-2a19-4f64-86bd-25ff4c83478e",
+      "area_nota": "area1",
+      "codigo": 60180
     },
     {
       "name": "tepanyaki camaron",
@@ -830,8 +852,10 @@
       "contable": true,
       "createdAt": "2020-11-15T06:44:57.630Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:18:31.295Z",
-      "id": "a742a56c-db7d-45c3-8a33-34b21a4dd2a5"
+      "lastEdit": "2021-03-12T06:38:54.687Z",
+      "id": "a742a56c-db7d-45c3-8a33-34b21a4dd2a5",
+      "area_nota": "area1",
+      "codigo": 80053
     },
     {
       "name": "tepanyaki mixto",
@@ -840,8 +864,10 @@
       "contable": true,
       "createdAt": "2020-11-15T06:45:30.602Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:18:42.283Z",
-      "id": "f81dc490-f641-460c-b382-e9658a9ffb6b"
+      "lastEdit": "2021-03-12T06:38:56.980Z",
+      "id": "f81dc490-f641-460c-b382-e9658a9ffb6b",
+      "area_nota": "area1",
+      "codigo": 39299
     },
     {
       "name": "teriyaki nvo camaron",
@@ -850,8 +876,10 @@
       "contable": true,
       "createdAt": "2020-11-15T06:48:30.953Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:19:35.482Z",
-      "id": "b9a838f9-89ae-42ff-829a-2c903c2576ab"
+      "lastEdit": "2021-03-12T06:39:06.186Z",
+      "id": "b9a838f9-89ae-42ff-829a-2c903c2576ab",
+      "area_nota": "area1",
+      "codigo": 85543
     },
     {
       "name": "teriyaki nvo pollo",
@@ -860,8 +888,10 @@
       "contable": true,
       "createdAt": "2020-11-15T06:48:42.101Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:19:44.297Z",
-      "id": "6220fd69-4d7e-4e27-87a7-1a475fa074df"
+      "lastEdit": "2021-03-12T06:39:09.126Z",
+      "id": "6220fd69-4d7e-4e27-87a7-1a475fa074df",
+      "area_nota": "area1",
+      "codigo": 93941
     },
     {
       "name": "teriyaki nvo res",
@@ -870,8 +900,10 @@
       "contable": true,
       "createdAt": "2020-11-15T06:48:55.860Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:19:52.385Z",
-      "id": "601e4389-d08a-4f37-8355-93b412b92102"
+      "lastEdit": "2021-03-12T06:39:12.726Z",
+      "id": "601e4389-d08a-4f37-8355-93b412b92102",
+      "area_nota": "area1",
+      "codigo": 47615
     },
     {
       "name": "teriyaki nvo mixto",
@@ -880,8 +912,10 @@
       "contable": true,
       "createdAt": "2020-11-15T06:49:09.501Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:20:03.522Z",
-      "id": "4f44d68f-f1e2-429a-9e4c-4a7482fe5c85"
+      "lastEdit": "2021-03-12T06:39:15.341Z",
+      "id": "4f44d68f-f1e2-429a-9e4c-4a7482fe5c85",
+      "area_nota": "area1",
+      "codigo": 36147
     },
     {
       "name": "agridulce camaron",
@@ -890,8 +924,10 @@
       "contable": true,
       "createdAt": "2020-11-15T06:50:38.847Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:36:06.293Z",
-      "id": "061ba92c-dc60-4393-843d-1c8b6a010a3e"
+      "lastEdit": "2021-03-12T06:41:04.436Z",
+      "id": "061ba92c-dc60-4393-843d-1c8b6a010a3e",
+      "area_nota": "area1",
+      "codigo": 30590
     },
     {
       "name": "agridulce pollo",
@@ -900,8 +936,10 @@
       "contable": true,
       "createdAt": "2020-11-15T06:50:47.500Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:36:26.171Z",
-      "id": "103349c9-c3c9-4375-831e-802ac93da4d0"
+      "lastEdit": "2021-03-12T06:41:06.933Z",
+      "id": "103349c9-c3c9-4375-831e-802ac93da4d0",
+      "area_nota": "area1",
+      "codigo": 43315
     },
     {
       "name": "camarones mojo de ajo",
@@ -910,8 +948,10 @@
       "contable": true,
       "createdAt": "2020-11-15T06:51:14.795Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:28:49.528Z",
-      "id": "2f55cc46-7a99-44ec-a00e-1a661688619c"
+      "lastEdit": "2021-03-12T06:41:24.883Z",
+      "id": "2f55cc46-7a99-44ec-a00e-1a661688619c",
+      "area_nota": "area1",
+      "codigo": 94100
     },
     {
       "name": "camarones empanizados",
@@ -920,8 +960,10 @@
       "contable": true,
       "createdAt": "2020-11-15T06:51:25.113Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:28:58.871Z",
-      "id": "58ecf246-e993-49f0-9fee-76c682ce6162"
+      "lastEdit": "2021-03-12T06:41:37.964Z",
+      "id": "58ecf246-e993-49f0-9fee-76c682ce6162",
+      "area_nota": "area1",
+      "codigo": 65689
     },
     {
       "name": "haromaki camaron",
@@ -930,8 +972,10 @@
       "contable": true,
       "createdAt": "2020-11-15T06:52:12.943Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:22:55.350Z",
-      "id": "e5b3d930-c44b-4ac1-992c-c584de3ce060"
+      "lastEdit": "2021-03-12T06:39:30.109Z",
+      "id": "e5b3d930-c44b-4ac1-992c-c584de3ce060",
+      "area_nota": "area1",
+      "codigo": 68919
     },
     {
       "name": "haromaki pollo",
@@ -940,8 +984,10 @@
       "contable": true,
       "createdAt": "2020-11-15T06:52:25.887Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:23:04.978Z",
-      "id": "c4a7b6dd-cb83-4039-98a4-53a38f09e907"
+      "lastEdit": "2021-03-12T06:39:33.231Z",
+      "id": "c4a7b6dd-cb83-4039-98a4-53a38f09e907",
+      "area_nota": "area1",
+      "codigo": 61901
     },
     {
       "name": "haromaki res",
@@ -950,8 +996,10 @@
       "contable": true,
       "createdAt": "2020-11-15T06:52:32.671Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:23:13.605Z",
-      "id": "00060757-a8b5-4392-be6c-90a6e7387e33"
+      "lastEdit": "2021-03-12T06:39:38.550Z",
+      "id": "00060757-a8b5-4392-be6c-90a6e7387e33",
+      "area_nota": "area1",
+      "codigo": 55550
     },
     {
       "name": "haromaki verduras",
@@ -960,8 +1008,10 @@
       "contable": true,
       "createdAt": "2020-11-15T06:52:44.294Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:23:22.159Z",
-      "id": "8ee65cf9-f63d-49d4-9efa-eb6af7e4b9ae"
+      "lastEdit": "2021-03-12T06:39:35.333Z",
+      "id": "8ee65cf9-f63d-49d4-9efa-eb6af7e4b9ae",
+      "area_nota": "area1",
+      "codigo": 57105
     },
     {
       "name": "sopa camaron",
@@ -970,8 +1020,10 @@
       "contable": true,
       "createdAt": "2020-11-15T06:53:05.752Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:27:21.046Z",
-      "id": "a13ecfe0-05d0-45b7-8b86-ad47e050a8d3"
+      "lastEdit": "2021-03-12T06:40:56.372Z",
+      "id": "a13ecfe0-05d0-45b7-8b86-ad47e050a8d3",
+      "area_nota": "area1",
+      "codigo": 33630
     },
     {
       "name": "sopa pollo",
@@ -980,8 +1032,10 @@
       "contable": true,
       "createdAt": "2020-11-15T06:53:27.937Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:27:30.563Z",
-      "id": "0d31e987-0c2c-43dc-9399-575b8610e3ac"
+      "lastEdit": "2021-03-12T06:40:58.903Z",
+      "id": "0d31e987-0c2c-43dc-9399-575b8610e3ac",
+      "area_nota": "area1",
+      "codigo": 97892
     },
     {
       "name": "sopa res",
@@ -990,8 +1044,10 @@
       "contable": true,
       "createdAt": "2020-11-15T06:53:36.190Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:27:38.358Z",
-      "id": "a4e86919-1756-4efe-96ac-ab84f22ce017"
+      "lastEdit": "2021-03-12T06:41:01.291Z",
+      "id": "a4e86919-1756-4efe-96ac-ab84f22ce017",
+      "area_nota": "area1",
+      "codigo": 29608
     },
     {
       "name": "helado frito",
@@ -1000,8 +1056,10 @@
       "contable": true,
       "createdAt": "2020-11-15T06:54:57.852Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:31:59.851Z",
-      "id": "af4ee48f-5305-4ad2-a8f7-496c09f09bd7"
+      "lastEdit": "2021-03-12T06:42:58.444Z",
+      "id": "af4ee48f-5305-4ad2-a8f7-496c09f09bd7",
+      "area_nota": "area1",
+      "codigo": 45867
     },
     {
       "name": "te helado",
@@ -1034,8 +1092,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:04:43.268Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:33:47.384Z",
-      "id": "404e545e-0b5c-4446-8df2-57134ae7b15b"
+      "lastEdit": "2021-03-12T06:44:06.462Z",
+      "id": "404e545e-0b5c-4446-8df2-57134ae7b15b",
+      "area_nota": "area2",
+      "codigo": 66634
     },
     {
       "name": "alga pollo",
@@ -1044,8 +1104,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:04:50.129Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:33:58.078Z",
-      "id": "5380fd02-bb15-4669-9f95-207b728632d0"
+      "lastEdit": "2021-03-12T06:44:09.367Z",
+      "id": "5380fd02-bb15-4669-9f95-207b728632d0",
+      "area_nota": "area2",
+      "codigo": 95051
     },
     {
       "name": "alga res",
@@ -1054,8 +1116,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:04:55.453Z",
       "createdBy": "admin",
-      "lastEdit": null,
-      "id": "cfd1a60e-3dc2-49d3-a95d-8f78b7a39911"
+      "lastEdit": "2021-03-12T06:44:12.246Z",
+      "id": "cfd1a60e-3dc2-49d3-a95d-8f78b7a39911",
+      "area_nota": "area2",
+      "codigo": 79687
     },
     {
       "name": "alga cangrejo",
@@ -1064,8 +1128,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:05:03.584Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:34:24.507Z",
-      "id": "487ec961-4040-4492-8583-586be31c76c6"
+      "lastEdit": "2021-03-12T06:44:16.463Z",
+      "id": "487ec961-4040-4492-8583-586be31c76c6",
+      "area_nota": "area2",
+      "codigo": 96437
     },
     {
       "name": "alga pulpo",
@@ -1074,8 +1140,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:05:15.969Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:34:33.112Z",
-      "id": "07820a07-c766-4eaa-907a-de2926c1e43c"
+      "lastEdit": "2021-03-12T06:44:19.326Z",
+      "id": "07820a07-c766-4eaa-907a-de2926c1e43c",
+      "area_nota": "area2",
+      "codigo": 57790
     },
     {
       "name": "philadelphia camaron",
@@ -1084,8 +1152,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:06:46.644Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:29:34.417Z",
-      "id": "1d04db1d-4fcb-40bc-834b-043f1814eb6b"
+      "lastEdit": "2021-03-12T06:41:42.624Z",
+      "id": "1d04db1d-4fcb-40bc-834b-043f1814eb6b",
+      "area_nota": "area2",
+      "codigo": 81324
     },
     {
       "name": "philadelphia pollo",
@@ -1094,8 +1164,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:06:58.956Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:29:43.258Z",
-      "id": "bd3709a4-6208-4d38-bb98-5c1317f882b2"
+      "lastEdit": "2021-03-12T06:41:48.995Z",
+      "id": "bd3709a4-6208-4d38-bb98-5c1317f882b2",
+      "area_nota": "area2",
+      "codigo": 62733
     },
     {
       "name": "philadelphia res",
@@ -1104,8 +1176,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:07:08.982Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:29:46.418Z",
-      "id": "37171fda-c805-4dad-a0d0-6744340a0670"
+      "lastEdit": "2021-03-12T06:42:14.904Z",
+      "id": "37171fda-c805-4dad-a0d0-6744340a0670",
+      "area_nota": "area2",
+      "codigo": 91630
     },
     {
       "name": "philadelphia cangrejo",
@@ -1114,8 +1188,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:07:16.946Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:29:55.078Z",
-      "id": "2940e677-3edb-42a6-be64-730b1e320d3a"
+      "lastEdit": "2021-03-12T06:42:17.435Z",
+      "id": "2940e677-3edb-42a6-be64-730b1e320d3a",
+      "area_nota": "area2",
+      "codigo": 85984
     },
     {
       "name": "philadelphia pulpo",
@@ -1124,8 +1200,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:07:30.927Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:30:05.878Z",
-      "id": "689ed233-5645-4c62-8f66-0ef730c53c67"
+      "lastEdit": "2021-03-12T06:42:22.922Z",
+      "id": "689ed233-5645-4c62-8f66-0ef730c53c67",
+      "area_nota": "area2",
+      "codigo": 91955
     },
     {
       "name": "philadelphia salmon",
@@ -1134,8 +1212,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:07:40.449Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:30:08.975Z",
-      "id": "65eddc4e-36f2-4fdb-ba71-b22a50a72570"
+      "lastEdit": "2021-03-12T06:42:25.987Z",
+      "id": "65eddc4e-36f2-4fdb-ba71-b22a50a72570",
+      "area_nota": "area2",
+      "codigo": 51258
     },
     {
       "name": "phil emp camaron",
@@ -1144,8 +1224,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:08:05.087Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:30:41.973Z",
-      "id": "d4ada70f-d84f-4f35-a659-ba4be76727e9"
+      "lastEdit": "2021-03-12T06:42:31.985Z",
+      "id": "d4ada70f-d84f-4f35-a659-ba4be76727e9",
+      "area_nota": "area2",
+      "codigo": 11749
     },
     {
       "name": "phil emp pollo",
@@ -1154,8 +1236,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:08:13.260Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:30:51.742Z",
-      "id": "49f11cb2-9629-4293-8e60-73fff417805c"
+      "lastEdit": "2021-03-12T06:42:36.842Z",
+      "id": "49f11cb2-9629-4293-8e60-73fff417805c",
+      "area_nota": "area2",
+      "codigo": 85317
     },
     {
       "name": "phil emp res",
@@ -1164,8 +1248,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:08:27.360Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:31:02.971Z",
-      "id": "e93a3f64-9768-428d-a866-95d936574b0d"
+      "lastEdit": "2021-03-12T06:42:40.426Z",
+      "id": "e93a3f64-9768-428d-a866-95d936574b0d",
+      "area_nota": "area2",
+      "codigo": 53021
     },
     {
       "name": "phil emp cangrejo",
@@ -1174,8 +1260,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:08:36.273Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:31:10.712Z",
-      "id": "94c91af1-00eb-4992-8d46-5a914f658e4f"
+      "lastEdit": "2021-03-12T06:42:48.472Z",
+      "id": "94c91af1-00eb-4992-8d46-5a914f658e4f",
+      "area_nota": "area2",
+      "codigo": 72614
     },
     {
       "name": "phil emp pulpo",
@@ -1184,8 +1272,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:08:44.535Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-28T20:08:25.474Z",
-      "id": "77b2df3c-b866-4ed7-a09e-ff0d456387b6"
+      "lastEdit": "2021-03-12T06:42:51.268Z",
+      "id": "77b2df3c-b866-4ed7-a09e-ff0d456387b6",
+      "area_nota": "area2",
+      "codigo": 46815
     },
     {
       "name": "phil emp salmon",
@@ -1194,8 +1284,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:08:53.377Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-28T20:08:38.865Z",
-      "id": "320c03d9-2591-46ac-aedf-91a1ca6f5207"
+      "lastEdit": "2021-03-12T06:42:54.306Z",
+      "id": "320c03d9-2591-46ac-aedf-91a1ca6f5207",
+      "area_nota": "area2",
+      "codigo": 32621
     },
     {
       "name": "aguacate camaron",
@@ -1204,8 +1296,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:09:56.581Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:13:54.445Z",
-      "id": "1c5d9567-02d4-4ab7-abee-4efb27b67e1f"
+      "lastEdit": "2021-03-12T06:37:33.580Z",
+      "id": "1c5d9567-02d4-4ab7-abee-4efb27b67e1f",
+      "area_nota": "area2",
+      "codigo": 84260
     },
     {
       "name": "aguacate pollo",
@@ -1214,8 +1308,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:10:07.132Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:14:01.968Z",
-      "id": "e7136d02-3c6e-47e1-9923-9b4c856a51d2"
+      "lastEdit": "2021-03-12T06:37:35.931Z",
+      "id": "e7136d02-3c6e-47e1-9923-9b4c856a51d2",
+      "codigo": 24479,
+      "area_nota": "area2"
     },
     {
       "name": "aguacate res",
@@ -1224,8 +1320,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:10:20.534Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:14:08.213Z",
-      "id": "697077c9-83d5-43fb-85a2-6af40a775068"
+      "lastEdit": "2021-03-12T06:37:39.989Z",
+      "id": "697077c9-83d5-43fb-85a2-6af40a775068",
+      "area_nota": "area2",
+      "codigo": 43823
     },
     {
       "name": "aguacate cangrejo",
@@ -1234,8 +1332,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:10:30.310Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:14:17.248Z",
-      "id": "e0fdbf44-374a-42da-9a5f-d3446d17bfb0"
+      "lastEdit": "2021-03-12T06:37:42.590Z",
+      "id": "e0fdbf44-374a-42da-9a5f-d3446d17bfb0",
+      "area_nota": "area2",
+      "codigo": 92311
     },
     {
       "name": "aguacate pulpo",
@@ -1244,8 +1344,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:10:38.733Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:14:32.951Z",
-      "id": "675a59f5-68ed-4bf6-ae89-cfd91820b1b4"
+      "lastEdit": "2021-03-12T06:37:45.067Z",
+      "id": "675a59f5-68ed-4bf6-ae89-cfd91820b1b4",
+      "area_nota": "area2",
+      "codigo": 65918
     },
     {
       "name": "aguacate salmon",
@@ -1254,8 +1356,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:10:49.972Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:14:40.437Z",
-      "id": "cb9d889f-71a8-40f7-885d-3d2b04d5d660"
+      "lastEdit": "2021-03-12T06:37:48.602Z",
+      "id": "cb9d889f-71a8-40f7-885d-3d2b04d5d660",
+      "area_nota": "area2",
+      "codigo": 96358
     },
     {
       "name": "empanizado camaron",
@@ -1264,8 +1368,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:15:45.212Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:15:14.157Z",
-      "id": "c19a7173-2746-4a49-80bc-1e67489bc767"
+      "lastEdit": "2021-03-12T06:37:54.300Z",
+      "id": "c19a7173-2746-4a49-80bc-1e67489bc767",
+      "area_nota": "area2",
+      "codigo": 14214
     },
     {
       "name": "empanizado pollo",
@@ -1274,8 +1380,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:15:53.682Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:15:22.517Z",
-      "id": "c5c7a9e0-3cdc-4ba2-baff-40b7c76a6b0e"
+      "lastEdit": "2021-03-12T06:37:56.591Z",
+      "id": "c5c7a9e0-3cdc-4ba2-baff-40b7c76a6b0e",
+      "area_nota": "area2",
+      "codigo": 34131
     },
     {
       "name": "empanizado res",
@@ -1284,8 +1392,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:16:03.077Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:15:33.218Z",
-      "id": "80491c92-69d1-456a-8f33-b47e4cb44083"
+      "lastEdit": "2021-03-12T06:37:59.415Z",
+      "id": "80491c92-69d1-456a-8f33-b47e4cb44083",
+      "area_nota": "area2",
+      "codigo": 69369
     },
     {
       "name": "empanizado cangrejo",
@@ -1294,8 +1404,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:16:12.246Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:15:48.933Z",
-      "id": "bf210488-c93b-484b-b858-14fcd407ea54"
+      "lastEdit": "2021-03-12T06:38:01.834Z",
+      "id": "bf210488-c93b-484b-b858-14fcd407ea54",
+      "area_nota": "area2",
+      "codigo": 23930
     },
     {
       "name": "empanizado pulpo",
@@ -1304,8 +1416,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:16:25.562Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:15:58.555Z",
-      "id": "a2f09fc1-daad-4905-9ac2-fb79b19f4d72"
+      "lastEdit": "2021-03-12T06:38:04.256Z",
+      "id": "a2f09fc1-daad-4905-9ac2-fb79b19f4d72",
+      "area_nota": "area2",
+      "codigo": 90466
     },
     {
       "name": "empanizado salmon",
@@ -1314,8 +1428,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:16:35.321Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:16:06.899Z",
-      "id": "2982c787-348a-4bdf-973a-672bc9480a5e"
+      "lastEdit": "2021-03-12T06:38:08.122Z",
+      "id": "2982c787-348a-4bdf-973a-672bc9480a5e",
+      "area_nota": "area2",
+      "codigo": 80356
     },
     {
       "name": "cordon pollo",
@@ -1324,8 +1440,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:17:36.468Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:24:38.704Z",
-      "id": "e41db088-3918-4415-bd01-0ba0df2bad42"
+      "lastEdit": "2021-03-12T06:40:22.644Z",
+      "id": "e41db088-3918-4415-bd01-0ba0df2bad42",
+      "area_nota": "area2",
+      "codigo": 56125
     },
     {
       "name": "cordon camaron",
@@ -1334,8 +1452,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:17:51.911Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:24:47.791Z",
-      "id": "842956aa-2d9e-4cdb-af4f-f68a00fcbde8"
+      "lastEdit": "2021-03-12T06:40:27.324Z",
+      "id": "842956aa-2d9e-4cdb-af4f-f68a00fcbde8",
+      "area_nota": "area2",
+      "codigo": 78195
     },
     {
       "name": "sweet roll",
@@ -1344,8 +1464,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:18:17.952Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:25:00.542Z",
-      "id": "744a5666-37b7-4681-bf7b-3bf5a12407b3"
+      "lastEdit": "2021-03-12T06:40:30.236Z",
+      "id": "744a5666-37b7-4681-bf7b-3bf5a12407b3",
+      "area_nota": "area2",
+      "codigo": 98946
     },
     {
       "name": "curtido roll",
@@ -1354,8 +1476,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:18:26.846Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:25:33.256Z",
-      "id": "09cfadef-44ce-4324-9bc6-75e430164cc1"
+      "lastEdit": "2021-03-12T06:40:34.103Z",
+      "id": "09cfadef-44ce-4324-9bc6-75e430164cc1",
+      "area_nota": "area2",
+      "codigo": 24733
     },
     {
       "name": "chicken roll",
@@ -1364,8 +1488,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:18:36.780Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:25:46.373Z",
-      "id": "088f935a-03b0-42bb-adfd-636f0001ff76"
+      "lastEdit": "2021-03-12T06:40:36.784Z",
+      "id": "088f935a-03b0-42bb-adfd-636f0001ff76",
+      "area_nota": "area2",
+      "codigo": 86859
     },
     {
       "name": "picosito roll",
@@ -1374,8 +1500,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:18:49.934Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:26:00.972Z",
-      "id": "595a2761-3cf6-41b0-959b-f3c330f68119"
+      "lastEdit": "2021-03-12T06:40:39.096Z",
+      "id": "595a2761-3cf6-41b0-959b-f3c330f68119",
+      "area_nota": "area2",
+      "codigo": 29960
     },
     {
       "name": "avocado roll",
@@ -1384,8 +1512,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:19:14.986Z",
       "createdBy": "admin",
-      "lastEdit": null,
-      "id": "89601993-9108-459c-9e32-fef79c617610"
+      "lastEdit": "2021-03-12T06:40:42.813Z",
+      "id": "89601993-9108-459c-9e32-fef79c617610",
+      "area_nota": "area2",
+      "codigo": 98166
     },
     {
       "name": "spicy roll",
@@ -1394,8 +1524,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:19:23.266Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:26:23.455Z",
-      "id": "79aa0f0d-501d-47ba-a773-2b01b9bf08f1"
+      "lastEdit": "2021-03-12T06:40:46.827Z",
+      "id": "79aa0f0d-501d-47ba-a773-2b01b9bf08f1",
+      "area_nota": "area2",
+      "codigo": 55443
     },
     {
       "name": "bola camaron",
@@ -1404,8 +1536,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:19:57.643Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:16:28.580Z",
-      "id": "0ed3b360-0f1b-449f-940e-95fa13e38788"
+      "lastEdit": "2021-03-12T06:38:11.104Z",
+      "id": "0ed3b360-0f1b-449f-940e-95fa13e38788",
+      "area_nota": "area2",
+      "codigo": 23388
     },
     {
       "name": "bola pollo",
@@ -1414,8 +1548,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:20:05.617Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:16:42.195Z",
-      "id": "551c985e-7102-42f1-8083-7a5dbb1660e3"
+      "lastEdit": "2021-03-12T06:38:13.354Z",
+      "id": "551c985e-7102-42f1-8083-7a5dbb1660e3",
+      "area_nota": "area2",
+      "codigo": 51366
     },
     {
       "name": "bola res",
@@ -1424,8 +1560,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:20:12.863Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:16:52.799Z",
-      "id": "0a91c94e-80f6-4d21-9857-22177b029aa7"
+      "lastEdit": "2021-03-12T06:38:15.642Z",
+      "id": "0a91c94e-80f6-4d21-9857-22177b029aa7",
+      "area_nota": "area2",
+      "codigo": 48978
     },
     {
       "name": "bola cangrejo",
@@ -1434,8 +1572,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:20:21.608Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:17:05.263Z",
-      "id": "f3f5ef7b-ea9b-439a-9eed-bc979a673755"
+      "lastEdit": "2021-03-12T06:38:18.692Z",
+      "id": "f3f5ef7b-ea9b-439a-9eed-bc979a673755",
+      "area_nota": "area2",
+      "codigo": 46379
     },
     {
       "name": "bola pulpo",
@@ -1444,8 +1584,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:20:32.337Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:17:12.169Z",
-      "id": "90d3fba5-1402-4e44-b212-d14d469ce963"
+      "lastEdit": "2021-03-12T06:38:22.108Z",
+      "id": "90d3fba5-1402-4e44-b212-d14d469ce963",
+      "area_nota": "area2",
+      "codigo": 95732
     },
     {
       "name": "bola salmon",
@@ -1454,8 +1596,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:20:40.603Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:17:20.231Z",
-      "id": "7363f125-fd28-4d54-b2a7-fcd31ef6d2c1"
+      "lastEdit": "2021-03-12T06:38:24.768Z",
+      "id": "7363f125-fd28-4d54-b2a7-fcd31ef6d2c1",
+      "area_nota": "area2",
+      "codigo": 43769
     },
     {
       "name": "cono camaron",
@@ -1464,8 +1608,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:24:09.436Z",
       "createdBy": "admin",
-      "lastEdit": null,
-      "id": "383180d8-7684-414c-bf3d-4f40a6096a3e"
+      "lastEdit": "2021-03-12T06:43:47.626Z",
+      "id": "383180d8-7684-414c-bf3d-4f40a6096a3e",
+      "area_nota": "area2",
+      "codigo": 80456
     },
     {
       "name": "cono cangrejo",
@@ -1474,8 +1620,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:24:19.341Z",
       "createdBy": "admin",
-      "lastEdit": null,
-      "id": "5c30ccee-1d06-43b2-bcc4-b50af12b973d"
+      "lastEdit": "2021-03-12T06:43:51.914Z",
+      "id": "5c30ccee-1d06-43b2-bcc4-b50af12b973d",
+      "area_nota": "area2",
+      "codigo": 31157
     },
     {
       "name": "cono pulpo",
@@ -1484,8 +1632,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:24:26.247Z",
       "createdBy": "admin",
-      "lastEdit": null,
-      "id": "f00fd42b-55c6-4ee0-ad01-112231e97393"
+      "lastEdit": "2021-03-12T06:43:55.739Z",
+      "id": "f00fd42b-55c6-4ee0-ad01-112231e97393",
+      "area_nota": "area2",
+      "codigo": 88573
     },
     {
       "name": "cono salmon",
@@ -1494,8 +1644,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:24:41.671Z",
       "createdBy": "admin",
-      "lastEdit": null,
-      "id": "93619e35-37fd-4142-bf30-1f5d56622e9f"
+      "lastEdit": "2021-03-12T06:44:02.115Z",
+      "id": "93619e35-37fd-4142-bf30-1f5d56622e9f",
+      "area_nota": "area2",
+      "codigo": 30914
     },
     {
       "name": "ensalada tampico",
@@ -1504,8 +1656,10 @@
       "contable": true,
       "createdAt": "2020-11-15T07:29:27.028Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:26:49.363Z",
-      "id": "76e0f1b7-36c9-4109-909d-19e81209f282"
+      "lastEdit": "2021-03-12T06:40:52.964Z",
+      "id": "76e0f1b7-36c9-4109-909d-19e81209f282",
+      "area_nota": "area3",
+      "codigo": 35989
     },
     {
       "name": "soya con limon",
@@ -1514,8 +1668,10 @@
       "contable": false,
       "createdAt": "2020-11-15T07:31:49.898Z",
       "createdBy": "admin",
-      "lastEdit": null,
-      "id": "141ff9ca-0489-4d24-9b6e-9ea36972f941"
+      "lastEdit": "2021-03-12T06:40:03.079Z",
+      "id": "141ff9ca-0489-4d24-9b6e-9ea36972f941",
+      "area_nota": "area4",
+      "codigo": 69521
     },
     {
       "name": "soya con chile",
@@ -1524,8 +1680,10 @@
       "contable": false,
       "createdAt": "2020-11-15T07:31:56.913Z",
       "createdBy": "admin",
-      "lastEdit": "2020-11-15T07:32:05.542Z",
-      "id": "148de478-2678-4334-821d-76da1a6b7455"
+      "lastEdit": "2021-03-12T06:40:11.544Z",
+      "id": "148de478-2678-4334-821d-76da1a6b7455",
+      "area_nota": "area4",
+      "codigo": 90009
     },
     {
       "name": "soya natural",
@@ -1534,8 +1692,10 @@
       "contable": false,
       "createdAt": "2020-11-15T07:32:22.532Z",
       "createdBy": "admin",
-      "lastEdit": null,
-      "id": "7636cd1f-8e52-4cdc-879a-cd3a34d262bb"
+      "lastEdit": "2021-03-12T06:40:08.391Z",
+      "id": "7636cd1f-8e52-4cdc-879a-cd3a34d262bb",
+      "area_nota": "area4",
+      "codigo": 94571
     },
     {
       "name": "cebollin solo",
@@ -1544,8 +1704,10 @@
       "contable": false,
       "createdAt": "2020-11-15T07:32:40.174Z",
       "createdBy": "admin",
-      "lastEdit": null,
-      "id": "9b16f698-5b69-48d4-a98f-67f6ef034bfc"
+      "lastEdit": "2021-03-12T06:40:15.285Z",
+      "id": "9b16f698-5b69-48d4-a98f-67f6ef034bfc",
+      "area_nota": "area4",
+      "codigo": 83545
     },
     {
       "name": "aderezo chipotle",
@@ -1554,8 +1716,10 @@
       "contable": false,
       "createdAt": "2020-11-15T07:33:06.918Z",
       "createdBy": "admin",
-      "lastEdit": null,
-      "id": "e5ce6874-013d-4ea2-a5ab-0d2bae619539"
+      "lastEdit": "2021-03-12T06:43:30.516Z",
+      "id": "e5ce6874-013d-4ea2-a5ab-0d2bae619539",
+      "area_nota": "area4",
+      "codigo": 32129
     },
     {
       "name": "aderezo cilantro",
@@ -1564,8 +1728,10 @@
       "contable": false,
       "createdAt": "2020-11-15T07:33:16.498Z",
       "createdBy": "admin",
-      "lastEdit": null,
-      "id": "db5af7db-3fe8-490e-b7fe-d2d0435c35ef"
+      "lastEdit": "2021-03-12T06:43:34.631Z",
+      "id": "db5af7db-3fe8-490e-b7fe-d2d0435c35ef",
+      "area_nota": "area4",
+      "codigo": 39670
     },
     {
       "name": "salsa sriracha",
@@ -1574,8 +1740,10 @@
       "contable": false,
       "createdAt": "2020-11-15T07:33:28.616Z",
       "createdBy": "admin",
-      "lastEdit": null,
-      "id": "635b7700-047f-42d7-92e1-931e55bd2cde"
+      "lastEdit": "2021-03-12T06:43:37.850Z",
+      "id": "635b7700-047f-42d7-92e1-931e55bd2cde",
+      "area_nota": "area4",
+      "codigo": 39543
     },
     {
       "name": "cuchara",
@@ -1584,8 +1752,10 @@
       "contable": false,
       "createdAt": "2020-11-15T07:34:00.616Z",
       "createdBy": "admin",
-      "lastEdit": null,
-      "id": "63b84c96-0677-44e8-9288-fec2e93e737c"
+      "lastEdit": "2021-03-12T06:38:44.084Z",
+      "id": "63b84c96-0677-44e8-9288-fec2e93e737c",
+      "area_nota": "area4",
+      "codigo": 97089
     },
     {
       "name": "tenedor",
@@ -1594,8 +1764,10 @@
       "contable": false,
       "createdAt": "2020-11-15T07:34:07.510Z",
       "createdBy": "admin",
-      "lastEdit": null,
-      "id": "1080340b-3b1d-45af-803a-f189d64d8dc2"
+      "lastEdit": "2021-03-12T06:38:46.720Z",
+      "id": "1080340b-3b1d-45af-803a-f189d64d8dc2",
+      "area_nota": "area4",
+      "codigo": 33181
     },
     {
       "name": "palillos",
@@ -1604,8 +1776,10 @@
       "contable": false,
       "createdAt": "2020-11-15T07:34:16.423Z",
       "createdBy": "admin",
-      "lastEdit": null,
-      "id": "cd76faa0-dc9e-4343-be2e-78f0293405b8"
+      "lastEdit": "2021-03-12T06:38:49.250Z",
+      "id": "cd76faa0-dc9e-4343-be2e-78f0293405b8",
+      "area_nota": "area4",
+      "codigo": 38046
     },
     {
       "name": "salsa anguila",
@@ -1614,8 +1788,10 @@
       "contable": false,
       "createdAt": "2020-11-19T00:52:38.296Z",
       "createdBy": "admin",
-      "lastEdit": null,
-      "id": "6c514b9c-324e-4e17-ab9b-007161bbeca7"
+      "lastEdit": "2021-03-12T06:43:41.389Z",
+      "id": "6c514b9c-324e-4e17-ab9b-007161bbeca7",
+      "area_nota": "area4",
+      "codigo": 25957
     },
     {
       "name": "empanizado veget",
@@ -1624,8 +1800,10 @@
       "contable": true,
       "createdAt": "2020-11-19T20:15:19.408Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-10T20:15:21.986Z",
-      "id": "e6654785-150c-4643-8702-bc6381ac92ec"
+      "lastEdit": "2021-03-12T06:38:26.836Z",
+      "id": "e6654785-150c-4643-8702-bc6381ac92ec",
+      "area_nota": "area2",
+      "codigo": 61401
     },
     {
       "name": "agridulce mixto",
@@ -1634,8 +1812,10 @@
       "contable": true,
       "createdAt": "2020-11-20T02:52:04.173Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-28T20:07:08.150Z",
-      "id": "7773dcd0-1e4b-42a6-985b-c2b96315acb4"
+      "lastEdit": "2021-03-12T06:41:20.794Z",
+      "id": "7773dcd0-1e4b-42a6-985b-c2b96315acb4",
+      "codigo": 70920,
+      "area_nota": "area1"
     },
     {
       "name": "tres quesos camaron",
@@ -1644,8 +1824,10 @@
       "contable": true,
       "createdAt": "2020-11-20T02:53:54.064Z",
       "createdBy": "admin",
-      "lastEdit": null,
-      "id": "37ad5ae0-be98-41c8-ae30-bba05d58b5f3"
+      "lastEdit": "2021-03-12T06:38:30.845Z",
+      "id": "37ad5ae0-be98-41c8-ae30-bba05d58b5f3",
+      "area_nota": "area2",
+      "codigo": 15980
     },
     {
       "name": "tres quesos pollo",
@@ -1654,8 +1836,10 @@
       "contable": true,
       "createdAt": "2020-11-20T02:54:11.386Z",
       "createdBy": "admin",
-      "lastEdit": null,
-      "id": "ef2b9669-422b-4310-bf80-ffb636f0b882"
+      "lastEdit": "2021-03-12T06:38:33.383Z",
+      "id": "ef2b9669-422b-4310-bf80-ffb636f0b882",
+      "area_nota": "area2",
+      "codigo": 31189
     },
     {
       "name": "tres quesos res",
@@ -1664,8 +1848,10 @@
       "contable": true,
       "createdAt": "2020-11-20T02:54:35.469Z",
       "createdBy": "admin",
-      "lastEdit": null,
-      "id": "12c88e79-8b23-454b-a1f4-92aabf754033"
+      "lastEdit": "2021-03-12T06:38:37.469Z",
+      "id": "12c88e79-8b23-454b-a1f4-92aabf754033",
+      "area_nota": "area2",
+      "codigo": 50429
     },
     {
       "name": "tres quesos cangrejo",
@@ -1674,8 +1860,10 @@
       "contable": true,
       "createdAt": "2020-11-20T02:55:46.960Z",
       "createdBy": "admin",
-      "lastEdit": null,
-      "id": "9f23ec37-3b9b-4b14-be46-0bbb41bb8bb6"
+      "lastEdit": "2021-03-12T06:38:39.962Z",
+      "id": "9f23ec37-3b9b-4b14-be46-0bbb41bb8bb6",
+      "area_nota": "area2",
+      "codigo": 34943
     },
     {
       "name": "teriyaki udon pollo",
@@ -1684,8 +1872,10 @@
       "contable": true,
       "createdAt": "2020-11-22T21:24:07.461Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:20:37.448Z",
-      "id": "f55d780b-51f1-42ad-b4dc-149bfc41654a"
+      "lastEdit": "2021-03-12T06:39:17.857Z",
+      "id": "f55d780b-51f1-42ad-b4dc-149bfc41654a",
+      "area_nota": "area1",
+      "codigo": 18279
     },
     {
       "name": "pepino camaron",
@@ -1706,8 +1896,10 @@
       "contable": true,
       "createdAt": "2021-01-03T01:45:43.420Z",
       "createdBy": "admin",
-      "lastEdit": null,
-      "id": "a2188f8d-b302-469c-9a12-665f5844759c"
+      "lastEdit": "2021-03-12T06:40:49.528Z",
+      "id": "a2188f8d-b302-469c-9a12-665f5844759c",
+      "area_nota": "area2",
+      "codigo": 44335
     },
     {
       "name": "tepanyaki pescado",
@@ -1716,8 +1908,10 @@
       "contable": true,
       "createdAt": "2021-01-03T01:46:09.925Z",
       "createdBy": "admin",
-      "lastEdit": null,
-      "id": "020edf64-ce95-4825-bdb5-a62c4f1973ba"
+      "lastEdit": "2021-03-12T06:39:00.329Z",
+      "id": "020edf64-ce95-4825-bdb5-a62c4f1973ba",
+      "area_nota": "area1",
+      "codigo": 96419
     },
     {
       "name": "pepino pollo",
@@ -1738,8 +1932,10 @@
       "contable": true,
       "createdAt": "2021-01-04T20:33:26.571Z",
       "createdBy": "admin",
-      "lastEdit": null,
-      "id": "0fcdfe4c-f620-4bc1-ad0c-48d4857d1713"
+      "lastEdit": "2021-03-12T06:37:17.699Z",
+      "id": "0fcdfe4c-f620-4bc1-ad0c-48d4857d1713",
+      "area_nota": "area2",
+      "codigo": 39412
     },
     {
       "name": "pepino cangrejo",
@@ -1748,8 +1944,10 @@
       "contable": true,
       "createdAt": "2021-01-04T20:33:40.111Z",
       "createdBy": "admin",
-      "lastEdit": null,
-      "id": "2da528a9-867f-4141-a833-ac13dfdb2233"
+      "lastEdit": "2021-03-12T06:37:20.170Z",
+      "id": "2da528a9-867f-4141-a833-ac13dfdb2233",
+      "area_nota": "area2",
+      "codigo": 85550
     },
     {
       "name": "pepino pulpo",
@@ -1758,8 +1956,10 @@
       "contable": true,
       "createdAt": "2021-01-04T20:33:56.024Z",
       "createdBy": "admin",
-      "lastEdit": null,
-      "id": "c67323bf-d0f6-4143-8b79-e70d876803ae"
+      "lastEdit": "2021-03-12T06:37:22.324Z",
+      "id": "c67323bf-d0f6-4143-8b79-e70d876803ae",
+      "area_nota": "area2",
+      "codigo": 27731
     },
     {
       "name": "pepino salmon",
@@ -1768,8 +1968,10 @@
       "contable": true,
       "createdAt": "2021-01-04T20:34:06.009Z",
       "createdBy": "admin",
-      "lastEdit": null,
-      "id": "a214ceaa-ee7f-448a-b177-68a88679f71f"
+      "lastEdit": "2021-03-12T06:37:25.573Z",
+      "id": "a214ceaa-ee7f-448a-b177-68a88679f71f",
+      "area_nota": "area2",
+      "codigo": 78831
     },
     {
       "name": "extra agrid pollo",
@@ -1778,8 +1980,10 @@
       "contable": true,
       "createdAt": "2021-01-04T20:44:53.873Z",
       "createdBy": "admin",
-      "lastEdit": null,
-      "id": "8a38ebd7-14d2-4a07-85e7-8a107b02462e"
+      "lastEdit": "2021-03-12T06:39:57.884Z",
+      "id": "8a38ebd7-14d2-4a07-85e7-8a107b02462e",
+      "area_nota": "area1",
+      "codigo": 89398
     },
     {
       "name": "teriyaki udon res",
@@ -1788,8 +1992,10 @@
       "contable": true,
       "createdAt": "2021-01-07T21:26:37.890Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:20:49.264Z",
-      "id": "b55eada9-b053-487a-ac97-4f30446b80e4"
+      "lastEdit": "2021-03-12T06:39:21.571Z",
+      "id": "b55eada9-b053-487a-ac97-4f30446b80e4",
+      "area_nota": "area1",
+      "codigo": 93243
     },
     {
       "name": "alga salmon",
@@ -1798,8 +2004,10 @@
       "contable": true,
       "createdAt": "2021-01-11T21:29:15.191Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:22:05.561Z",
-      "id": "f66cf2ef-867e-4df0-93f5-f2d0ce4a5814"
+      "lastEdit": "2021-03-12T06:44:22.379Z",
+      "id": "f66cf2ef-867e-4df0-93f5-f2d0ce4a5814",
+      "area_nota": "area2",
+      "codigo": 79544
     },
     {
       "name": "tepayanki veget",
@@ -1808,8 +2016,10 @@
       "contable": true,
       "createdAt": "2021-01-12T21:42:26.590Z",
       "createdBy": "admin",
-      "lastEdit": null,
-      "id": "7dc246cc-3dc9-4e67-ba85-5a2c899a1837"
+      "lastEdit": "2021-03-12T06:39:04.201Z",
+      "id": "7dc246cc-3dc9-4e67-ba85-5a2c899a1837",
+      "area_nota": "area1",
+      "codigo": 72591
     },
     {
       "name": "teriyaki udon cam",
@@ -1818,8 +2028,10 @@
       "contable": true,
       "createdAt": "2021-01-22T23:42:51.447Z",
       "createdBy": "admin",
-      "lastEdit": "2021-01-27T22:21:08.736Z",
-      "id": "14cb12b9-3b9e-4496-866e-729c4bedb1f8"
+      "lastEdit": "2021-03-12T06:39:24.813Z",
+      "id": "14cb12b9-3b9e-4496-866e-729c4bedb1f8",
+      "area_nota": "area1",
+      "codigo": 25308
     },
     {
       "name": "teriyaki udon mixto",
@@ -1828,8 +2040,10 @@
       "contable": true,
       "createdAt": "2021-01-27T22:21:27.602Z",
       "createdBy": "admin",
-      "lastEdit": null,
-      "id": "05b84451-1723-4865-9e02-8a527c683b31"
+      "lastEdit": "2021-03-12T06:39:27.349Z",
+      "id": "05b84451-1723-4865-9e02-8a527c683b31",
+      "area_nota": "area1",
+      "codigo": 59762
     },
     {
       "name": "alga veget",
@@ -1838,8 +2052,10 @@
       "contable": true,
       "createdAt": "2021-02-27T20:04:53.140Z",
       "createdBy": "admin",
-      "lastEdit": null,
-      "id": "a729ab7a-c01c-4c2f-8fa7-a39138841dc3"
+      "lastEdit": "2021-03-12T06:44:25.341Z",
+      "id": "a729ab7a-c01c-4c2f-8fa7-a39138841dc3",
+      "area_nota": "area2",
+      "codigo": 57256
     }
   ],
   "clientes": [
@@ -87219,6 +87435,1004 @@
       "time": "",
       "fecha": "2021-03-11",
       "id": "bf90e1bb-a649-4120-804a-3e087b5d10d4"
+    },
+    {
+      "folio": 935,
+      "orden": 1,
+      "torreta": "mostrador",
+      "personas": 1,
+      "servicio": "pll",
+      "cliente": {
+        "name": "",
+        "tel": "",
+        "address": {
+          "calle": "",
+          "cruces": "",
+          "colonia": "",
+          "obs": ""
+        },
+        "codigo": null,
+        "id": null
+      },
+      "estado": "abierto",
+      "impreso": false,
+      "items": [
+        {
+          "cant": 1,
+          "name": "alga camaron",
+          "importe": 69,
+          "price": 69,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "404e545e-0b5c-4446-8df2-57134ae7b15b",
+          "contable": true,
+          "createdAt": "2021-03-12T06:36:34.382Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 1,
+          "name": "avocado roll",
+          "importe": 82,
+          "price": 82,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "89601993-9108-459c-9e32-fef79c617610",
+          "contable": true,
+          "createdAt": "2021-03-12T06:36:38.200Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 1,
+          "name": "picosito roll",
+          "importe": 82,
+          "price": 82,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "595a2761-3cf6-41b0-959b-f3c330f68119",
+          "contable": true,
+          "createdAt": "2021-03-12T06:36:38.680Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 2,
+          "name": "te helado",
+          "importe": 36,
+          "price": 18,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "5ad597a5-94c9-4152-8b5d-daae1fca1767",
+          "contable": true,
+          "area_nota": "area3",
+          "createdAt": "2021-03-12T06:36:41.041Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 2,
+          "name": "haromaki camaron",
+          "importe": 56,
+          "price": 28,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "e5b3d930-c44b-4ac1-992c-c584de3ce060",
+          "contable": true,
+          "createdAt": "2021-03-12T06:36:43.359Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 1,
+          "name": "haromaki res",
+          "importe": 24,
+          "price": 24,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "00060757-a8b5-4392-be6c-90a6e7387e33",
+          "contable": true,
+          "createdAt": "2021-03-12T06:36:44.234Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 1,
+          "name": "helado frito",
+          "importe": 39,
+          "price": 39,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "af4ee48f-5305-4ad2-a8f7-496c09f09bd7",
+          "contable": true,
+          "createdAt": "2021-03-12T06:36:48.178Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 1,
+          "name": "ensalada tampico",
+          "importe": 25,
+          "price": 25,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "76e0f1b7-36c9-4109-909d-19e81209f282",
+          "contable": true,
+          "createdAt": "2021-03-12T06:36:50.713Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        }
+      ],
+      "importe": 413,
+      "dscto": 0,
+      "total": 413,
+      "efectivo": 0,
+      "tarjeta": 0,
+      "cambio": 0,
+      "createdAt": "2021-03-12T06:36:30.566Z",
+      "createdBy": "admin",
+      "closedAt": null,
+      "time": "",
+      "fecha": "2021-03-12",
+      "id": "cad110f2-7766-4892-9690-ec28388ddec8"
+    },
+    {
+      "folio": 936,
+      "orden": 2,
+      "torreta": "mostrador",
+      "personas": 1,
+      "servicio": "pll",
+      "cliente": {
+        "name": "",
+        "tel": "",
+        "address": {
+          "calle": "",
+          "cruces": "",
+          "colonia": "",
+          "obs": ""
+        },
+        "codigo": null,
+        "id": null
+      },
+      "estado": "abierto",
+      "impreso": false,
+      "items": [
+        {
+          "cant": 1,
+          "name": "alga camaron",
+          "importe": 69,
+          "price": 69,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "404e545e-0b5c-4446-8df2-57134ae7b15b",
+          "contable": true,
+          "area_nota": "area2",
+          "createdAt": "2021-03-12T06:45:01.386Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 1,
+          "name": "alga pollo",
+          "importe": 59,
+          "price": 59,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "5380fd02-bb15-4669-9f95-207b728632d0",
+          "contable": true,
+          "area_nota": "area2",
+          "createdAt": "2021-03-12T06:45:01.811Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 1,
+          "name": "alga salmon",
+          "importe": 73,
+          "price": 73,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "f66cf2ef-867e-4df0-93f5-f2d0ce4a5814",
+          "contable": true,
+          "area_nota": "area2",
+          "createdAt": "2021-03-12T06:45:02.136Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 1,
+          "name": "aguacate pollo",
+          "importe": 75,
+          "price": 75,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "e7136d02-3c6e-47e1-9923-9b4c856a51d2",
+          "contable": true,
+          "area_nota": "area2",
+          "createdAt": "2021-03-12T06:45:06.603Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 1,
+          "name": "curtido roll",
+          "importe": 85,
+          "price": 85,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "09cfadef-44ce-4324-9bc6-75e430164cc1",
+          "contable": true,
+          "area_nota": "area2",
+          "createdAt": "2021-03-12T06:45:09.515Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 1,
+          "name": "cordon pollo",
+          "importe": 82,
+          "price": 82,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "e41db088-3918-4415-bd01-0ba0df2bad42",
+          "contable": true,
+          "area_nota": "area2",
+          "createdAt": "2021-03-12T06:45:11.424Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 1,
+          "name": "spicy roll",
+          "importe": 87,
+          "price": 87,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "79aa0f0d-501d-47ba-a773-2b01b9bf08f1",
+          "contable": true,
+          "area_nota": "area2",
+          "createdAt": "2021-03-12T06:45:12.352Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 1,
+          "name": "salmoncito",
+          "importe": 115,
+          "price": 115,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "a2188f8d-b302-469c-9a12-665f5844759c",
+          "contable": true,
+          "area_nota": "area2",
+          "createdAt": "2021-03-12T06:45:13.416Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 1,
+          "name": "agridulce pollo",
+          "importe": 90,
+          "price": 90,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "103349c9-c3c9-4375-831e-802ac93da4d0",
+          "contable": true,
+          "area_nota": "area1",
+          "createdAt": "2021-03-12T06:45:16.724Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 1,
+          "name": "camarones empanizados",
+          "importe": 105,
+          "price": 105,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "58ecf246-e993-49f0-9fee-76c682ce6162",
+          "contable": true,
+          "area_nota": "area1",
+          "createdAt": "2021-03-12T06:45:19.638Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 1,
+          "name": "haromaki camaron",
+          "importe": 28,
+          "price": 28,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "e5b3d930-c44b-4ac1-992c-c584de3ce060",
+          "contable": true,
+          "area_nota": "area1",
+          "createdAt": "2021-03-12T06:45:26.510Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 1,
+          "name": "haromaki pollo",
+          "importe": 24,
+          "price": 24,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "c4a7b6dd-cb83-4039-98a4-53a38f09e907",
+          "contable": true,
+          "area_nota": "area1",
+          "createdAt": "2021-03-12T06:45:26.795Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 1,
+          "name": "haromaki res",
+          "importe": 24,
+          "price": 24,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "00060757-a8b5-4392-be6c-90a6e7387e33",
+          "contable": true,
+          "area_nota": "area1",
+          "createdAt": "2021-03-12T06:45:27.081Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 1,
+          "name": "arroz frito verduras",
+          "importe": 45,
+          "price": 45,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "ac6a22a3-7d7f-42c4-aea5-815f3877e142",
+          "contable": true,
+          "area_nota": "area1",
+          "createdAt": "2021-03-12T06:45:29.216Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 1,
+          "name": "arroz frito camaron",
+          "importe": 64,
+          "price": 64,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "4a585c7b-c265-407c-aabd-ad31207ac87e",
+          "contable": true,
+          "area_nota": "area1",
+          "createdAt": "2021-03-12T06:45:29.550Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 1,
+          "name": "arroz frito pollo",
+          "importe": 55,
+          "price": 55,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "5e7af4e0-787b-4b3d-9aee-5746cdbbeb3e",
+          "contable": true,
+          "area_nota": "area1",
+          "createdAt": "2021-03-12T06:45:29.910Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 1,
+          "name": "arroz frito mixto",
+          "importe": 64,
+          "price": 64,
+          "dscto": 0,
+          "modificadores": [
+            {
+              "name": "camaron",
+              "price": 0
+            },
+            {
+              "name": "res",
+              "price": 0
+            },
+            {
+              "name": "pollo",
+              "price": 0
+            }
+          ],
+          "producto_id": "3c4a3b3a-a173-4566-9bbd-1af5222bf70c",
+          "contable": true,
+          "area_nota": "area1",
+          "createdAt": "2021-03-12T06:45:30.326Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 1,
+          "name": "extra philadelphia",
+          "importe": 15,
+          "price": 15,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "0b226c78-e465-45e3-bbab-9378ebc75c31",
+          "contable": true,
+          "area_nota": "area1",
+          "createdAt": "2021-03-12T06:45:34.066Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 1,
+          "name": "extra aguacate",
+          "importe": 15,
+          "price": 15,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "28866954-7c56-4fe2-ba3c-4af0b677f46e",
+          "contable": true,
+          "area_nota": "area1",
+          "createdAt": "2021-03-12T06:45:34.411Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 1,
+          "name": "extra cangrejo",
+          "importe": 15,
+          "price": 15,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "27b07406-09a8-4797-b32a-f96ee47dfd83",
+          "contable": true,
+          "area_nota": "area1",
+          "createdAt": "2021-03-12T06:45:34.745Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 4,
+          "name": "soya con limon",
+          "importe": 0,
+          "price": 0,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "141ff9ca-0489-4d24-9b6e-9ea36972f941",
+          "contable": false,
+          "area_nota": "area4",
+          "createdAt": "2021-03-12T06:46:21.660Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 3,
+          "name": "aderezo chipotle",
+          "importe": 0,
+          "price": 0,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "e5ce6874-013d-4ea2-a5ab-0d2bae619539",
+          "contable": false,
+          "area_nota": "area4",
+          "createdAt": "2021-03-12T06:46:23.321Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 2,
+          "name": "soya con chile",
+          "importe": 0,
+          "price": 0,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "148de478-2678-4334-821d-76da1a6b7455",
+          "contable": false,
+          "area_nota": "area4",
+          "createdAt": "2021-03-12T06:46:24.795Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 4,
+          "name": "salsa sriracha",
+          "importe": 0,
+          "price": 0,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "635b7700-047f-42d7-92e1-931e55bd2cde",
+          "contable": false,
+          "area_nota": "area4",
+          "createdAt": "2021-03-12T06:46:27.413Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 4,
+          "name": "te helado",
+          "importe": 72,
+          "price": 18,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "5ad597a5-94c9-4152-8b5d-daae1fca1767",
+          "contable": true,
+          "area_nota": "area3",
+          "createdAt": "2021-03-12T06:46:49.566Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 1,
+          "name": "philadelphia camaron",
+          "importe": 82,
+          "price": 82,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "1d04db1d-4fcb-40bc-834b-043f1814eb6b",
+          "contable": true,
+          "area_nota": "area2",
+          "createdAt": "2021-03-12T06:47:35.372Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        }
+      ],
+      "importe": 1343,
+      "dscto": 0,
+      "total": 1343,
+      "efectivo": 0,
+      "tarjeta": 0,
+      "cambio": 0,
+      "createdAt": "2021-03-12T06:44:37.733Z",
+      "createdBy": "admin",
+      "closedAt": null,
+      "time": "",
+      "fecha": "2021-03-12",
+      "id": "3d36ccd7-90ff-4444-9178-e79fe0775644"
+    },
+    {
+      "folio": 937,
+      "orden": 3,
+      "torreta": "alma vanessa",
+      "personas": 1,
+      "servicio": "domicilio",
+      "cliente": {
+        "name": "alma vanessa",
+        "tel": "3332452819",
+        "address": {
+          "calle": "rafael molin #3967",
+          "cruces": "luis covarrubias y alberto correa",
+          "colonia": "polanco",
+          "obs": ""
+        },
+        "id": "7d2afd39-de20-4f13-89e1-031d6d8b7b03"
+      },
+      "estado": "abierto",
+      "impreso": false,
+      "items": [
+        {
+          "cant": 1,
+          "name": "alga camaron",
+          "importe": 69,
+          "price": 69,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "404e545e-0b5c-4446-8df2-57134ae7b15b",
+          "contable": true,
+          "area_nota": "area2",
+          "createdAt": "2021-03-12T06:49:11.113Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": true
+        },
+        {
+          "cant": 1,
+          "name": "philadelphia camaron",
+          "importe": 82,
+          "price": 82,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "1d04db1d-4fcb-40bc-834b-043f1814eb6b",
+          "contable": true,
+          "area_nota": "area2",
+          "createdAt": "2021-03-12T06:49:13.928Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": true
+        },
+        {
+          "cant": 1,
+          "name": "arroz frito mixto",
+          "importe": 64,
+          "price": 64,
+          "dscto": 0,
+          "modificadores": [
+            {
+              "name": "camaron",
+              "price": 0
+            },
+            {
+              "name": "res",
+              "price": 0
+            },
+            {
+              "name": "pollo",
+              "price": 0
+            }
+          ],
+          "producto_id": "3c4a3b3a-a173-4566-9bbd-1af5222bf70c",
+          "contable": true,
+          "area_nota": "area1",
+          "createdAt": "2021-03-12T06:49:18.687Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": true
+        },
+        {
+          "cant": 1,
+          "name": "extra philadelphia",
+          "importe": 15,
+          "price": 15,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "0b226c78-e465-45e3-bbab-9378ebc75c31",
+          "contable": true,
+          "area_nota": "area1",
+          "createdAt": "2021-03-12T06:49:22.931Z",
+          "createdBy": "admin",
+          "cancelado": true,
+          "impreso": true
+        },
+        {
+          "cant": 1,
+          "name": "extra aguacate",
+          "importe": 15,
+          "price": 15,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "28866954-7c56-4fe2-ba3c-4af0b677f46e",
+          "contable": true,
+          "area_nota": "area1",
+          "createdAt": "2021-03-12T06:49:23.434Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": true
+        },
+        {
+          "cant": 1,
+          "name": "extra cangrejo",
+          "importe": 15,
+          "price": 15,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "27b07406-09a8-4797-b32a-f96ee47dfd83",
+          "contable": true,
+          "area_nota": "area1",
+          "createdAt": "2021-03-12T06:49:24.567Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": true
+        },
+        {
+          "cant": 1,
+          "name": "te helado",
+          "importe": 18,
+          "price": 18,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "5ad597a5-94c9-4152-8b5d-daae1fca1767",
+          "contable": true,
+          "area_nota": "area3",
+          "createdAt": "2021-03-12T06:49:27.460Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": true
+        },
+        {
+          "cant": 1,
+          "name": "calpico",
+          "importe": 18,
+          "price": 18,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "036cb6c0-411a-4423-9913-800f10951fe7",
+          "contable": true,
+          "area_nota": "area3",
+          "createdAt": "2021-03-12T06:49:27.799Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": true
+        },
+        {
+          "cant": 2,
+          "name": "soya con limon",
+          "importe": 0,
+          "price": 0,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "141ff9ca-0489-4d24-9b6e-9ea36972f941",
+          "contable": false,
+          "area_nota": "area4",
+          "createdAt": "2021-03-12T06:49:29.855Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": true
+        },
+        {
+          "cant": 2,
+          "name": "soya con chile",
+          "importe": 0,
+          "price": 0,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "148de478-2678-4334-821d-76da1a6b7455",
+          "contable": false,
+          "area_nota": "area4",
+          "createdAt": "2021-03-12T06:49:30.889Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": true
+        },
+        {
+          "cant": 2,
+          "name": "aderezo chipotle",
+          "importe": 0,
+          "price": 0,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "e5ce6874-013d-4ea2-a5ab-0d2bae619539",
+          "contable": false,
+          "area_nota": "area4",
+          "createdAt": "2021-03-12T06:49:32.649Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": true
+        },
+        {
+          "cant": 3,
+          "name": "tenedor",
+          "importe": 0,
+          "price": 0,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "1080340b-3b1d-45af-803a-f189d64d8dc2",
+          "contable": false,
+          "area_nota": "area4",
+          "createdAt": "2021-03-12T06:49:34.637Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": true
+        },
+        {
+          "cant": 1,
+          "name": "cordon pollo",
+          "importe": 82,
+          "price": 82,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "e41db088-3918-4415-bd01-0ba0df2bad42",
+          "contable": true,
+          "area_nota": "area2",
+          "createdAt": "2021-03-12T06:50:22.844Z",
+          "createdBy": "admin",
+          "cancelado": true,
+          "impreso": true
+        },
+        {
+          "cant": 1,
+          "name": "curtido roll",
+          "importe": 85,
+          "price": 85,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "09cfadef-44ce-4324-9bc6-75e430164cc1",
+          "contable": true,
+          "area_nota": "area2",
+          "createdAt": "2021-03-12T06:50:23.419Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": true
+        },
+        {
+          "cant": 1,
+          "name": "spicy roll",
+          "importe": 87,
+          "price": 87,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "79aa0f0d-501d-47ba-a773-2b01b9bf08f1",
+          "contable": true,
+          "area_nota": "area2",
+          "createdAt": "2021-03-12T06:50:23.952Z",
+          "createdBy": "admin",
+          "cancelado": true,
+          "impreso": true
+        }
+      ],
+      "importe": 366,
+      "dscto": 0,
+      "total": 366,
+      "efectivo": 0,
+      "tarjeta": 0,
+      "cambio": 0,
+      "createdAt": "2021-03-12T06:49:04.322Z",
+      "createdBy": "admin",
+      "closedAt": null,
+      "time": "",
+      "fecha": "2021-03-12",
+      "id": "b5dd55e7-66de-4219-b9fe-adc969f9a77e"
+    },
+    {
+      "folio": 938,
+      "orden": 1,
+      "torreta": "mostrador",
+      "personas": 1,
+      "servicio": "pll",
+      "cliente": {
+        "name": "",
+        "tel": "",
+        "address": {
+          "calle": "",
+          "cruces": "",
+          "colonia": "",
+          "obs": ""
+        },
+        "codigo": null,
+        "id": null
+      },
+      "estado": "abierto",
+      "impreso": false,
+      "items": [
+        {
+          "cant": 1,
+          "name": "te helado",
+          "importe": null,
+          "price": 18,
+          "dscto": null,
+          "modificadores": [],
+          "producto_id": "5ad597a5-94c9-4152-8b5d-daae1fca1767",
+          "contable": true,
+          "area_nota": "area3",
+          "createdAt": "2021-03-13T18:51:31.561Z",
+          "createdBy": "admin",
+          "cancelado": true,
+          "impreso": false
+        },
+        {
+          "cant": 1,
+          "name": "alga camaron",
+          "importe": 0,
+          "price": 69,
+          "dscto": 69,
+          "modificadores": [],
+          "producto_id": "404e545e-0b5c-4446-8df2-57134ae7b15b",
+          "contable": true,
+          "area_nota": "area2",
+          "createdAt": "2021-03-13T18:51:33.183Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 1,
+          "name": "alga pollo",
+          "importe": 59,
+          "price": 59,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "5380fd02-bb15-4669-9f95-207b728632d0",
+          "contable": true,
+          "area_nota": "area2",
+          "createdAt": "2021-03-13T18:51:33.586Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 1,
+          "name": "arroz frito mixto",
+          "importe": 64,
+          "price": 64,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "3c4a3b3a-a173-4566-9bbd-1af5222bf70c",
+          "contable": true,
+          "area_nota": "area1",
+          "createdAt": "2021-03-13T19:21:05.577Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 1,
+          "name": "extra philadelphia",
+          "importe": 15,
+          "price": 15,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "0b226c78-e465-45e3-bbab-9378ebc75c31",
+          "contable": true,
+          "area_nota": "area1",
+          "createdAt": "2021-03-13T19:21:07.854Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 1,
+          "name": "extra aguacate",
+          "importe": 15,
+          "price": 15,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "28866954-7c56-4fe2-ba3c-4af0b677f46e",
+          "contable": true,
+          "area_nota": "area1",
+          "createdAt": "2021-03-13T19:21:08.160Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 1,
+          "name": "extra cangrejo",
+          "importe": 15,
+          "price": 15,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "27b07406-09a8-4797-b32a-f96ee47dfd83",
+          "contable": true,
+          "area_nota": "area1",
+          "createdAt": "2021-03-13T19:21:08.507Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        }
+      ],
+      "importe": 168,
+      "dscto": 0,
+      "total": 168,
+      "efectivo": 0,
+      "tarjeta": 0,
+      "cambio": 0,
+      "createdAt": "2021-03-13T18:51:28.677Z",
+      "createdBy": "admin",
+      "closedAt": null,
+      "time": "",
+      "fecha": "2021-03-13",
+      "id": "8635d1fa-7878-40dc-bb66-505993cc389e"
     }
   ],
   "logs": [
@@ -87585,6 +88799,55 @@
       "operador": "admin",
       "commit": "ha iniciado sesión",
       "id": "97cd78a0-d1e4-4ebc-868e-3b7e5bbbd2ad"
+    },
+    {
+      "createdAt": "2021-03-11T06:43:03.581Z",
+      "fecha": "2021-03-11",
+      "operador": "admin",
+      "commit": "ha cerrado sesión",
+      "id": "24e43c6f-5c1b-4fd8-82aa-e109b7bcf4dd"
+    },
+    {
+      "createdAt": "2021-03-12T06:00:43.143Z",
+      "fecha": "2021-03-12",
+      "operador": "admin",
+      "commit": "ha iniciado sesión",
+      "id": "03f2bc2f-1da0-43ac-87ef-7030bb1c25d4"
+    },
+    {
+      "createdAt": "2021-03-12T06:58:28.415Z",
+      "fecha": "2021-03-12",
+      "operador": "admin",
+      "commit": "ha hecho una consulta al monitor de ventas",
+      "id": "18206786-103c-47ff-b642-a71b51bf2c0d"
+    },
+    {
+      "createdAt": "2021-03-12T07:00:19.252Z",
+      "fecha": "2021-03-12",
+      "operador": "admin",
+      "commit": "ha cerrado sesión",
+      "id": "85c7bfbc-aea8-4d92-ba61-390cd634b77d"
+    },
+    {
+      "createdAt": "2021-03-13T18:24:08.560Z",
+      "fecha": "2021-03-13",
+      "operador": "admin",
+      "commit": "ha iniciado sesión",
+      "id": "b608c6e1-1e65-40a8-a659-9df05c0cf607"
+    },
+    {
+      "createdAt": "2021-03-13T19:19:54.395Z",
+      "fecha": "2021-03-13",
+      "operador": "admin",
+      "commit": "ha hecho una consulta al monitor de ventas",
+      "id": "181165e0-9105-4e6f-82ea-37a525250430"
+    },
+    {
+      "createdAt": "2021-03-13T19:20:12.334Z",
+      "fecha": "2021-03-13",
+      "operador": "admin",
+      "commit": "ha hecho una consulta al monitor de ventas",
+      "id": "8009bce2-59f4-421a-aeca-57604ac2ec09"
     }
   ],
   "cajas": [

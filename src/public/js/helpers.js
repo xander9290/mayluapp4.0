@@ -1,6 +1,8 @@
 const operadorSession = sessionStorage.getItem("operador");
 const operadorRol = sessionStorage.getItem("operadorRol");
 
+sessionStorage.setItem("operador", "admin");
+
 const fechaActual = (d) => {
   const date = new Date(d);
   const ano = date.getFullYear();
