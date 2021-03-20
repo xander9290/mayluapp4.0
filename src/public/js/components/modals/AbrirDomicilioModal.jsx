@@ -432,7 +432,12 @@ function AbrirDomicilioModal(props) {
             </div>
           </div>
           <div className="tab-pane fade" id="historial" role="tabpanel">
-            <Historial cliente={cliente} />
+            <Historial
+              cliente={cliente}
+              _cuenta={cuenta}
+              createCuenta={createCuenta}
+              onHide={props.onHide}
+            />
           </div>
         </div>
       </div>
@@ -440,7 +445,7 @@ function AbrirDomicilioModal(props) {
   );
 }
 
-function Historial({ cliente }) {
+function Historial({ cliente, _cuenta, createCuenta, onHide }) {
   const [historial, setHistorial] = useState([]);
   const [cuenta, setCuenta] = useState({});
 
@@ -461,6 +466,52 @@ function Historial({ cliente }) {
     if (cta) {
       setCuenta(cta);
     }
+  };
+
+  const volverAPedir = () => {
+    if (
+      !window.confirm(
+        "esta acción abrirá una cuenta nueva. ¿continuar?".toUpperCase()
+      )
+    )
+      return;
+    const oldItems = cuenta.items;
+    const newItems = [];
+    oldItems.map((item) => {
+      item.createdAt = fechaISO();
+      item.createdBy = operadorSession;
+      newItems.push(item);
+    });
+    const { importe, totalConDscto } = procesarItems(newItems, cuenta.dscto);
+    const newCta = {
+      ..._cuenta,
+      servicio: "domicilio",
+      torreta: cliente.name,
+      cliente: {
+        name: cliente.name,
+        tel: cliente.tel,
+        address: {
+          calle: cliente.calle,
+          cruces: cliente.cruces,
+          colonia: cliente.colonia,
+          obs: cliente.obs,
+        },
+        id: cliente.id,
+        codigo: cliente.codigo,
+      },
+      items: oldItems,
+      importe,
+      total: totalConDscto,
+      createdAt: fechaISO(),
+    };
+    createCuenta(newCta, (res) => {
+      if (res) {
+        onHide();
+        setTimeout(() => {
+          props.openCaptura();
+        }, 500);
+      }
+    });
   };
 
   return (
@@ -501,7 +552,15 @@ function Historial({ cliente }) {
               ) : null}
             </ul>
           </div>
-          <div className="card-footer"></div>
+          <div className="card-footer">
+            <button
+              onClick={volverAPedir}
+              type="button"
+              className="btn btn-success"
+            >
+              volver a pedir
+            </button>
+          </div>
         </div>
       </div>
       <div className="col-md-8">

@@ -88313,7 +88313,7 @@
         "id": null
       },
       "estado": "abierto",
-      "impreso": false,
+      "impreso": true,
       "items": [
         {
           "cant": 1,
@@ -88433,6 +88433,482 @@
       "time": "",
       "fecha": "2021-03-13",
       "id": "8635d1fa-7878-40dc-bb66-505993cc389e"
+    },
+    {
+      "folio": 939,
+      "orden": 1,
+      "torreta": "mostrador",
+      "personas": 1,
+      "servicio": "pll",
+      "cliente": {
+        "name": "",
+        "tel": "",
+        "address": {
+          "calle": "",
+          "cruces": "",
+          "colonia": "",
+          "obs": ""
+        },
+        "codigo": null,
+        "id": null
+      },
+      "estado": "abierto",
+      "impreso": true,
+      "items": [
+        {
+          "cant": 2,
+          "name": "empanizado camaron",
+          "importe": 146,
+          "price": 73,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "c19a7173-2746-4a49-80bc-1e67489bc767",
+          "contable": true,
+          "area_nota": "area2",
+          "createdAt": "2021-03-14T06:21:48.822Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 1,
+          "name": "philadelphia camaron",
+          "importe": 82,
+          "price": 82,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "1d04db1d-4fcb-40bc-834b-043f1814eb6b",
+          "contable": true,
+          "area_nota": "area2",
+          "createdAt": "2021-03-14T06:21:51.241Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 1,
+          "name": "alga camaron",
+          "importe": 69,
+          "price": 69,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "404e545e-0b5c-4446-8df2-57134ae7b15b",
+          "contable": true,
+          "area_nota": "area2",
+          "createdAt": "2021-03-14T06:21:52.917Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 1,
+          "name": "arroz frito mixto",
+          "importe": 64,
+          "price": 64,
+          "dscto": 0,
+          "modificadores": [
+            {
+              "name": "camaron",
+              "price": 0
+            },
+            {
+              "name": "res",
+              "price": 0
+            },
+            {
+              "name": "pollo",
+              "price": 0
+            }
+          ],
+          "producto_id": "3c4a3b3a-a173-4566-9bbd-1af5222bf70c",
+          "contable": true,
+          "area_nota": "area1",
+          "createdAt": "2021-03-14T06:21:59.404Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        }
+      ],
+      "importe": 361,
+      "dscto": 0,
+      "total": 361,
+      "efectivo": 0,
+      "tarjeta": 0,
+      "cambio": 0,
+      "createdAt": "2021-03-14T06:21:09.357Z",
+      "createdBy": "admin",
+      "closedAt": null,
+      "time": "",
+      "fecha": "2021-03-14",
+      "id": "cc641321-8002-421e-a538-f42a3ed9112d"
+    },
+    {
+      "folio": 940,
+      "orden": 1,
+      "torreta": "jessica",
+      "personas": 1,
+      "servicio": "domicilio",
+      "cliente": {
+        "name": "jessica",
+        "tel": "333645453",
+        "address": {
+          "calle": "calle 32  3865",
+          "cruces": "patria y 13 ",
+          "colonia": "polanco",
+          "obs": ""
+        },
+        "id": "f117a8fc-4fe7-4aa5-bc40-0cc85f74232c"
+      },
+      "estado": "cancelado",
+      "impreso": true,
+      "items": [
+        {
+          "cant": 1,
+          "name": "cordon pollo",
+          "importe": 82,
+          "price": 82,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "e41db088-3918-4415-bd01-0ba0df2bad42",
+          "contable": true,
+          "createdAt": "2021-03-20T05:22:33.671Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 1,
+          "name": "avocado roll",
+          "importe": 82,
+          "price": 82,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "89601993-9108-459c-9e32-fef79c617610",
+          "contable": true,
+          "createdAt": "2021-03-20T05:22:33.671Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 1,
+          "name": "arroz frito camaron",
+          "importe": 64,
+          "price": 64,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "4a585c7b-c265-407c-aabd-ad31207ac87e",
+          "contable": true,
+          "createdAt": "2021-03-20T05:22:33.671Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 1,
+          "name": "helado frito",
+          "importe": 39,
+          "price": 39,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "af4ee48f-5305-4ad2-a8f7-496c09f09bd7",
+          "contable": true,
+          "createdAt": "2021-03-20T05:22:33.671Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        }
+      ],
+      "importe": 267,
+      "dscto": 0,
+      "total": 267,
+      "efectivo": 500,
+      "tarjeta": 0,
+      "cambio": 233,
+      "createdAt": "2021-03-20T05:22:33.671Z",
+      "createdBy": "admin",
+      "closedAt": "2021-03-09T16:31:00.775Z",
+      "time": "32 minutos",
+      "fecha": "2021-03-09",
+      "id": "3dccd4c1-efac-4b65-9751-7d9186f40cc9"
+    },
+    {
+      "folio": 941,
+      "orden": 1,
+      "torreta": "jessica",
+      "personas": 1,
+      "servicio": "domicilio",
+      "cliente": {
+        "name": "jessica",
+        "tel": "333645453",
+        "address": {
+          "calle": "calle 32  3865",
+          "cruces": "patria y 13 ",
+          "colonia": "polanco",
+          "obs": ""
+        },
+        "id": "f117a8fc-4fe7-4aa5-bc40-0cc85f74232c"
+      },
+      "estado": "abierto",
+      "impreso": true,
+      "items": [
+        {
+          "cant": 2,
+          "name": "arroz frito camaron",
+          "importe": 108,
+          "price": 54,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "4a585c7b-c265-407c-aabd-ad31207ac87e",
+          "contable": true,
+          "createdAt": "2021-03-20T05:24:25.275Z",
+          "createdBy": "admin",
+          "cancelado": false
+        },
+        {
+          "cant": 3,
+          "name": "empanizado camaron",
+          "importe": 204,
+          "price": 68,
+          "dscto": 0,
+          "modificadores": [
+            {
+              "name": "sin alga",
+              "price": 0
+            }
+          ],
+          "producto_id": "c19a7173-2746-4a49-80bc-1e67489bc767",
+          "contable": true,
+          "createdAt": "2021-03-20T05:24:25.275Z",
+          "createdBy": "admin",
+          "cancelado": false
+        },
+        {
+          "cant": 3,
+          "name": "soya con limon",
+          "importe": 0,
+          "price": 0,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "141ff9ca-0489-4d24-9b6e-9ea36972f941",
+          "contable": false,
+          "createdAt": "2021-03-20T05:24:25.275Z",
+          "createdBy": "admin",
+          "cancelado": false
+        },
+        {
+          "cant": 3,
+          "name": "soya con chile",
+          "importe": 0,
+          "price": 0,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "148de478-2678-4334-821d-76da1a6b7455",
+          "contable": false,
+          "createdAt": "2021-03-20T05:24:25.275Z",
+          "createdBy": "admin",
+          "cancelado": false
+        },
+        {
+          "cant": 3,
+          "name": "aderezo cilantro",
+          "importe": 0,
+          "price": 0,
+          "dscto": 0,
+          "modificadores": [
+            {
+              "name": "cebollin solo",
+              "price": 0
+            }
+          ],
+          "producto_id": "db5af7db-3fe8-490e-b7fe-d2d0435c35ef",
+          "contable": false,
+          "createdAt": "2021-03-20T05:24:25.275Z",
+          "createdBy": "admin",
+          "cancelado": false
+        }
+      ],
+      "importe": 312,
+      "dscto": 0,
+      "total": 312,
+      "efectivo": 0,
+      "tarjeta": 0,
+      "cambio": 0,
+      "createdAt": "2021-03-20T05:24:25.275Z",
+      "createdBy": "admin",
+      "closedAt": null,
+      "time": "",
+      "fecha": "2021-03-19",
+      "id": "e4bc8c98-ff2d-4e71-8bb6-51d59d6023a1"
+    },
+    {
+      "folio": 942,
+      "orden": 2,
+      "torreta": "alma vanessa",
+      "personas": 1,
+      "servicio": "domicilio",
+      "cliente": {
+        "name": "alma vanessa",
+        "tel": "3332452819",
+        "address": {
+          "calle": "rafael molin #3967",
+          "cruces": "luis covarrubias y alberto correa",
+          "colonia": "polanco",
+          "obs": ""
+        },
+        "id": "7d2afd39-de20-4f13-89e1-031d6d8b7b03"
+      },
+      "estado": "abierto",
+      "impreso": false,
+      "items": [
+        {
+          "cant": 1,
+          "name": "empanizado camaron",
+          "importe": 68,
+          "price": 68,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "c19a7173-2746-4a49-80bc-1e67489bc767",
+          "contable": true,
+          "createdAt": "2021-03-20T05:25:58.235Z",
+          "createdBy": "admin",
+          "cancelado": false
+        },
+        {
+          "cant": 1,
+          "name": "philadelphia camaron",
+          "importe": 77,
+          "price": 77,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "1d04db1d-4fcb-40bc-834b-043f1814eb6b",
+          "contable": true,
+          "createdAt": "2021-03-20T05:25:58.235Z",
+          "createdBy": "admin",
+          "cancelado": false
+        },
+        {
+          "cant": 1,
+          "name": "arroz frito mixto",
+          "importe": 54,
+          "price": 54,
+          "dscto": 0,
+          "modificadores": [
+            {
+              "name": "camaron",
+              "price": 0
+            },
+            {
+              "name": "res",
+              "price": 0
+            },
+            {
+              "name": "pollo",
+              "price": 0
+            }
+          ],
+          "producto_id": "3c4a3b3a-a173-4566-9bbd-1af5222bf70c",
+          "contable": true,
+          "createdAt": "2021-03-20T05:25:58.235Z",
+          "createdBy": "admin",
+          "cancelado": false
+        },
+        {
+          "cant": 2,
+          "name": "te helado",
+          "importe": 30,
+          "price": 15,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "5ad597a5-94c9-4152-8b5d-daae1fca1767",
+          "contable": true,
+          "createdAt": "2021-03-20T05:25:58.235Z",
+          "createdBy": "admin",
+          "cancelado": false
+        },
+        {
+          "cant": 2,
+          "name": "soya con limon",
+          "importe": 0,
+          "price": 0,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "141ff9ca-0489-4d24-9b6e-9ea36972f941",
+          "contable": false,
+          "createdAt": "2021-03-20T05:25:58.235Z",
+          "createdBy": "admin",
+          "cancelado": false
+        },
+        {
+          "cant": 2,
+          "name": "soya con chile",
+          "importe": 0,
+          "price": 0,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "148de478-2678-4334-821d-76da1a6b7455",
+          "contable": false,
+          "createdAt": "2021-03-20T05:25:58.235Z",
+          "createdBy": "admin",
+          "cancelado": false
+        },
+        {
+          "cant": 1,
+          "name": "aderezo chipotle",
+          "importe": 0,
+          "price": 0,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "e5ce6874-013d-4ea2-a5ab-0d2bae619539",
+          "contable": false,
+          "createdAt": "2021-03-20T05:25:58.235Z",
+          "createdBy": "admin",
+          "cancelado": false
+        },
+        {
+          "cant": 1,
+          "name": "aderezo cilantro",
+          "importe": 0,
+          "price": 0,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "db5af7db-3fe8-490e-b7fe-d2d0435c35ef",
+          "contable": false,
+          "createdAt": "2021-03-20T05:25:58.235Z",
+          "createdBy": "admin",
+          "cancelado": false
+        },
+        {
+          "cant": 2,
+          "name": "tenedor",
+          "importe": 0,
+          "price": 0,
+          "dscto": 0,
+          "modificadores": [
+            {
+              "name": "c.500",
+              "price": 0
+            }
+          ],
+          "producto_id": "1080340b-3b1d-45af-803a-f189d64d8dc2",
+          "contable": false,
+          "createdAt": "2021-03-20T05:25:58.235Z",
+          "createdBy": "admin",
+          "cancelado": false
+        }
+      ],
+      "importe": 229,
+      "dscto": 0,
+      "total": 229,
+      "efectivo": 0,
+      "tarjeta": 0,
+      "cambio": 0,
+      "createdAt": "2021-03-20T05:25:58.235Z",
+      "createdBy": "admin",
+      "closedAt": null,
+      "time": "",
+      "fecha": "2021-03-19",
+      "id": "9c58d4d6-2783-4bfb-adbf-3547d631ba88"
     }
   ],
   "logs": [
@@ -88848,6 +89324,20 @@
       "operador": "admin",
       "commit": "ha hecho una consulta al monitor de ventas",
       "id": "8009bce2-59f4-421a-aeca-57604ac2ec09"
+    },
+    {
+      "createdAt": "2021-03-14T06:19:41.987Z",
+      "fecha": "2021-03-14",
+      "operador": "admin",
+      "commit": "ha hecho una consulta al monitor de ventas",
+      "id": "33efa1f8-8e83-4080-a161-3ee38c378ab3"
+    },
+    {
+      "createdAt": "2021-03-20T04:58:48.748Z",
+      "fecha": "2021-03-19",
+      "operador": "admin",
+      "commit": "ha iniciado sesión",
+      "id": "ac5e8221-c777-4ae3-bb5d-76e0ed1cf503"
     }
   ],
   "cajas": [
