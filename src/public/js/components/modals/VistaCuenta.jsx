@@ -2,7 +2,6 @@ function VistaCuenta(props) {
   const { editarCuenta, cuenta } = useContext(AppContext);
 
   const [itemsIdx, setItemsIdx] = useState(null);
-
   const selectItem = (idx) => {
     setItemsIdx(idx);
   };
@@ -45,10 +44,29 @@ function VistaCuenta(props) {
         importe,
         total: totalConDscto,
       };
-      editarCuenta(cuenta.id, newCta, (res) => {
-        console.log(res);
-      });
+      editarCuenta(cuenta.id, newCta, (res) => {});
     }
+  };
+
+  const descontarProducto = (idx) => {
+    const entry = window.prompt("Importe en porcentaje %", 0);
+    if (entry === null) return;
+    const list = cuenta.items;
+    const _dscto = parseInt(entry);
+    const precio = list[idx].price;
+    const total = Math.round((precio * _dscto) / 100);
+    const _totalDscto = precio - total;
+    list[idx].importe = _totalDscto;
+    list[idx].dscto = total;
+    const { importe, totalConDscto } = procesarItems(list, 0);
+    const newCta = {
+      ...cuenta,
+      items: list,
+      importe,
+      dscto: 0,
+      total: totalConDscto,
+    };
+    editarCuenta(cuenta.id, newCta, (res) => {});
   };
 
   const capturar = () => {
@@ -129,6 +147,7 @@ function VistaCuenta(props) {
                 <th scope="col">
                   <i className="bi bi-printer"></i>
                 </th>
+                <th scope="col">-%</th>
                 <th scope="col">cant</th>
                 <th scope="col">descripción</th>
                 <th scope="col">importe</th>
@@ -139,7 +158,7 @@ function VistaCuenta(props) {
               </tr>
             </thead>
             <tbody>
-              {cuenta &&
+              {cuenta.id &&
                 cuenta.items.map((item, i) => (
                   <tr
                     style={{ cursor: "default" }}
@@ -147,7 +166,7 @@ function VistaCuenta(props) {
                     key={i}
                     className={`fw-bold text-uppercase ${
                       itemsIdx === i ? "bg-info" : ""
-                    } ${item.cancelado ? "bg-danger" : ""}`}
+                    } ${item.cancelado ? "bg-danger" : ""} `}
                   >
                     {cuenta.estado !== "abierto" ? null : (
                       <th scope="row" className="text-center">
@@ -165,6 +184,16 @@ function VistaCuenta(props) {
                     <th scope="row" className="text-center">
                       {item.impreso && <i className="bi bi-check-square"></i>}
                     </th>
+                    <th scope="row" className="text-center">
+                      <button
+                        onClick={() => descontarProducto(i)}
+                        title="DESCONTAR"
+                        type="button"
+                        className="btn btn-primary btn-sm"
+                      >
+                        -%
+                      </button>
+                    </th>
                     <td className="text-center fs-5">{item.cant}</td>
                     <td>
                       <p className="p-0 m-0 text-nowrap fs-5">
@@ -179,9 +208,27 @@ function VistaCuenta(props) {
                         </small>
                       ))}
                     </td>
-                    <td className="text-end fs-5">${item.importe}</td>
-                    <td className="text-end fs-5">${item.price}</td>
-                    <td className="text-end fs-5">-${item.dscto}</td>
+                    <td
+                      className={`text-end fs-5 ${
+                        item.dscto > 0 ? "bg-warning" : ""
+                      }`}
+                    >
+                      ${item.importe}
+                    </td>
+                    <td
+                      className={`text-end fs-5 ${
+                        item.dscto > 0 ? "bg-warning" : ""
+                      }`}
+                    >
+                      ${item.price}
+                    </td>
+                    <td
+                      className={`text-end fs-5 ${
+                        item.dscto > 0 ? "bg-warning" : ""
+                      }`}
+                    >
+                      -${item.dscto}
+                    </td>
                     <td className="text-end fs-5">{item.createdBy}</td>
                     <td className="text-end fs-5">
                       {formatoFecha(item.createdAt)[1]}
