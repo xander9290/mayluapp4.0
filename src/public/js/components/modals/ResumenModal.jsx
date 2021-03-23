@@ -1,9 +1,6 @@
 function ResumenModal(props) {
-  const { servicios, caja, tarjetas } = props;
+  const { servicios, cancelados, descuentos, caja, tarjetas } = props;
   const { commit } = useContext(AppContext);
-
-  const [descuentos, setDescuentos] = useState([]);
-  const [cancelados, setCancelados] = useState([]);
 
   const setImpresion = () => {
     const printContents = document.getElementById("body").innerHTML,
@@ -31,28 +28,7 @@ function ResumenModal(props) {
     return true;
   };
 
-  const procesarDescuentos = () => {
-    const ctasComedor = servicios.comedor.ctas.filter(
-      (cuenta) => cuenta.dscto > 0
-    );
-    const ctasPll = servicios.pll.ctas.filter((cuenta) => cuenta.dscto > 0);
-    const ctasDomicilio = servicios.domicilio.ctas.filter(
-      (cuenta) => cuenta.dscto > 0
-    );
-    setDescuentos([...ctasComedor, ...ctasPll, ...ctasDomicilio]);
-  };
-
-  const procesarCancelados = () => {
-    setCancelados([
-      ...servicios.comedor.cancelados,
-      ...servicios.pll.cancelados,
-      ...servicios.domicilio.cancelados,
-    ]);
-  };
-
   const handleShow = () => {
-    procesarDescuentos();
-    procesarCancelados();
     setImpresion();
   };
 
@@ -161,7 +137,7 @@ function ResumenModal(props) {
               <div key={i * 5}>
                 <h4>-orden:{cuenta.orden}</h4>
                 <h4>importe:${cuenta.importe}.00</h4>
-                <h4>dscto:-${cuenta.dscto}</h4>
+                <h4>dscto:-%{cuenta.dscto}</h4>
                 <h4>
                   total:$
                   {cuenta.total}
@@ -182,6 +158,7 @@ function ResumenModal(props) {
                     <small>{formatoFecha(cuenta.createdAt)[0]}</small>
                   </p>
                 </h4>
+                <p>-------------------------------------</p>
               </div>
             ))}
           </div>

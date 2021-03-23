@@ -88909,6 +88909,196 @@
       "time": "",
       "fecha": "2021-03-19",
       "id": "9c58d4d6-2783-4bfb-adbf-3547d631ba88"
+    },
+    {
+      "folio": 943,
+      "orden": 1,
+      "torreta": "mostrador",
+      "personas": 1,
+      "servicio": "pll",
+      "cliente": {
+        "name": "",
+        "tel": "",
+        "address": {
+          "calle": "",
+          "cruces": "",
+          "colonia": "",
+          "obs": ""
+        },
+        "codigo": null,
+        "id": null
+      },
+      "estado": "cancelado",
+      "impreso": true,
+      "items": [
+        {
+          "cant": 1,
+          "name": "te helado",
+          "importe": 18,
+          "price": 18,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "5ad597a5-94c9-4152-8b5d-daae1fca1767",
+          "contable": true,
+          "area_nota": "area3",
+          "createdAt": "2021-03-23T16:07:02.228Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 1,
+          "name": "arroz frito verduras",
+          "importe": 45,
+          "price": 45,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "ac6a22a3-7d7f-42c4-aea5-815f3877e142",
+          "contable": true,
+          "area_nota": "area1",
+          "createdAt": "2021-03-23T16:07:03.942Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 1,
+          "name": "ensalada tampico",
+          "importe": 25,
+          "price": 25,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "76e0f1b7-36c9-4109-909d-19e81209f282",
+          "contable": true,
+          "area_nota": "area3",
+          "createdAt": "2021-03-23T16:07:05.907Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        }
+      ],
+      "importe": 88,
+      "dscto": 13,
+      "total": 75,
+      "efectivo": 0,
+      "tarjeta": 0,
+      "cambio": 0,
+      "createdAt": "2021-03-23T16:06:59.982Z",
+      "createdBy": "admin",
+      "closedAt": "2021-03-23T16:12:07.420Z",
+      "time": "5 minutos",
+      "fecha": "2021-03-23",
+      "id": "2bbb454c-b9af-4e7b-a8c9-7bdea8ba0b96"
+    },
+    {
+      "folio": 944,
+      "orden": 2,
+      "torreta": "mostrador",
+      "personas": 1,
+      "servicio": "pll",
+      "cliente": {
+        "name": "",
+        "tel": "",
+        "address": {
+          "calle": "",
+          "cruces": "",
+          "colonia": "",
+          "obs": ""
+        },
+        "codigo": null,
+        "id": null
+      },
+      "estado": "abierto",
+      "impreso": false,
+      "items": [
+        {
+          "cant": 1,
+          "name": "te helado",
+          "importe": 18,
+          "price": 18,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "5ad597a5-94c9-4152-8b5d-daae1fca1767",
+          "contable": true,
+          "area_nota": "area3",
+          "createdAt": "2021-03-23T16:19:19.172Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 1,
+          "name": "arroz frito verduras",
+          "importe": 45,
+          "price": 45,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "ac6a22a3-7d7f-42c4-aea5-815f3877e142",
+          "contable": true,
+          "area_nota": "area1",
+          "createdAt": "2021-03-23T16:19:20.743Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 1,
+          "name": "ensalada tampico",
+          "importe": 25,
+          "price": 25,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "76e0f1b7-36c9-4109-909d-19e81209f282",
+          "contable": true,
+          "area_nota": "area3",
+          "createdAt": "2021-03-23T16:19:22.930Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 2,
+          "name": "philadelphia camaron",
+          "importe": 0,
+          "price": 82,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "1d04db1d-4fcb-40bc-834b-043f1814eb6b",
+          "contable": true,
+          "area_nota": "area2",
+          "createdAt": "2021-03-23T16:19:27.102Z",
+          "createdBy": "admin",
+          "cancelado": true,
+          "impreso": false
+        },
+        {
+          "cant": 1,
+          "name": "ensalada tampico",
+          "importe": 25,
+          "price": 25,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "76e0f1b7-36c9-4109-909d-19e81209f282",
+          "contable": true,
+          "area_nota": "area3",
+          "createdAt": "2021-03-23T16:22:21.182Z",
+          "createdBy": "admin",
+          "cancelado": true,
+          "impreso": false
+        }
+      ],
+      "importe": 88,
+      "dscto": 0,
+      "total": 88,
+      "efectivo": 0,
+      "tarjeta": 0,
+      "cambio": 0,
+      "createdAt": "2021-03-23T16:19:16.109Z",
+      "createdBy": "admin",
+      "closedAt": null,
+      "time": "",
+      "fecha": "2021-03-23",
+      "id": "caaed699-4efd-43b3-ba8b-5bd3db8aaccf"
     }
   ],
   "logs": [
@@ -89338,6 +89528,146 @@
       "operador": "admin",
       "commit": "ha iniciado sesión",
       "id": "ac5e8221-c777-4ae3-bb5d-76e0ed1cf503"
+    },
+    {
+      "createdAt": "2021-03-22T07:15:08.502Z",
+      "fecha": "2021-03-22",
+      "operador": "admin",
+      "commit": "ha iniciado sesión",
+      "id": "d7d695ac-62fb-4b76-9a2b-8c75a681022d"
+    },
+    {
+      "createdAt": "2021-03-22T07:15:29.215Z",
+      "fecha": "2021-03-22",
+      "operador": "admin",
+      "commit": "ha hecho una consulta al monitor de ventas",
+      "id": "4840341f-9683-4901-acb7-6cce1b72b3c4"
+    },
+    {
+      "createdAt": "2021-03-22T07:16:38.534Z",
+      "fecha": "2021-03-22",
+      "operador": "admin",
+      "commit": "ha impreso un resumen de ventas",
+      "id": "ba65d82a-40e3-45bb-bd60-cc5321c2b2aa"
+    },
+    {
+      "createdAt": "2021-03-22T07:17:00.813Z",
+      "fecha": "2021-03-22",
+      "operador": "admin",
+      "commit": "ha impreso un detallado de productos",
+      "id": "ae45d9e3-c756-492f-a296-68aa160ce0ab"
+    },
+    {
+      "createdAt": "2021-03-22T07:17:32.042Z",
+      "fecha": "2021-03-22",
+      "operador": "admin",
+      "commit": "ha cerrado sesión",
+      "id": "838dfb18-fb93-4b14-bfca-6dce555869d4"
+    },
+    {
+      "createdAt": "2021-03-23T15:52:21.916Z",
+      "fecha": "2021-03-23",
+      "operador": "admin",
+      "commit": "ha iniciado sesión",
+      "id": "1a6b7e4a-3d8f-4e0f-b9d1-09d0731536fa"
+    },
+    {
+      "createdAt": "2021-03-23T16:07:22.803Z",
+      "fecha": "2021-03-23",
+      "operador": "admin",
+      "commit": "Ha reabierto la orden 1",
+      "id": "6ef12729-21f5-482c-bf7f-2dd75f2e3187"
+    },
+    {
+      "createdAt": "2021-03-23T16:07:55.685Z",
+      "fecha": "2021-03-23",
+      "operador": "admin",
+      "commit": "ha hecho una consulta al monitor de ventas",
+      "id": "04f7a6d3-e105-4f49-9ef0-1fccaae51667"
+    },
+    {
+      "createdAt": "2021-03-23T16:09:39.335Z",
+      "fecha": "2021-03-23",
+      "operador": "admin",
+      "commit": "ha hecho una consulta al monitor de ventas",
+      "id": "867daaf3-2aa3-4bcc-b9c5-51e81c577e9d"
+    },
+    {
+      "createdAt": "2021-03-23T16:10:41.479Z",
+      "fecha": "2021-03-23",
+      "operador": "admin",
+      "commit": "ha hecho una consulta al monitor de ventas",
+      "id": "dacdb5a5-6302-474f-9a66-dc36aeb28719"
+    },
+    {
+      "createdAt": "2021-03-23T16:11:40.798Z",
+      "fecha": "2021-03-23",
+      "operador": "admin",
+      "commit": "ha impreso un resumen de ventas",
+      "id": "4b7d8617-3c33-4d0c-b95e-3a857b2532f7"
+    },
+    {
+      "createdAt": "2021-03-23T16:12:07.423Z",
+      "fecha": "2021-03-23",
+      "operador": "admin",
+      "commit": "Ha cancelado la orden 1",
+      "id": "2c221ab5-7415-4fed-b3a2-07743fd83682"
+    },
+    {
+      "createdAt": "2021-03-23T16:12:11.787Z",
+      "fecha": "2021-03-23",
+      "operador": "admin",
+      "commit": "ha hecho una consulta al monitor de ventas",
+      "id": "c9e4f060-741a-4d41-8d8d-dff1a00388e3"
+    },
+    {
+      "createdAt": "2021-03-23T16:13:22.055Z",
+      "fecha": "2021-03-23",
+      "operador": "admin",
+      "commit": "ha impreso un resumen de ventas",
+      "id": "ceb42422-eb30-4711-9828-afb0315b675f"
+    },
+    {
+      "createdAt": "2021-03-23T16:14:04.622Z",
+      "fecha": "2021-03-23",
+      "operador": "admin",
+      "commit": "ha hecho una consulta al monitor de ventas",
+      "id": "c2e72eae-b3de-4e82-ab28-2f7817955347"
+    },
+    {
+      "createdAt": "2021-03-23T16:14:21.399Z",
+      "fecha": "2021-03-23",
+      "operador": "admin",
+      "commit": "ha impreso un resumen de ventas",
+      "id": "6c8681fc-da1d-4eaf-98cb-63c5e3a299f2"
+    },
+    {
+      "createdAt": "2021-03-23T16:22:30.672Z",
+      "fecha": "2021-03-23",
+      "operador": "admin",
+      "commit": "ha hecho una consulta al monitor de ventas",
+      "id": "74e0585c-140a-43c3-9c17-7f6941154c9e"
+    },
+    {
+      "createdAt": "2021-03-23T16:22:46.018Z",
+      "fecha": "2021-03-23",
+      "operador": "admin",
+      "commit": "ha impreso un resumen de ventas",
+      "id": "dfe5802a-54f5-4441-8969-4d5f3763b572"
+    },
+    {
+      "createdAt": "2021-03-23T16:23:13.699Z",
+      "fecha": "2021-03-23",
+      "operador": "admin",
+      "commit": "ha hecho una consulta al monitor de ventas",
+      "id": "cc045405-041e-434d-bb34-33fb16211219"
+    },
+    {
+      "createdAt": "2021-03-23T16:23:35.274Z",
+      "fecha": "2021-03-23",
+      "operador": "admin",
+      "commit": "ha impreso un resumen de ventas",
+      "id": "4edfeb6c-cca8-465a-850f-62a7ac932c65"
     }
   ],
   "cajas": [

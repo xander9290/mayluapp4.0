@@ -12,14 +12,15 @@ function DescuendoModal(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const importe = cuenta.importe;
+    // const importe = cuenta.importe;
     const _dscto = parseInt(dscto.dscto);
-    const total = Math.round((importe * _dscto) / 100);
-    const totalDscto = importe - total;
+    // const total = Math.round((importe * _dscto) / 100);
+    // const totalDscto = importe - total;
+    const { totalConDscto } = procesarItems(cuenta.items, _dscto);
     const newCta = {
       ...cuenta,
-      dscto: total,
-      total: totalDscto,
+      dscto: _dscto,
+      total: totalConDscto,
     };
     editarCuenta(cuenta.id, newCta, (res) => {
       if (res) {

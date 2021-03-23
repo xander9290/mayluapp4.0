@@ -8,10 +8,12 @@ function Monitor(props) {
 
   // SERVIVICIOS
   const [servicios, setServicios] = useState({
-    comedor: { total: 0, ctas: [], cancelados: [] },
-    pll: { total: 0, ctas: [], cancelados: [] },
-    domicilio: { total: 0, ctas: [], cancelados: [] },
+    comedor: { total: 0, ctas: [] },
+    pll: { total: 0, ctas: [] },
+    domicilio: { total: 0, ctas: [] },
   });
+  const [descuentos, setDescuentos] = useState([]);
+  const [cancelados, setCancelados] = useState([]);
   // CAJA
   const [caja, setCaja] = useState({
     gastos: { total: 0, qty: [] },
@@ -143,6 +145,8 @@ function Monitor(props) {
   };
 
   const procesarServicios = (ctas, ctasC) => {
+    const ctasCanceladas = [];
+    const ctasDscto = [];
     // COMEDOR
     const cuentasComedor = ctas.filter(
       (cuenta) => cuenta.servicio === "comedor"
@@ -150,28 +154,44 @@ function Monitor(props) {
     const cuentasCanceladasComedor = ctasC.filter(
       (cuenta) => cuenta.servicio === "comedor" && cuenta.estado === "cancelado"
     );
+    const cuentasDescuentoComedor = ctas.filter(
+      (cuenta) => cuenta.servicio === "comedor" && cuenta.dscto > 0
+    );
     let totalComedor = 0;
     cuentasComedor.map((cuenta) => {
       totalComedor += cuenta.total;
     });
+    cuentasCanceladasComedor.map((item) => {
+      ctasCanceladas.push(item);
+    });
+    cuentasDescuentoComedor.map((item) => {
+      ctasDscto.push(item);
+    });
     const comedor = {
       total: totalComedor,
       ctas: cuentasComedor,
-      cancelados: cuentasCanceladasComedor,
     };
     // PARA LLEVAR
     const cuentasPll = ctas.filter((cuenta) => cuenta.servicio === "pll");
     const cuentasCanceladasPll = ctasC.filter(
       (cuenta) => cuenta.servicio === "pll" && cuenta.estado === "cancelado"
     );
+    const cuentasDescuentoPll = ctas.filter(
+      (cuenta) => cuenta.servicio === "pll" && cuenta.dscto > 0
+    );
     let totalPll = 0;
     cuentasPll.map((cuenta) => {
       totalPll += cuenta.total;
     });
+    cuentasCanceladasPll.map((item) => {
+      ctasCanceladas.push(item);
+    });
+    cuentasDescuentoPll.map((item) => {
+      ctasDscto.push(item);
+    });
     const pll = {
       total: totalPll,
       ctas: cuentasPll,
-      cancelados: cuentasCanceladasPll,
     };
     // DOMICILIO
     const cuentasDomicilio = ctas.filter(
@@ -181,22 +201,31 @@ function Monitor(props) {
       (cuenta) =>
         cuenta.servicio === "domicilio" && cuenta.estado === "cancelado"
     );
+    const cuentasDescuentoDomicilio = ctas.filter(
+      (cuenta) => cuenta.servicio === "domicilio" && cuenta.dscto > 0
+    );
     let totalDomicilio = 0;
     cuentasDomicilio.map((cuenta) => {
       totalDomicilio += cuenta.total;
     });
+    cuentasCanceladasDomicilio.map((item) => {
+      ctasCanceladas.push(item);
+    });
+    cuentasDescuentoDomicilio.map((item) => {
+      ctasDscto.push(item);
+    });
     const domicilio = {
       total: totalDomicilio,
       ctas: cuentasDomicilio,
-      cancelados: cuentasCanceladasDomicilio,
     };
-
     setServicios({
       ...servicios,
       comedor,
       pll,
       domicilio,
     });
+    setCancelados(ctasCanceladas);
+    setDescuentos(ctasDscto);
   };
 
   const procesarCaja = (cajas) => {
@@ -380,6 +409,8 @@ function Monitor(props) {
         show={abrirResumenModal}
         onHide={() => setAbrirResumenModal(false)}
         servicios={servicios}
+        cancelados={cancelados}
+        descuentos={descuentos}
         caja={caja}
         tarjetas={tarjetas}
       />
