@@ -133,7 +133,7 @@ function VistaCuenta(props) {
           </ul>
         </div>
         <div
-          style={{ height: "465px", overflow: "scroll" }}
+          style={{ height: "465px", overflow: "scroll", whiteSpace: "nowrap" }}
           className="card-body p-1"
         >
           <table className="table table-bordered border-dark">
@@ -270,7 +270,7 @@ function VistaCuenta(props) {
               <h5>importe: ${cuenta.importe}</h5>
             </li>
             <li className="list-group-item">
-              <h5>dscto: -${cuenta.dscto}</h5>
+              <h5>dscto: -%{cuenta.dscto}</h5>
             </li>
             <li className="list-group-item">
               <h5>total: ${cuenta.total}</h5>

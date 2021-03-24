@@ -161,7 +161,10 @@ function PuntoVenta() {
 
   const openDescuento = () => {
     if (cuenta.id) {
-      if (cuenta.impreso) return;
+      if (cuenta.impreso) {
+        alert("la cuenta ya se encuentra impresa".toUpperCase());
+        return;
+      }
       setAbrirDescuentoModal(true);
     } else {
       alert("selecciona una cuenta para continuar".toUpperCase());

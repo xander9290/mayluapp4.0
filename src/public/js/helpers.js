@@ -97,7 +97,8 @@ const procesarItems = (items = [], dscto = 0) => {
   itemsContables.map((item) => {
     importe += item.importe;
   });
-  totalConDscto = importe - parseInt(dscto);
+  const importeDscto = Math.round((importe * dscto) / 100);
+  totalConDscto = importe - importeDscto;
 
   return { importe, totalConDscto };
 };
