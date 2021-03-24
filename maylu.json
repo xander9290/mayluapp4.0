@@ -89183,7 +89183,6 @@
         "codigo": null,
         "id": null
       },
-<<<<<<< HEAD
       "estado": "cerrado",
       "impreso": true,
       "items": [
@@ -89192,650 +89191,18 @@
           "name": "alga camaron",
           "importe": 69,
           "price": 69,
-=======
-      "estado": "abierto",
-      "impreso": true,
-      "items": [
-        {
-          "cant": 1,
-          "name": "te helado",
-          "importe": null,
-          "price": 18,
-          "dscto": null,
-          "modificadores": [],
-          "producto_id": "5ad597a5-94c9-4152-8b5d-daae1fca1767",
-          "contable": true,
-          "area_nota": "area3",
-          "createdAt": "2021-03-13T18:51:31.561Z",
-          "createdBy": "admin",
-          "cancelado": true,
-          "impreso": false
-        },
-        {
-          "cant": 1,
-          "name": "alga camaron",
-          "importe": 0,
-          "price": 69,
-          "dscto": 69,
-          "modificadores": [],
-          "producto_id": "404e545e-0b5c-4446-8df2-57134ae7b15b",
-          "contable": true,
-          "area_nota": "area2",
-          "createdAt": "2021-03-13T18:51:33.183Z",
-          "createdBy": "admin",
-          "cancelado": false,
-          "impreso": false
-        },
-        {
-          "cant": 1,
-          "name": "alga pollo",
-          "importe": 59,
-          "price": 59,
-          "dscto": 0,
-          "modificadores": [],
-          "producto_id": "5380fd02-bb15-4669-9f95-207b728632d0",
-          "contable": true,
-          "area_nota": "area2",
-          "createdAt": "2021-03-13T18:51:33.586Z",
-          "createdBy": "admin",
-          "cancelado": false,
-          "impreso": false
-        },
-        {
-          "cant": 1,
-          "name": "arroz frito mixto",
-          "importe": 64,
-          "price": 64,
-          "dscto": 0,
-          "modificadores": [],
-          "producto_id": "3c4a3b3a-a173-4566-9bbd-1af5222bf70c",
-          "contable": true,
-          "area_nota": "area1",
-          "createdAt": "2021-03-13T19:21:05.577Z",
-          "createdBy": "admin",
-          "cancelado": false,
-          "impreso": false
-        },
-        {
-          "cant": 1,
-          "name": "extra philadelphia",
-          "importe": 15,
-          "price": 15,
-          "dscto": 0,
-          "modificadores": [],
-          "producto_id": "0b226c78-e465-45e3-bbab-9378ebc75c31",
-          "contable": true,
-          "area_nota": "area1",
-          "createdAt": "2021-03-13T19:21:07.854Z",
-          "createdBy": "admin",
-          "cancelado": false,
-          "impreso": false
-        },
-        {
-          "cant": 1,
-          "name": "extra aguacate",
-          "importe": 15,
-          "price": 15,
-          "dscto": 0,
-          "modificadores": [],
-          "producto_id": "28866954-7c56-4fe2-ba3c-4af0b677f46e",
-          "contable": true,
-          "area_nota": "area1",
-          "createdAt": "2021-03-13T19:21:08.160Z",
-          "createdBy": "admin",
-          "cancelado": false,
-          "impreso": false
-        },
-        {
-          "cant": 1,
-          "name": "extra cangrejo",
-          "importe": 15,
-          "price": 15,
-          "dscto": 0,
-          "modificadores": [],
-          "producto_id": "27b07406-09a8-4797-b32a-f96ee47dfd83",
-          "contable": true,
-          "area_nota": "area1",
-          "createdAt": "2021-03-13T19:21:08.507Z",
-          "createdBy": "admin",
-          "cancelado": false,
-          "impreso": false
-        }
-      ],
-      "importe": 168,
-      "dscto": 0,
-      "total": 168,
-      "efectivo": 0,
-      "tarjeta": 0,
-      "cambio": 0,
-      "createdAt": "2021-03-13T18:51:28.677Z",
-      "createdBy": "admin",
-      "closedAt": null,
-      "time": "",
-      "fecha": "2021-03-13",
-      "id": "8635d1fa-7878-40dc-bb66-505993cc389e"
-    },
-    {
-      "folio": 939,
-      "orden": 1,
-      "torreta": "mostrador",
-      "personas": 1,
-      "servicio": "pll",
-      "cliente": {
-        "name": "",
-        "tel": "",
-        "address": {
-          "calle": "",
-          "cruces": "",
-          "colonia": "",
-          "obs": ""
-        },
-        "codigo": null,
-        "id": null
-      },
-      "estado": "abierto",
-      "impreso": true,
-      "items": [
-        {
-          "cant": 2,
-          "name": "empanizado camaron",
-          "importe": 146,
-          "price": 73,
-          "dscto": 0,
-          "modificadores": [],
-          "producto_id": "c19a7173-2746-4a49-80bc-1e67489bc767",
-          "contable": true,
-          "area_nota": "area2",
-          "createdAt": "2021-03-14T06:21:48.822Z",
-          "createdBy": "admin",
-          "cancelado": false,
-          "impreso": false
-        },
-        {
-          "cant": 1,
-          "name": "philadelphia camaron",
-          "importe": 82,
-          "price": 82,
-          "dscto": 0,
-          "modificadores": [],
-          "producto_id": "1d04db1d-4fcb-40bc-834b-043f1814eb6b",
-          "contable": true,
-          "area_nota": "area2",
-          "createdAt": "2021-03-14T06:21:51.241Z",
-          "createdBy": "admin",
-          "cancelado": false,
-          "impreso": false
-        },
-        {
-          "cant": 1,
-          "name": "alga camaron",
-          "importe": 69,
-          "price": 69,
           "dscto": 0,
           "modificadores": [],
           "producto_id": "404e545e-0b5c-4446-8df2-57134ae7b15b",
           "contable": true,
-          "area_nota": "area2",
-          "createdAt": "2021-03-14T06:21:52.917Z",
-          "createdBy": "admin",
-          "cancelado": false,
-          "impreso": false
-        },
-        {
-          "cant": 1,
-          "name": "arroz frito mixto",
-          "importe": 64,
-          "price": 64,
-          "dscto": 0,
-          "modificadores": [
-            {
-              "name": "camaron",
-              "price": 0
-            },
-            {
-              "name": "res",
-              "price": 0
-            },
-            {
-              "name": "pollo",
-              "price": 0
-            }
-          ],
-          "producto_id": "3c4a3b3a-a173-4566-9bbd-1af5222bf70c",
-          "contable": true,
-          "area_nota": "area1",
-          "createdAt": "2021-03-14T06:21:59.404Z",
-          "createdBy": "admin",
-          "cancelado": false,
-          "impreso": false
-        }
-      ],
-      "importe": 361,
-      "dscto": 0,
-      "total": 361,
-      "efectivo": 0,
-      "tarjeta": 0,
-      "cambio": 0,
-      "createdAt": "2021-03-14T06:21:09.357Z",
-      "createdBy": "admin",
-      "closedAt": null,
-      "time": "",
-      "fecha": "2021-03-14",
-      "id": "cc641321-8002-421e-a538-f42a3ed9112d"
-    },
-    {
-      "folio": 940,
-      "orden": 1,
-      "torreta": "jessica",
-      "personas": 1,
-      "servicio": "domicilio",
-      "cliente": {
-        "name": "jessica",
-        "tel": "333645453",
-        "address": {
-          "calle": "calle 32  3865",
-          "cruces": "patria y 13 ",
-          "colonia": "polanco",
-          "obs": ""
-        },
-        "id": "f117a8fc-4fe7-4aa5-bc40-0cc85f74232c"
-      },
-      "estado": "cancelado",
-      "impreso": true,
-      "items": [
-        {
-          "cant": 1,
-          "name": "cordon pollo",
-          "importe": 82,
-          "price": 82,
-          "dscto": 0,
-          "modificadores": [],
-          "producto_id": "e41db088-3918-4415-bd01-0ba0df2bad42",
-          "contable": true,
-          "createdAt": "2021-03-20T05:22:33.671Z",
-          "createdBy": "admin",
-          "cancelado": false,
-          "impreso": false
-        },
-        {
-          "cant": 1,
-          "name": "avocado roll",
-          "importe": 82,
-          "price": 82,
-          "dscto": 0,
-          "modificadores": [],
-          "producto_id": "89601993-9108-459c-9e32-fef79c617610",
-          "contable": true,
-          "createdAt": "2021-03-20T05:22:33.671Z",
-          "createdBy": "admin",
-          "cancelado": false,
-          "impreso": false
-        },
-        {
-          "cant": 1,
-          "name": "arroz frito camaron",
-          "importe": 64,
-          "price": 64,
-          "dscto": 0,
-          "modificadores": [],
-          "producto_id": "4a585c7b-c265-407c-aabd-ad31207ac87e",
-          "contable": true,
-          "createdAt": "2021-03-20T05:22:33.671Z",
-          "createdBy": "admin",
-          "cancelado": false,
-          "impreso": false
-        },
-        {
-          "cant": 1,
-          "name": "helado frito",
-          "importe": 39,
-          "price": 39,
-          "dscto": 0,
-          "modificadores": [],
-          "producto_id": "af4ee48f-5305-4ad2-a8f7-496c09f09bd7",
-          "contable": true,
-          "createdAt": "2021-03-20T05:22:33.671Z",
-          "createdBy": "admin",
-          "cancelado": false,
-          "impreso": false
-        }
-      ],
-      "importe": 267,
-      "dscto": 0,
-      "total": 267,
-      "efectivo": 500,
-      "tarjeta": 0,
-      "cambio": 233,
-      "createdAt": "2021-03-20T05:22:33.671Z",
-      "createdBy": "admin",
-      "closedAt": "2021-03-09T16:31:00.775Z",
-      "time": "32 minutos",
-      "fecha": "2021-03-09",
-      "id": "3dccd4c1-efac-4b65-9751-7d9186f40cc9"
-    },
-    {
-      "folio": 941,
-      "orden": 1,
-      "torreta": "jessica",
-      "personas": 1,
-      "servicio": "domicilio",
-      "cliente": {
-        "name": "jessica",
-        "tel": "333645453",
-        "address": {
-          "calle": "calle 32  3865",
-          "cruces": "patria y 13 ",
-          "colonia": "polanco",
-          "obs": ""
-        },
-        "id": "f117a8fc-4fe7-4aa5-bc40-0cc85f74232c"
-      },
-      "estado": "abierto",
-      "impreso": true,
-      "items": [
-        {
-          "cant": 2,
-          "name": "arroz frito camaron",
-          "importe": 108,
-          "price": 54,
-          "dscto": 0,
-          "modificadores": [],
-          "producto_id": "4a585c7b-c265-407c-aabd-ad31207ac87e",
-          "contable": true,
-          "createdAt": "2021-03-20T05:24:25.275Z",
-          "createdBy": "admin",
-          "cancelado": false
-        },
-        {
-          "cant": 3,
-          "name": "empanizado camaron",
-          "importe": 204,
-          "price": 68,
-          "dscto": 0,
-          "modificadores": [
-            {
-              "name": "sin alga",
-              "price": 0
-            }
-          ],
-          "producto_id": "c19a7173-2746-4a49-80bc-1e67489bc767",
-          "contable": true,
-          "createdAt": "2021-03-20T05:24:25.275Z",
-          "createdBy": "admin",
-          "cancelado": false
-        },
-        {
-          "cant": 3,
-          "name": "soya con limon",
-          "importe": 0,
-          "price": 0,
-          "dscto": 0,
-          "modificadores": [],
-          "producto_id": "141ff9ca-0489-4d24-9b6e-9ea36972f941",
-          "contable": false,
-          "createdAt": "2021-03-20T05:24:25.275Z",
-          "createdBy": "admin",
-          "cancelado": false
-        },
-        {
-          "cant": 3,
-          "name": "soya con chile",
-          "importe": 0,
-          "price": 0,
-          "dscto": 0,
-          "modificadores": [],
-          "producto_id": "148de478-2678-4334-821d-76da1a6b7455",
-          "contable": false,
-          "createdAt": "2021-03-20T05:24:25.275Z",
-          "createdBy": "admin",
-          "cancelado": false
-        },
-        {
-          "cant": 3,
-          "name": "aderezo cilantro",
-          "importe": 0,
-          "price": 0,
-          "dscto": 0,
-          "modificadores": [
-            {
-              "name": "cebollin solo",
-              "price": 0
-            }
-          ],
-          "producto_id": "db5af7db-3fe8-490e-b7fe-d2d0435c35ef",
-          "contable": false,
-          "createdAt": "2021-03-20T05:24:25.275Z",
-          "createdBy": "admin",
-          "cancelado": false
-        }
-      ],
-      "importe": 312,
-      "dscto": 0,
-      "total": 312,
-      "efectivo": 0,
-      "tarjeta": 0,
-      "cambio": 0,
-      "createdAt": "2021-03-20T05:24:25.275Z",
-      "createdBy": "admin",
-      "closedAt": null,
-      "time": "",
-      "fecha": "2021-03-19",
-      "id": "e4bc8c98-ff2d-4e71-8bb6-51d59d6023a1"
-    },
-    {
-      "folio": 942,
-      "orden": 2,
-      "torreta": "alma vanessa",
-      "personas": 1,
-      "servicio": "domicilio",
-      "cliente": {
-        "name": "alma vanessa",
-        "tel": "3332452819",
-        "address": {
-          "calle": "rafael molin #3967",
-          "cruces": "luis covarrubias y alberto correa",
-          "colonia": "polanco",
-          "obs": ""
-        },
-        "id": "7d2afd39-de20-4f13-89e1-031d6d8b7b03"
-      },
-      "estado": "abierto",
-      "impreso": false,
-      "items": [
-        {
-          "cant": 1,
-          "name": "empanizado camaron",
-          "importe": 68,
-          "price": 68,
-          "dscto": 0,
-          "modificadores": [],
-          "producto_id": "c19a7173-2746-4a49-80bc-1e67489bc767",
-          "contable": true,
-          "createdAt": "2021-03-20T05:25:58.235Z",
-          "createdBy": "admin",
-          "cancelado": false
-        },
-        {
-          "cant": 1,
-          "name": "philadelphia camaron",
-          "importe": 77,
-          "price": 77,
-          "dscto": 0,
-          "modificadores": [],
-          "producto_id": "1d04db1d-4fcb-40bc-834b-043f1814eb6b",
-          "contable": true,
-          "createdAt": "2021-03-20T05:25:58.235Z",
-          "createdBy": "admin",
-          "cancelado": false
-        },
-        {
-          "cant": 1,
-          "name": "arroz frito mixto",
-          "importe": 54,
-          "price": 54,
-          "dscto": 0,
-          "modificadores": [
-            {
-              "name": "camaron",
-              "price": 0
-            },
-            {
-              "name": "res",
-              "price": 0
-            },
-            {
-              "name": "pollo",
-              "price": 0
-            }
-          ],
-          "producto_id": "3c4a3b3a-a173-4566-9bbd-1af5222bf70c",
-          "contable": true,
-          "createdAt": "2021-03-20T05:25:58.235Z",
-          "createdBy": "admin",
-          "cancelado": false
-        },
-        {
-          "cant": 2,
-          "name": "te helado",
-          "importe": 30,
-          "price": 15,
-          "dscto": 0,
-          "modificadores": [],
-          "producto_id": "5ad597a5-94c9-4152-8b5d-daae1fca1767",
-          "contable": true,
-          "createdAt": "2021-03-20T05:25:58.235Z",
-          "createdBy": "admin",
-          "cancelado": false
-        },
-        {
-          "cant": 2,
-          "name": "soya con limon",
-          "importe": 0,
-          "price": 0,
-          "dscto": 0,
-          "modificadores": [],
-          "producto_id": "141ff9ca-0489-4d24-9b6e-9ea36972f941",
-          "contable": false,
-          "createdAt": "2021-03-20T05:25:58.235Z",
-          "createdBy": "admin",
-          "cancelado": false
-        },
-        {
-          "cant": 2,
-          "name": "soya con chile",
-          "importe": 0,
-          "price": 0,
-          "dscto": 0,
-          "modificadores": [],
-          "producto_id": "148de478-2678-4334-821d-76da1a6b7455",
-          "contable": false,
-          "createdAt": "2021-03-20T05:25:58.235Z",
-          "createdBy": "admin",
-          "cancelado": false
-        },
-        {
-          "cant": 1,
-          "name": "aderezo chipotle",
-          "importe": 0,
-          "price": 0,
-          "dscto": 0,
-          "modificadores": [],
-          "producto_id": "e5ce6874-013d-4ea2-a5ab-0d2bae619539",
-          "contable": false,
-          "createdAt": "2021-03-20T05:25:58.235Z",
-          "createdBy": "admin",
-          "cancelado": false
-        },
-        {
-          "cant": 1,
-          "name": "aderezo cilantro",
-          "importe": 0,
-          "price": 0,
-          "dscto": 0,
-          "modificadores": [],
-          "producto_id": "db5af7db-3fe8-490e-b7fe-d2d0435c35ef",
-          "contable": false,
-          "createdAt": "2021-03-20T05:25:58.235Z",
-          "createdBy": "admin",
-          "cancelado": false
-        },
-        {
-          "cant": 2,
-          "name": "tenedor",
-          "importe": 0,
-          "price": 0,
-          "dscto": 0,
-          "modificadores": [
-            {
-              "name": "c.500",
-              "price": 0
-            }
-          ],
-          "producto_id": "1080340b-3b1d-45af-803a-f189d64d8dc2",
-          "contable": false,
-          "createdAt": "2021-03-20T05:25:58.235Z",
-          "createdBy": "admin",
-          "cancelado": false
-        }
-      ],
-      "importe": 229,
-      "dscto": 0,
-      "total": 229,
-      "efectivo": 0,
-      "tarjeta": 0,
-      "cambio": 0,
-      "createdAt": "2021-03-20T05:25:58.235Z",
-      "createdBy": "admin",
-      "closedAt": null,
-      "time": "",
-      "fecha": "2021-03-19",
-      "id": "9c58d4d6-2783-4bfb-adbf-3547d631ba88"
-    },
-    {
-      "folio": 943,
-      "orden": 1,
-      "torreta": "mostrador",
-      "personas": 1,
-      "servicio": "pll",
-      "cliente": {
-        "name": "",
-        "tel": "",
-        "address": {
-          "calle": "",
-          "cruces": "",
-          "colonia": "",
-          "obs": ""
-        },
-        "codigo": null,
-        "id": null
-      },
-      "estado": "cancelado",
-      "impreso": true,
-      "items": [
-        {
-          "cant": 1,
-          "name": "te helado",
-          "importe": 18,
-          "price": 18,
->>>>>>> 0cee132d146e4a39efd7e896d02a13e082cbff71
-          "dscto": 0,
-          "modificadores": [],
-          "producto_id": "404e545e-0b5c-4446-8df2-57134ae7b15b",
-          "contable": true,
-<<<<<<< HEAD
           "area_nota": "area2",
           "createdAt": "2021-03-12T02:32:39.606Z",
-=======
-          "area_nota": "area3",
-          "createdAt": "2021-03-23T16:07:02.228Z",
->>>>>>> 0cee132d146e4a39efd7e896d02a13e082cbff71
           "createdBy": "admin",
           "cancelado": false,
           "impreso": false
         },
         {
           "cant": 1,
-<<<<<<< HEAD
           "name": "soya con limon",
           "importe": 0,
           "price": 0,
@@ -89884,16 +89251,10 @@
           "name": "alga camaron",
           "importe": 69,
           "price": 69,
-=======
-          "name": "arroz frito verduras",
-          "importe": 45,
-          "price": 45,
->>>>>>> 0cee132d146e4a39efd7e896d02a13e082cbff71
           "dscto": 0,
           "modificadores": [],
-          "producto_id": "ac6a22a3-7d7f-42c4-aea5-815f3877e142",
+          "producto_id": "404e545e-0b5c-4446-8df2-57134ae7b15b",
           "contable": true,
-<<<<<<< HEAD
           "area_nota": "area2",
           "createdAt": "2021-03-12T02:33:09.283Z",
           "createdBy": "admin",
@@ -89926,10 +89287,6 @@
           "contable": false,
           "area_nota": "area4",
           "createdAt": "2021-03-12T02:33:21.793Z",
-=======
-          "area_nota": "area1",
-          "createdAt": "2021-03-23T16:07:03.942Z",
->>>>>>> 0cee132d146e4a39efd7e896d02a13e082cbff71
           "createdBy": "admin",
           "cancelado": false,
           "impreso": false
@@ -89970,7 +89327,6 @@
       "items": [
         {
           "cant": 1,
-<<<<<<< HEAD
           "name": "agridulce pollo",
           "importe": 90,
           "price": 90,
@@ -89980,58 +89336,11 @@
           "contable": true,
           "area_nota": "area1",
           "createdAt": "2021-03-12T03:08:02.059Z",
-=======
-          "name": "ensalada tampico",
-          "importe": 25,
-          "price": 25,
-          "dscto": 0,
-          "modificadores": [],
-          "producto_id": "76e0f1b7-36c9-4109-909d-19e81209f282",
-          "contable": true,
-          "area_nota": "area3",
-          "createdAt": "2021-03-23T16:07:05.907Z",
->>>>>>> 0cee132d146e4a39efd7e896d02a13e082cbff71
           "createdBy": "admin",
           "cancelado": false,
           "impreso": false
-        }
-      ],
-      "importe": 88,
-      "dscto": 13,
-      "total": 75,
-      "efectivo": 0,
-      "tarjeta": 0,
-      "cambio": 0,
-      "createdAt": "2021-03-23T16:06:59.982Z",
-      "createdBy": "admin",
-      "closedAt": "2021-03-23T16:12:07.420Z",
-      "time": "5 minutos",
-      "fecha": "2021-03-23",
-      "id": "2bbb454c-b9af-4e7b-a8c9-7bdea8ba0b96"
-    },
-    {
-      "folio": 944,
-      "orden": 2,
-      "torreta": "mostrador",
-      "personas": 1,
-      "servicio": "pll",
-      "cliente": {
-        "name": "",
-        "tel": "",
-        "address": {
-          "calle": "",
-          "cruces": "",
-          "colonia": "",
-          "obs": ""
         },
-        "codigo": null,
-        "id": null
-      },
-      "estado": "abierto",
-      "impreso": false,
-      "items": [
         {
-<<<<<<< HEAD
           "cant": 6,
           "name": "haromaki pollo",
           "importe": 144,
@@ -90087,18 +89396,6 @@
           "area_nota": "area3",
           "contable": false,
           "createdAt": "2021-03-12T03:09:50.757Z",
-=======
-          "cant": 1,
-          "name": "te helado",
-          "importe": 18,
-          "price": 18,
-          "dscto": 0,
-          "modificadores": [],
-          "producto_id": "5ad597a5-94c9-4152-8b5d-daae1fca1767",
-          "contable": true,
-          "area_nota": "area3",
-          "createdAt": "2021-03-23T16:19:19.172Z",
->>>>>>> 0cee132d146e4a39efd7e896d02a13e082cbff71
           "createdBy": "admin",
           "cancelado": false,
           "impreso": false
@@ -90140,7 +89437,6 @@
       "items": [
         {
           "cant": 1,
-<<<<<<< HEAD
           "name": "tepanyaki pollo",
           "importe": 90,
           "price": 90,
@@ -90150,24 +89446,12 @@
           "contable": true,
           "area_nota": "area1",
           "createdAt": "2021-03-12T03:31:33.340Z",
-=======
-          "name": "arroz frito verduras",
-          "importe": 45,
-          "price": 45,
-          "dscto": 0,
-          "modificadores": [],
-          "producto_id": "ac6a22a3-7d7f-42c4-aea5-815f3877e142",
-          "contable": true,
-          "area_nota": "area1",
-          "createdAt": "2021-03-23T16:19:20.743Z",
->>>>>>> 0cee132d146e4a39efd7e896d02a13e082cbff71
           "createdBy": "admin",
           "cancelado": false,
           "impreso": false
         },
         {
           "cant": 1,
-<<<<<<< HEAD
           "name": "aguacate camaron",
           "importe": 82,
           "price": 82,
@@ -90177,39 +89461,12 @@
           "contable": true,
           "area_nota": "area2",
           "createdAt": "2021-03-12T03:32:24.305Z",
-=======
-          "name": "ensalada tampico",
-          "importe": 25,
-          "price": 25,
-          "dscto": 0,
-          "modificadores": [],
-          "producto_id": "76e0f1b7-36c9-4109-909d-19e81209f282",
-          "contable": true,
-          "area_nota": "area3",
-          "createdAt": "2021-03-23T16:19:22.930Z",
->>>>>>> 0cee132d146e4a39efd7e896d02a13e082cbff71
           "createdBy": "admin",
           "cancelado": false,
           "impreso": false
         },
         {
-          "cant": 2,
-          "name": "philadelphia camaron",
-          "importe": 0,
-          "price": 82,
-          "dscto": 0,
-          "modificadores": [],
-          "producto_id": "1d04db1d-4fcb-40bc-834b-043f1814eb6b",
-          "contable": true,
-          "area_nota": "area2",
-          "createdAt": "2021-03-23T16:19:27.102Z",
-          "createdBy": "admin",
-          "cancelado": true,
-          "impreso": false
-        },
-        {
           "cant": 1,
-<<<<<<< HEAD
           "name": "arroz frito verduras",
           "importe": 45,
           "price": 45,
@@ -90264,23 +89521,11 @@
           "contable": false,
           "area_nota": "area4",
           "createdAt": "2021-03-12T03:37:33.587Z",
-=======
-          "name": "ensalada tampico",
-          "importe": 25,
-          "price": 25,
-          "dscto": 0,
-          "modificadores": [],
-          "producto_id": "76e0f1b7-36c9-4109-909d-19e81209f282",
-          "contable": true,
-          "area_nota": "area3",
-          "createdAt": "2021-03-23T16:22:21.182Z",
->>>>>>> 0cee132d146e4a39efd7e896d02a13e082cbff71
           "createdBy": "admin",
-          "cancelado": true,
+          "cancelado": false,
           "impreso": false
         }
       ],
-<<<<<<< HEAD
       "importe": 217,
       "dscto": 0,
       "total": 217,
@@ -108257,6 +107502,11 @@
               "idx": 1
             },
             {
+              "name": "camaron",
+              "price": 0,
+              "idx": 0
+            },
+            {
               "name": "pollo",
               "price": 0,
               "idx": 2
@@ -108265,22 +107515,7 @@
           "producto_id": "3c4a3b3a-a173-4566-9bbd-1af5222bf70c",
           "contable": true,
           "area_nota": "area1",
-          "createdAt": "2021-03-23T20:09:22.932Z",
-          "createdBy": "admin",
-          "cancelado": false,
-          "impreso": false
-        },
-        {
-          "cant": 3,
-          "name": "aderezo chipotle",
-          "importe": 0,
-          "price": 0,
-          "dscto": 0,
-          "modificadores": [],
-          "producto_id": "e5ce6874-013d-4ea2-a5ab-0d2bae619539",
-          "contable": false,
-          "area_nota": "area4",
-          "createdAt": "2021-03-23T20:09:30.152Z",
+          "createdAt": "2021-03-24T03:01:44.501Z",
           "createdBy": "admin",
           "cancelado": false,
           "impreso": false
@@ -108292,17 +107527,17 @@
       "efectivo": 100,
       "tarjeta": 0,
       "cambio": 36,
-      "createdAt": "2021-03-23T20:09:18.127Z",
+      "createdAt": "2021-03-24T03:01:41.294Z",
       "createdBy": "admin",
-      "closedAt": "2021-03-23T20:25:39.102Z",
-      "time": "16 minutos",
+      "closedAt": "2021-03-24T03:01:56.887Z",
+      "time": "15 segundos",
       "fecha": "2021-03-23",
-      "id": "69110ff2-bdb7-4963-8048-6e48fce9c60d"
+      "id": "ff1592a0-8256-4a07-86f1-acd66fd8dfcc"
     },
     {
       "folio": 1112,
       "orden": 2,
-      "torreta": "para lleva",
+      "torreta": "mostrador",
       "personas": 1,
       "servicio": "pll",
       "cliente": {
@@ -108330,7 +107565,7 @@
           "producto_id": "c19a7173-2746-4a49-80bc-1e67489bc767",
           "contable": true,
           "area_nota": "area2",
-          "createdAt": "2021-03-23T21:21:32.922Z",
+          "createdAt": "2021-03-24T03:02:14.204Z",
           "createdBy": "admin",
           "cancelado": false,
           "impreso": false
@@ -108345,7 +107580,7 @@
           "producto_id": "036cb6c0-411a-4423-9913-800f10951fe7",
           "contable": true,
           "area_nota": "area3",
-          "createdAt": "2021-03-23T21:25:53.595Z",
+          "createdAt": "2021-03-24T03:02:17.002Z",
           "createdBy": "admin",
           "cancelado": false,
           "impreso": false
@@ -108354,15 +107589,15 @@
       "importe": 91,
       "dscto": 0,
       "total": 91,
-      "efectivo": 201,
+      "efectivo": 100,
       "tarjeta": 0,
-      "cambio": 110,
-      "createdAt": "2021-03-23T21:21:25.976Z",
+      "cambio": 9,
+      "createdAt": "2021-03-24T03:02:05.610Z",
       "createdBy": "admin",
-      "closedAt": "2021-03-23T21:26:25.031Z",
-      "time": "4 minutos",
+      "closedAt": "2021-03-24T03:02:27.267Z",
+      "time": "21 segundos",
       "fecha": "2021-03-23",
-      "id": "a6ec102b-ff3f-4b28-8772-b51b679db1dc"
+      "id": "937079e6-025f-4cc6-a96d-e7db8e3bb144"
     },
     {
       "folio": 1113,
@@ -108408,52 +107643,7 @@
           "producto_id": "f81dc490-f641-460c-b382-e9658a9ffb6b",
           "contable": true,
           "area_nota": "area1",
-          "createdAt": "2021-03-23T22:00:38.062Z",
-          "createdBy": "admin",
-          "cancelado": false,
-          "impreso": false
-        },
-        {
-          "cant": 1,
-          "name": "soya con limon",
-          "importe": 0,
-          "price": 0,
-          "dscto": 0,
-          "modificadores": [],
-          "producto_id": "141ff9ca-0489-4d24-9b6e-9ea36972f941",
-          "contable": false,
-          "area_nota": "area4",
-          "createdAt": "2021-03-23T22:00:45.116Z",
-          "createdBy": "admin",
-          "cancelado": false,
-          "impreso": false
-        },
-        {
-          "cant": 1,
-          "name": "soya con chile",
-          "importe": 0,
-          "price": 0,
-          "dscto": 0,
-          "modificadores": [],
-          "producto_id": "148de478-2678-4334-821d-76da1a6b7455",
-          "contable": false,
-          "area_nota": "area4",
-          "createdAt": "2021-03-23T22:00:45.595Z",
-          "createdBy": "admin",
-          "cancelado": false,
-          "impreso": false
-        },
-        {
-          "cant": 1,
-          "name": "aderezo chipotle",
-          "importe": 0,
-          "price": 0,
-          "dscto": 0,
-          "modificadores": [],
-          "producto_id": "e5ce6874-013d-4ea2-a5ab-0d2bae619539",
-          "contable": false,
-          "area_nota": "area4",
-          "createdAt": "2021-03-23T22:00:50.370Z",
+          "createdAt": "2021-03-24T03:02:40.335Z",
           "createdBy": "admin",
           "cancelado": false,
           "impreso": false
@@ -108462,15 +107652,15 @@
       "importe": 115,
       "dscto": 0,
       "total": 115,
-      "efectivo": 200,
+      "efectivo": 115,
       "tarjeta": 0,
-      "cambio": 85,
-      "createdAt": "2021-03-23T22:00:28.348Z",
+      "cambio": 0,
+      "createdAt": "2021-03-24T03:02:34.519Z",
       "createdBy": "admin",
-      "closedAt": "2021-03-23T22:01:06.670Z",
-      "time": "38 segundos",
+      "closedAt": "2021-03-24T03:03:00.196Z",
+      "time": "25 segundos",
       "fecha": "2021-03-23",
-      "id": "4de73ebc-b92f-48ac-85b3-0b4e1de86f83"
+      "id": "bf25008b-07c6-4787-996c-5f999482fb05"
     },
     {
       "folio": 1114,
@@ -108503,37 +107693,7 @@
           "producto_id": "ac6a22a3-7d7f-42c4-aea5-815f3877e142",
           "contable": true,
           "area_nota": "area1",
-          "createdAt": "2021-03-23T22:06:07.506Z",
-          "createdBy": "admin",
-          "cancelado": false,
-          "impreso": false
-        },
-        {
-          "cant": 3,
-          "name": "soya con limon",
-          "importe": 0,
-          "price": 0,
-          "dscto": 0,
-          "modificadores": [],
-          "producto_id": "141ff9ca-0489-4d24-9b6e-9ea36972f941",
-          "contable": false,
-          "area_nota": "area4",
-          "createdAt": "2021-03-23T22:06:11.888Z",
-          "createdBy": "admin",
-          "cancelado": false,
-          "impreso": false
-        },
-        {
-          "cant": 3,
-          "name": "soya con chile",
-          "importe": 0,
-          "price": 0,
-          "dscto": 0,
-          "modificadores": [],
-          "producto_id": "148de478-2678-4334-821d-76da1a6b7455",
-          "contable": false,
-          "area_nota": "area4",
-          "createdAt": "2021-03-23T22:06:13.356Z",
+          "createdAt": "2021-03-24T03:03:14.146Z",
           "createdBy": "admin",
           "cancelado": false,
           "impreso": false
@@ -108545,30 +107705,30 @@
       "efectivo": 135,
       "tarjeta": 0,
       "cambio": 0,
-      "createdAt": "2021-03-23T22:06:02.742Z",
+      "createdAt": "2021-03-24T03:03:08.340Z",
       "createdBy": "admin",
-      "closedAt": "2021-03-23T22:07:05.489Z",
-      "time": "1 minutos",
+      "closedAt": "2021-03-24T03:03:26.479Z",
+      "time": "18 segundos",
       "fecha": "2021-03-23",
-      "id": "b116a01a-9e59-4f50-b793-843facb3745b"
+      "id": "1d6ff946-c02f-4c40-b148-d5e2e08277a1"
     },
     {
       "folio": 1115,
       "orden": 5,
-      "torreta": "milagros",
+      "torreta": "mostrador",
       "personas": 1,
-      "servicio": "domicilio",
+      "servicio": "pll",
       "cliente": {
-        "name": "milagros",
-        "tel": "3312150990",
+        "name": "",
+        "tel": "",
         "address": {
-          "calle": "maria bancalary 3209",
-          "cruces": "esq patria",
-          "colonia": "echeverria",
-          "obs": "es ferreteria"
+          "calle": "",
+          "cruces": "",
+          "colonia": "",
+          "obs": ""
         },
-        "id": "840947e2-9e79-4405-a90e-4ac1214d9351",
-        "codigo": 18474
+        "codigo": null,
+        "id": null
       },
       "estado": "cerrado",
       "impreso": true,
@@ -108583,7 +107743,7 @@
           "producto_id": "c5c7a9e0-3cdc-4ba2-baff-40b7c76a6b0e",
           "contable": true,
           "area_nota": "area2",
-          "createdAt": "2021-03-23T23:35:46.172Z",
+          "createdAt": "2021-03-24T03:05:15.684Z",
           "createdBy": "admin",
           "cancelado": false,
           "impreso": false
@@ -108598,72 +107758,7 @@
           "producto_id": "036cb6c0-411a-4423-9913-800f10951fe7",
           "contable": true,
           "area_nota": "area3",
-          "createdAt": "2021-03-23T23:35:53.163Z",
-          "createdBy": "admin",
-          "cancelado": false,
-          "impreso": false
-        },
-        {
-          "cant": 1,
-          "name": "soya con limon",
-          "importe": 0,
-          "price": 0,
-          "dscto": 0,
-          "modificadores": [],
-          "producto_id": "141ff9ca-0489-4d24-9b6e-9ea36972f941",
-          "contable": false,
-          "area_nota": "area4",
-          "createdAt": "2021-03-23T23:36:14.833Z",
-          "createdBy": "admin",
-          "cancelado": false,
-          "impreso": false
-        },
-        {
-          "cant": 1,
-          "name": "soya con chile",
-          "importe": 0,
-          "price": 0,
-          "dscto": 0,
-          "modificadores": [],
-          "producto_id": "148de478-2678-4334-821d-76da1a6b7455",
-          "contable": false,
-          "area_nota": "area4",
-          "createdAt": "2021-03-23T23:36:15.360Z",
-          "createdBy": "admin",
-          "cancelado": false,
-          "impreso": false
-        },
-        {
-          "cant": 1,
-          "name": "aderezo chipotle",
-          "importe": 0,
-          "price": 0,
-          "dscto": 0,
-          "modificadores": [],
-          "producto_id": "e5ce6874-013d-4ea2-a5ab-0d2bae619539",
-          "contable": false,
-          "area_nota": "area4",
-          "createdAt": "2021-03-23T23:36:26.414Z",
-          "createdBy": "admin",
-          "cancelado": false,
-          "impreso": false
-        },
-        {
-          "cant": 1,
-          "name": "palillos",
-          "importe": 0,
-          "price": 0,
-          "dscto": 0,
-          "modificadores": [
-            {
-              "name": "paga con 200",
-              "price": 0
-            }
-          ],
-          "producto_id": "cd76faa0-dc9e-4343-be2e-78f0293405b8",
-          "contable": false,
-          "area_nota": "area4",
-          "createdAt": "2021-03-23T23:36:32.525Z",
+          "createdAt": "2021-03-24T03:05:18.961Z",
           "createdBy": "admin",
           "cancelado": false,
           "impreso": false
@@ -108672,15 +107767,15 @@
       "importe": 86,
       "dscto": 0,
       "total": 86,
-      "efectivo": 200,
+      "efectivo": 86,
       "tarjeta": 0,
-      "cambio": 114,
-      "createdAt": "2021-03-23T23:35:38.209Z",
+      "cambio": 0,
+      "createdAt": "2021-03-24T03:05:08.153Z",
       "createdBy": "admin",
-      "closedAt": "2021-03-23T23:51:39.534Z",
-      "time": "16 minutos",
+      "closedAt": "2021-03-24T03:05:56.907Z",
+      "time": "48 segundos",
       "fecha": "2021-03-23",
-      "id": "872c7f3e-4454-4b0f-a316-ec967fd05cac"
+      "id": "fb07d1e5-8bbf-4e39-b85d-13362320488f"
     },
     {
       "folio": 1116,
@@ -108713,7 +107808,7 @@
           "producto_id": "404e545e-0b5c-4446-8df2-57134ae7b15b",
           "contable": true,
           "area_nota": "area2",
-          "createdAt": "2021-03-24T02:43:31.711Z",
+          "createdAt": "2021-03-24T03:06:15.586Z",
           "createdBy": "admin",
           "cancelado": false,
           "impreso": false
@@ -108744,7 +107839,7 @@
           "producto_id": "3c4a3b3a-a173-4566-9bbd-1af5222bf70c",
           "contable": true,
           "area_nota": "area1",
-          "createdAt": "2021-03-24T02:43:38.011Z",
+          "createdAt": "2021-03-24T03:06:18.203Z",
           "createdBy": "admin",
           "cancelado": false,
           "impreso": false
@@ -108753,15 +107848,80 @@
       "importe": 133,
       "dscto": 0,
       "total": 133,
-      "efectivo": 200,
+      "efectivo": 133,
       "tarjeta": 0,
-      "cambio": 67,
-      "createdAt": "2021-03-24T02:43:28.951Z",
+      "cambio": 0,
+      "createdAt": "2021-03-24T03:06:11.402Z",
       "createdBy": "admin",
-      "closedAt": "2021-03-24T02:55:16.360Z",
-      "time": "11 minutos",
+      "closedAt": "2021-03-24T03:06:30.048Z",
+      "time": "18 segundos",
       "fecha": "2021-03-23",
-      "id": "38eaf83d-76b5-421e-9d9a-8a52dcd5bba0"
+      "id": "9bd7a932-ebf9-4625-83e6-08a490c743e6"
+    },
+    {
+      "folio": 1117,
+      "orden": 7,
+      "torreta": "mostrador",
+      "personas": 1,
+      "servicio": "pll",
+      "cliente": {
+        "name": "",
+        "tel": "",
+        "address": {
+          "calle": "",
+          "cruces": "",
+          "colonia": "",
+          "obs": ""
+        },
+        "codigo": null,
+        "id": null
+      },
+      "estado": "cerrado",
+      "impreso": true,
+      "items": [
+        {
+          "cant": 1,
+          "name": "arroz frito pollo",
+          "importe": 55,
+          "price": 55,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "5e7af4e0-787b-4b3d-9aee-5746cdbbeb3e",
+          "contable": true,
+          "area_nota": "area1",
+          "createdAt": "2021-03-24T03:10:58.472Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        },
+        {
+          "cant": 1,
+          "name": "calpico",
+          "importe": 18,
+          "price": 18,
+          "dscto": 0,
+          "modificadores": [],
+          "producto_id": "036cb6c0-411a-4423-9913-800f10951fe7",
+          "contable": true,
+          "area_nota": "area3",
+          "createdAt": "2021-03-24T03:11:10.752Z",
+          "createdBy": "admin",
+          "cancelado": false,
+          "impreso": false
+        }
+      ],
+      "importe": 73,
+      "dscto": 0,
+      "total": 73,
+      "efectivo": 500,
+      "tarjeta": 0,
+      "cambio": 427,
+      "createdAt": "2021-03-24T03:10:50.738Z",
+      "createdBy": "admin",
+      "closedAt": "2021-03-24T03:12:34.493Z",
+      "time": "1 minutos",
+      "fecha": "2021-03-23",
+      "id": "7bce0c70-5e77-4f27-8047-adfc0600515c"
     }
   ],
   "logs": [
@@ -143163,23 +142323,6 @@
       "commit": "ha cobrado la orden 1",
       "id": "e9ff3f0a-35d9-46f5-bf74-20f819437b89"
     },
-=======
-      "importe": 88,
-      "dscto": 0,
-      "total": 88,
-      "efectivo": 0,
-      "tarjeta": 0,
-      "cambio": 0,
-      "createdAt": "2021-03-23T16:19:16.109Z",
-      "createdBy": "admin",
-      "closedAt": null,
-      "time": "",
-      "fecha": "2021-03-23",
-      "id": "caaed699-4efd-43b3-ba8b-5bd3db8aaccf"
-    }
-  ],
-  "logs": [
->>>>>>> 0cee132d146e4a39efd7e896d02a13e082cbff71
     {
       "createdAt": "2021-03-17T22:13:27.252Z",
       "fecha": "2021-03-17",
@@ -144280,260 +143423,137 @@
       "id": "bda3309d-ee84-4842-bb6c-5dc6e31d73a8"
     },
     {
-      "createdAt": "2021-03-23T20:07:26.501Z",
+      "createdAt": "2021-03-24T03:01:15.624Z",
       "fecha": "2021-03-23",
       "operador": "admin",
       "commit": "ha iniciado sesión",
-      "id": "8739f180-7217-47a9-b1dd-2be9b51494df"
+      "id": "a660b54e-fe78-42d9-83cb-9c721a0e8498"
     },
     {
-      "createdAt": "2021-03-23T20:10:33.732Z",
-      "fecha": "2021-03-23",
-      "operador": "admin",
-      "commit": "ha cerrado sesión",
-      "id": "6d8230d3-7eae-4763-9f99-50409bbbcecb"
-    },
-    {
-      "createdAt": "2021-03-23T20:10:54.735Z",
-      "fecha": "2021-03-23",
-      "operador": "admin",
-      "commit": "ha iniciado sesión",
-      "id": "673628ca-396b-4475-a3a5-e1f43218d126"
-    },
-    {
-      "createdAt": "2021-03-23T20:12:17.998Z",
-      "fecha": "2021-03-23",
-      "operador": "admin",
-      "commit": "ha cerrado sesión",
-      "id": "40c50122-3565-4a11-b371-d14cd2772f94"
-    },
-    {
-      "createdAt": "2021-03-23T20:12:39.290Z",
-      "fecha": "2021-03-23",
-      "operador": "admin",
-      "commit": "ha iniciado sesión",
-      "id": "e412a49c-0d2a-4b68-986e-43d2f23e837d"
-    },
-    {
-      "createdAt": "2021-03-23T20:25:39.102Z",
+      "createdAt": "2021-03-24T03:01:56.888Z",
       "fecha": "2021-03-23",
       "operador": "admin",
       "commit": "ha cobrado la orden 1",
-      "id": "ac720d88-195f-4105-b1e4-f767170d36b0"
+      "id": "21ea0caf-11b2-4ec8-b105-d2a632201113"
     },
     {
-      "createdAt": "2021-03-23T21:25:49.186Z",
-      "fecha": "2021-03-23",
-      "operador": "admin",
-      "commit": "Ha reabierto la orden 2",
-      "id": "c12934a5-f7a4-4862-a87b-836436153a5b"
-    },
-    {
-      "createdAt": "2021-03-23T21:26:25.031Z",
+      "createdAt": "2021-03-24T03:02:27.267Z",
       "fecha": "2021-03-23",
       "operador": "admin",
       "commit": "ha cobrado la orden 2",
-      "id": "4691edf1-678c-40a8-bc4e-f328f43170ba"
+      "id": "080974f6-8983-4867-8db6-e02acd84bd2e"
     },
     {
-      "createdAt": "2021-03-23T22:01:06.671Z",
+      "createdAt": "2021-03-24T03:03:00.196Z",
       "fecha": "2021-03-23",
       "operador": "admin",
       "commit": "ha cobrado la orden 3",
-      "id": "6bd43694-f853-44a5-bc11-ecc6b92225f6"
+      "id": "f0c89401-a809-45c1-8857-f24b5500e226"
     },
     {
-      "createdAt": "2021-03-23T22:07:05.489Z",
+      "createdAt": "2021-03-24T03:03:26.480Z",
       "fecha": "2021-03-23",
       "operador": "admin",
       "commit": "ha cobrado la orden 4",
-      "id": "2c125279-7dac-4c74-8087-b1bba193a63e"
+      "id": "b5fc1d48-59a3-4be8-b0a6-d01533c3c942"
     },
     {
-      "createdAt": "2021-03-23T23:51:39.534Z",
+      "createdAt": "2021-03-24T03:05:56.908Z",
       "fecha": "2021-03-23",
       "operador": "admin",
       "commit": "ha cobrado la orden 5",
-      "id": "452726ab-4de9-4732-ab05-655fd272903e"
+      "id": "d5d715b5-40d0-4382-b076-4bb0b54d3ea2"
     },
     {
-      "createdAt": "2021-03-24T00:54:01.729Z",
-      "fecha": "2021-03-23",
-      "operador": "admin",
-      "commit": "ha hecho una consulta al monitor de ventas",
-<<<<<<< HEAD
-      "id": "2cb9583e-f64e-4913-ae8b-63da3b0dcc19"
-    },
-    {
-      "createdAt": "2021-03-24T02:55:16.360Z",
+      "createdAt": "2021-03-24T03:06:30.049Z",
       "fecha": "2021-03-23",
       "operador": "admin",
       "commit": "ha cobrado la orden 6",
-      "id": "c84fa8f6-1c73-4653-9dc8-daf945ae3184"
+      "id": "63513592-6648-4a11-aed3-86bdc053935a"
     },
     {
-      "createdAt": "2021-03-24T02:56:19.977Z",
+      "createdAt": "2021-03-24T03:12:34.493Z",
+      "fecha": "2021-03-23",
+      "operador": "admin",
+      "commit": "ha cobrado la orden 7",
+      "id": "020fa69e-d112-47e0-9212-efb369997ffa"
+    },
+    {
+      "createdAt": "2021-03-24T03:17:18.714Z",
+      "fecha": "2021-03-23",
+      "operador": "admin",
+      "commit": "ha iniciado sesión",
+      "id": "5bf26151-db0a-4e68-908c-6073488df6e5"
+    },
+    {
+      "createdAt": "2021-03-24T03:23:59.461Z",
+      "fecha": "2021-03-23",
+      "operador": "admin",
+      "commit": "ha iniciado sesión",
+      "id": "0609402b-f73d-47fa-8062-f7b3e5634861"
+    },
+    {
+      "createdAt": "2021-03-24T03:24:49.776Z",
+      "fecha": "2021-03-23",
+      "operador": "admin",
+      "commit": "ha hecho una consulta al monitor de ventas",
+      "id": "ee8ccff5-4f17-460c-8ac2-b5b98362406a"
+    },
+    {
+      "createdAt": "2021-03-24T03:25:03.184Z",
+      "fecha": "2021-03-23",
+      "operador": "admin",
+      "commit": "ha impreso un resumen de ventas",
+      "id": "9ed5757d-942a-4fa9-8187-c2a5ed8992e7"
+    },
+    {
+      "createdAt": "2021-03-24T03:25:33.831Z",
+      "fecha": "2021-03-23",
+      "operador": "admin",
+      "commit": "ha impreso un resumen de ventas",
+      "id": "e635491d-35af-4886-9ba2-01d38b91546f"
+    },
+    {
+      "createdAt": "2021-03-24T03:25:56.361Z",
+      "fecha": "2021-03-23",
+      "operador": "admin",
+      "commit": "ha impreso un resumen de ventas",
+      "id": "b59d2bef-01de-410b-9a8d-460848fc26db"
+    },
+    {
+      "createdAt": "2021-03-24T03:34:36.139Z",
+      "fecha": "2021-03-23",
+      "operador": "admin",
+      "commit": "ha hecho una consulta al monitor de ventas",
+      "id": "1be57fae-800a-4ef8-abaa-e74f23534087"
+    },
+    {
+      "createdAt": "2021-03-24T03:34:39.968Z",
+      "fecha": "2021-03-23",
+      "operador": "admin",
+      "commit": "ha impreso un resumen de ventas",
+      "id": "5d81b956-149d-494c-8829-24fc83e31b13"
+    },
+    {
+      "createdAt": "2021-03-24T03:35:22.502Z",
+      "fecha": "2021-03-23",
+      "operador": "admin",
+      "commit": "ha hecho una consulta al monitor de ventas",
+      "id": "50c99ea6-ba29-4cfc-9e14-16b39725b2e9"
+    },
+    {
+      "createdAt": "2021-03-24T03:35:29.056Z",
+      "fecha": "2021-03-23",
+      "operador": "admin",
+      "commit": "ha impreso un resumen de ventas",
+      "id": "6091866e-5ebe-453b-b221-be7f182d3614"
+    },
+    {
+      "createdAt": "2021-03-24T03:35:47.049Z",
       "fecha": "2021-03-23",
       "operador": "admin",
       "commit": "ha cerrado sesión",
-      "id": "e63cc260-9dc5-4d55-9c27-db38ef56e853"
-=======
-      "id": "8009bce2-59f4-421a-aeca-57604ac2ec09"
-    },
-    {
-      "createdAt": "2021-03-14T06:19:41.987Z",
-      "fecha": "2021-03-14",
-      "operador": "admin",
-      "commit": "ha hecho una consulta al monitor de ventas",
-      "id": "33efa1f8-8e83-4080-a161-3ee38c378ab3"
-    },
-    {
-      "createdAt": "2021-03-20T04:58:48.748Z",
-      "fecha": "2021-03-19",
-      "operador": "admin",
-      "commit": "ha iniciado sesión",
-      "id": "ac5e8221-c777-4ae3-bb5d-76e0ed1cf503"
-    },
-    {
-      "createdAt": "2021-03-22T07:15:08.502Z",
-      "fecha": "2021-03-22",
-      "operador": "admin",
-      "commit": "ha iniciado sesión",
-      "id": "d7d695ac-62fb-4b76-9a2b-8c75a681022d"
-    },
-    {
-      "createdAt": "2021-03-22T07:15:29.215Z",
-      "fecha": "2021-03-22",
-      "operador": "admin",
-      "commit": "ha hecho una consulta al monitor de ventas",
-      "id": "4840341f-9683-4901-acb7-6cce1b72b3c4"
-    },
-    {
-      "createdAt": "2021-03-22T07:16:38.534Z",
-      "fecha": "2021-03-22",
-      "operador": "admin",
-      "commit": "ha impreso un resumen de ventas",
-      "id": "ba65d82a-40e3-45bb-bd60-cc5321c2b2aa"
-    },
-    {
-      "createdAt": "2021-03-22T07:17:00.813Z",
-      "fecha": "2021-03-22",
-      "operador": "admin",
-      "commit": "ha impreso un detallado de productos",
-      "id": "ae45d9e3-c756-492f-a296-68aa160ce0ab"
-    },
-    {
-      "createdAt": "2021-03-22T07:17:32.042Z",
-      "fecha": "2021-03-22",
-      "operador": "admin",
-      "commit": "ha cerrado sesión",
-      "id": "838dfb18-fb93-4b14-bfca-6dce555869d4"
-    },
-    {
-      "createdAt": "2021-03-23T15:52:21.916Z",
-      "fecha": "2021-03-23",
-      "operador": "admin",
-      "commit": "ha iniciado sesión",
-      "id": "1a6b7e4a-3d8f-4e0f-b9d1-09d0731536fa"
-    },
-    {
-      "createdAt": "2021-03-23T16:07:22.803Z",
-      "fecha": "2021-03-23",
-      "operador": "admin",
-      "commit": "Ha reabierto la orden 1",
-      "id": "6ef12729-21f5-482c-bf7f-2dd75f2e3187"
-    },
-    {
-      "createdAt": "2021-03-23T16:07:55.685Z",
-      "fecha": "2021-03-23",
-      "operador": "admin",
-      "commit": "ha hecho una consulta al monitor de ventas",
-      "id": "04f7a6d3-e105-4f49-9ef0-1fccaae51667"
-    },
-    {
-      "createdAt": "2021-03-23T16:09:39.335Z",
-      "fecha": "2021-03-23",
-      "operador": "admin",
-      "commit": "ha hecho una consulta al monitor de ventas",
-      "id": "867daaf3-2aa3-4bcc-b9c5-51e81c577e9d"
-    },
-    {
-      "createdAt": "2021-03-23T16:10:41.479Z",
-      "fecha": "2021-03-23",
-      "operador": "admin",
-      "commit": "ha hecho una consulta al monitor de ventas",
-      "id": "dacdb5a5-6302-474f-9a66-dc36aeb28719"
-    },
-    {
-      "createdAt": "2021-03-23T16:11:40.798Z",
-      "fecha": "2021-03-23",
-      "operador": "admin",
-      "commit": "ha impreso un resumen de ventas",
-      "id": "4b7d8617-3c33-4d0c-b95e-3a857b2532f7"
-    },
-    {
-      "createdAt": "2021-03-23T16:12:07.423Z",
-      "fecha": "2021-03-23",
-      "operador": "admin",
-      "commit": "Ha cancelado la orden 1",
-      "id": "2c221ab5-7415-4fed-b3a2-07743fd83682"
-    },
-    {
-      "createdAt": "2021-03-23T16:12:11.787Z",
-      "fecha": "2021-03-23",
-      "operador": "admin",
-      "commit": "ha hecho una consulta al monitor de ventas",
-      "id": "c9e4f060-741a-4d41-8d8d-dff1a00388e3"
-    },
-    {
-      "createdAt": "2021-03-23T16:13:22.055Z",
-      "fecha": "2021-03-23",
-      "operador": "admin",
-      "commit": "ha impreso un resumen de ventas",
-      "id": "ceb42422-eb30-4711-9828-afb0315b675f"
-    },
-    {
-      "createdAt": "2021-03-23T16:14:04.622Z",
-      "fecha": "2021-03-23",
-      "operador": "admin",
-      "commit": "ha hecho una consulta al monitor de ventas",
-      "id": "c2e72eae-b3de-4e82-ab28-2f7817955347"
-    },
-    {
-      "createdAt": "2021-03-23T16:14:21.399Z",
-      "fecha": "2021-03-23",
-      "operador": "admin",
-      "commit": "ha impreso un resumen de ventas",
-      "id": "6c8681fc-da1d-4eaf-98cb-63c5e3a299f2"
-    },
-    {
-      "createdAt": "2021-03-23T16:22:30.672Z",
-      "fecha": "2021-03-23",
-      "operador": "admin",
-      "commit": "ha hecho una consulta al monitor de ventas",
-      "id": "74e0585c-140a-43c3-9c17-7f6941154c9e"
-    },
-    {
-      "createdAt": "2021-03-23T16:22:46.018Z",
-      "fecha": "2021-03-23",
-      "operador": "admin",
-      "commit": "ha impreso un resumen de ventas",
-      "id": "dfe5802a-54f5-4441-8969-4d5f3763b572"
-    },
-    {
-      "createdAt": "2021-03-23T16:23:13.699Z",
-      "fecha": "2021-03-23",
-      "operador": "admin",
-      "commit": "ha hecho una consulta al monitor de ventas",
-      "id": "cc045405-041e-434d-bb34-33fb16211219"
-    },
-    {
-      "createdAt": "2021-03-23T16:23:35.274Z",
-      "fecha": "2021-03-23",
-      "operador": "admin",
-      "commit": "ha impreso un resumen de ventas",
-      "id": "4edfeb6c-cca8-465a-850f-62a7ac932c65"
->>>>>>> 0cee132d146e4a39efd7e896d02a13e082cbff71
+      "id": "ff237cbb-641b-46f8-a939-8e5f702780c9"
     }
   ],
   "cajas": [
@@ -145457,11 +144477,11 @@
       "tipo": "gasto",
       "concepto": "40 tacos dorados",
       "importe": 100,
-      "createdAt": "2021-03-23T20:51:51.851Z",
+      "createdAt": "2021-03-24T03:35:11.822Z",
       "fecha": "2021-03-23",
       "createdBy": "admin",
       "folio": 102,
-      "id": "3d591608-4806-4c6f-a0ea-84f9d052e155"
+      "id": "2977f63a-6d45-485d-8f3c-fa9e503ca9ce"
     }
   ]
 }
