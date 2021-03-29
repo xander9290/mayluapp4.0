@@ -364,6 +364,7 @@ function PuntoVenta() {
         </div>
         <button
           onClick={openPagar}
+          disabled={cuenta.estado==="cerrado"?true:false}
           type="button"
           className="btn btn-warning btn-lg fw-bold text-uppercase py-3 mb-2"
         >

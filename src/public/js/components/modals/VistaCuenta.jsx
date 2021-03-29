@@ -186,6 +186,7 @@ function VistaCuenta(props) {
                     </th>
                     <th scope="row" className="text-center">
                       <button
+                      disabled={cuenta.estado==="cerrado"?true:false}
                         onClick={() => descontarProducto(i)}
                         title="DESCONTAR"
                         type="button"
