@@ -185,15 +185,17 @@ function VistaCuenta(props) {
                       {item.impreso && <i className="bi bi-check-square"></i>}
                     </th>
                     <th scope="row" className="text-center">
-                      <button
-                      disabled={cuenta.estado==="cerrado"?true:false}
-                        onClick={() => descontarProducto(i)}
-                        title="DESCONTAR"
-                        type="button"
-                        className="btn btn-primary btn-sm"
-                      >
-                        -%
-                      </button>
+                      {
+                        item.cancelado?null:(<button
+                          disabled={cuenta.estado==="cerrado"?true:false}
+                            onClick={() => descontarProducto(i)}
+                            title="DESCONTAR"
+                            type="button"
+                            className="btn btn-primary btn-sm"
+                          >
+                            -%
+                          </button>)
+                      }
                     </th>
                     <td className="text-center fs-5">{item.cant}</td>
                     <td>
