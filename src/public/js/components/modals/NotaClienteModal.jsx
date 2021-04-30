@@ -179,22 +179,22 @@ function NotaClienteModal(props) {
           <small>
             <ul>
               <li style={{ display: cuenta.dscto > 0 ? "block" : "none" }}>
-                subtotal: ${cuenta.importe}.00
+                subtotal: ${cuenta.importe}
               </li>
               <li style={{ display: cuenta.dscto > 0 ? "block" : "none" }}>
-                descuento: -${cuenta.dscto}.00
+                descuento: -${cuenta.dscto}
               </li>
               <li>
-                <h2>total: ${cuenta.total}.00</h2>
+                <h1>total: ${cuenta.total}</h1>
               </li>
               <li style={{ display: cuenta.efectivo > 0 ? "block" : "none" }}>
-                efectivo: ${cuenta.efectivo}.00
+                efectivo: ${cuenta.efectivo}
               </li>
               <li style={{ display: cuenta.tarjeta > 0 ? "block" : "none" }}>
-                tarjeta: ${cuenta.tarjeta}.00
+                tarjeta: ${cuenta.tarjeta}
               </li>
               <li style={{ display: cuenta.cambio > 0 ? "block" : "none" }}>
-                cambio: ${cuenta.cambio}.00
+                cambio: ${cuenta.cambio}
               </li>
             </ul>
             {numeroALetras(cuenta.total, {

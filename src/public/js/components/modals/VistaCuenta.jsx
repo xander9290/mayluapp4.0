@@ -168,7 +168,7 @@ function VistaCuenta(props) {
                       itemsIdx === i ? "bg-info" : ""
                     } ${item.cancelado ? "bg-danger" : ""} `}
                   >
-                    {cuenta.estado !== "abierto" ? null : (
+                    {cuenta.impreso === true ? null : (
                       <th scope="row" className="text-center">
                         <button
                           disabled={item.cancelado ? true : false}
@@ -187,7 +187,7 @@ function VistaCuenta(props) {
                     <th scope="row" className="text-center">
                       {
                         item.cancelado?null:(<button
-                          disabled={cuenta.estado==="cerrado"?true:false}
+                          disabled={cuenta.impreso?true:false}
                             onClick={() => descontarProducto(i)}
                             title="DESCONTAR"
                             type="button"
