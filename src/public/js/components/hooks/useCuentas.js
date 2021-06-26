@@ -23,6 +23,7 @@ const initialCuenta = {
   total: 0,
   efectivo: 0,
   tarjeta: 0,
+  otro_medio: 0,
   cambio: 0,
   createdAt: null,
   createdBy: operadorSession,

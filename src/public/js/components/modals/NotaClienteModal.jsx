@@ -193,6 +193,9 @@ function NotaClienteModal(props) {
               <li style={{ display: cuenta.tarjeta > 0 ? "block" : "none" }}>
                 tarjeta: ${cuenta.tarjeta}
               </li>
+              <li style={{ display: cuenta.otro_medio > 0 ? "block" : "none" }}>
+                otro medio: ${cuenta.otro_medio}
+              </li>
               <li style={{ display: cuenta.cambio > 0 ? "block" : "none" }}>
                 cambio: ${cuenta.cambio}
               </li>

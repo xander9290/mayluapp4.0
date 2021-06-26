@@ -1,5 +1,5 @@
 function ResumenModal(props) {
-  const { servicios, cancelados, descuentos, caja, tarjetas } = props;
+  const { servicios, cancelados, descuentos, caja, tarjetas, otroMedio } = props;
   const { commit } = useContext(AppContext);
 
   const setImpresion = () => {
@@ -47,22 +47,22 @@ function ResumenModal(props) {
       <Modal.Body>
         <div id="body">
           <br></br>
-          <h1 id="title">RESUMEN DE VENTAS</h1>
+          <h1 id="title">RESUMEN DE VENTA</h1>
           <hr></hr>
           <p>fecha: {formatoFecha(Date.now())[0]}</p>
           <p>operador: {operadorSession}</p>
           <hr></hr>
           <h3>cuentas por servicio</h3>
           <h4>
-            -comedor: ${servicios.comedor.total}.00 (
+            -comedor: ${servicios.comedor.total} (
             {servicios.comedor.ctas.length})
           </h4>
           <h4>
-            -para llevar: ${servicios.pll.total}.00 ({servicios.pll.ctas.length}
+            -para llevar: ${servicios.pll.total} ({servicios.pll.ctas.length}
             )
           </h4>
           <h4>
-            -domicilio: ${servicios.domicilio.total}.00 (
+            -domicilio: ${servicios.domicilio.total} (
             {servicios.domicilio.ctas.length})
           </h4>
           <h2>
@@ -70,7 +70,6 @@ function ResumenModal(props) {
             {servicios.comedor.total +
               servicios.pll.total +
               servicios.domicilio.total}
-            .00
           </h2>
           <hr></hr>
           <div
@@ -85,7 +84,7 @@ function ResumenModal(props) {
             {caja.gastos.qty.map((gasto, i) => (
               <div key={i * 2}>
                 <h4>
-                  -concepto: {gasto.concepto} -${gasto.importe}.00
+                  -concepto: {gasto.concepto} -${gasto.importe}
                 </h4>
                 <p>-------------------------------------</p>
               </div>
@@ -93,7 +92,7 @@ function ResumenModal(props) {
             {caja.depositos.qty.map((deposito, i) => (
               <div key={i * 3}>
                 <h4>
-                  -concepto: {deposito.concepto} +${deposito.importe}.00
+                  -concepto: {deposito.concepto} +${deposito.importe}
                 </h4>
                 <p>-------------------------------------</p>
               </div>
@@ -117,7 +116,27 @@ function ResumenModal(props) {
               </div>
             ))}
             <p>-------------------------------------</p>
-            <h4>total de tarjetas: ${tarjetas.total}.00</h4>
+            <h4>total de tarjetas: ${tarjetas.total}</h4>
+            <hr></hr>
+          </div>
+          <div
+            style={{
+              display: tarjetas.qty.length > 0 ? "block" : "none",
+            }}
+          >
+            <h3>pagos con otros medios</h3>
+            {otroMedio.qty.map((cuenta, i) => (
+              <div key={i * 5}>
+                <h4>
+                  -orden: {cuenta.orden} total: ${cuenta.otro_medio}
+                  <p style={{ margin: "0", padding: "0" }}>
+                    <small>{formatoFecha(cuenta.createdAt)[0]}</small>
+                  </p>
+                </h4>
+              </div>
+            ))}
+            <p>-------------------------------------</p>
+            <h4>total otros medios: ${otroMedio.total}</h4>
             <hr></hr>
           </div>
           <h2>
@@ -127,8 +146,7 @@ function ResumenModal(props) {
               servicios.domicilio.total +
               caja.depositos.total -
               caja.gastos.total -
-              tarjetas.total}
-            .00
+              tarjetas.total-otroMedio.total}
           </h2>
           <div style={{ display: descuentos.length > 0 ? "block" : "none" }}>
             <hr></hr>
@@ -136,7 +154,7 @@ function ResumenModal(props) {
             {descuentos.map((cuenta, i) => (
               <div key={i * 5}>
                 <h4>-orden:{cuenta.orden}</h4>
-                <h4>importe:${cuenta.importe}.00</h4>
+                <h4>importe:${cuenta.importe}</h4>
                 <h4>dscto:-%{cuenta.dscto}</h4>
                 <h4>
                   total:$

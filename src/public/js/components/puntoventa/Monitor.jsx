@@ -21,6 +21,8 @@ function Monitor(props) {
   });
   // TARJETAS
   const [tarjetas, setTarjetas] = useState({ total: 0, qty: [] });
+  //otros medios de pago
+  const [otroMedio, setOtroMedio] = useState({ total: 0, qty: [] });
   // PRODUCTOS
   const [productosDetallado, setProductosDetallados] = useState({
     items: [],
@@ -90,6 +92,7 @@ function Monitor(props) {
     );
     procesarServicios(cuentasContables, cuentasCanceladas);
     procesarTarjetas(cuentasContables);
+    procesarOtrosMedios(cuentasContables)
     procesarProductos(cuentasContables);
   };
 
@@ -258,7 +261,7 @@ function Monitor(props) {
     const cuentasTarjetas = ctas.filter((cuenta) => cuenta.tarjeta > 0);
     let totalTarjetas = 0;
     cuentasTarjetas.map((cuenta) => {
-      totalTarjetas += cuenta.total;
+      totalTarjetas += cuenta.tarjeta;
     });
     const tarjetas = {
       total: totalTarjetas,
@@ -267,6 +270,18 @@ function Monitor(props) {
     setTarjetas(tarjetas);
   };
 
+  const procesarOtrosMedios =(ctas)=>{
+    const cuentasOtros = ctas.filter((cuenta) => cuenta.otro_medio > 0);
+    let totalOtros = 0;
+    cuentasOtros.map((cuenta) => {
+      totalOtros += cuenta.otro_medio;
+    });
+    const otrosMedios = {
+      total: totalOtros,
+      qty: cuentasOtros,
+    };
+    setOtroMedio(otrosMedios);
+  }
   return (
     <div className="col-md-12">
       <div className="card bg-dark">
@@ -333,21 +348,21 @@ function Monitor(props) {
           <ul className="list-group">
             <li className="list-group-item text-uppercase h5">
               <span className="fw-bold">comedor: </span>
-              <span>${servicios.comedor.total}.00</span>
+              <span>${servicios.comedor.total}</span>
               <span className="badge bg-primary ms-1">
                 {servicios.comedor.ctas.length}
               </span>
             </li>
             <li className="list-group-item text-uppercase h5">
               <span className="fw-bold">para llevar: </span>
-              <span>${servicios.pll.total}.00</span>
+              <span>${servicios.pll.total}</span>
               <span className="badge bg-primary ms-1">
                 {servicios.pll.ctas.length}
               </span>
             </li>
             <li className="list-group-item text-uppercase h5">
               <span className="fw-bold">domicilio: </span>
-              <span>${servicios.domicilio.total}.00</span>
+              <span>${servicios.domicilio.total}</span>
               <span className="badge bg-primary ms-1">
                 {servicios.domicilio.ctas.length}
               </span>
@@ -359,7 +374,6 @@ function Monitor(props) {
                 {servicios.comedor.total +
                   servicios.pll.total +
                   servicios.domicilio.total}
-                .00
               </span>
             </li>
             <h5 className="text-uppercase text-center text-light">
@@ -367,14 +381,14 @@ function Monitor(props) {
             </h5>
             <li className="list-group-item text-uppercase h5">
               <span className="fw-bold">retiros: </span>
-              <span>-${caja.gastos.total}.00</span>
+              <span>-${caja.gastos.total}</span>
               <span className="badge bg-primary ms-1">
                 {caja.gastos.qty.length}
               </span>
             </li>
             <li className="list-group-item text-uppercase h5">
               <span className="fw-bold">depósitos: </span>
-              <span>+${caja.depositos.total}.00</span>
+              <span>+${caja.depositos.total}</span>
               <span className="badge bg-primary ms-1">
                 {caja.depositos.qty.length}
               </span>
@@ -384,9 +398,14 @@ function Monitor(props) {
             </h5>
             <li className="list-group-item text-uppercase h5">
               <span className="fw-bold">tarjetas: </span>
-              <span>${tarjetas.total}.00</span>
+              <span>${tarjetas.total}</span>
               <span className="badge bg-primary ms-1">
                 {tarjetas.qty.length}
+              </span>
+              <span className="fw-bold ms-1">otros medios: </span>
+              <span>${otroMedio.total}</span>
+              <span className="badge bg-primary ms-1">
+                {otroMedio.qty.length}
               </span>
             </li>
             <li className="list-group-item text-uppercase bg-info h5">
@@ -398,8 +417,7 @@ function Monitor(props) {
                   servicios.domicilio.total +
                   caja.depositos.total -
                   caja.gastos.total -
-                  tarjetas.total}
-                .00
+                  tarjetas.total-otroMedio.total}
               </span>
             </li>
           </ul>
@@ -413,6 +431,7 @@ function Monitor(props) {
         descuentos={descuentos}
         caja={caja}
         tarjetas={tarjetas}
+        otroMedio={otroMedio}
       />
       <DetalladoModal
         show={abrirDetallados}

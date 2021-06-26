@@ -7,6 +7,7 @@ function PagarCuentaModal(props) {
   const [values, setvalues] = useState({
     efectivo: 0,
     tarjeta: 0,
+    otros: 0
   });
   const [recibo, setRecibo] = useState(true);
   const [error, setError] = useState(null);
@@ -27,7 +28,7 @@ function PagarCuentaModal(props) {
   };
 
   const handleExited = () => {
-    setvalues({ efectivo: 0, tarjeta: 0 });
+    setvalues({ efectivo: 0, tarjeta: 0, otros: 0 });
     setError("");
     setRecibo(true);
   };
@@ -35,14 +36,15 @@ function PagarCuentaModal(props) {
   const handleSubmitPago = async (e) => {
     e.preventDefault();
     const cambio =
-        parseInt(values.efectivo) - cuenta.total + parseInt(values.tarjeta),
-      checkpago = parseInt(values.efectivo) + parseInt(values.tarjeta);
+        parseInt(values.efectivo) - cuenta.total + parseInt(values.tarjeta)+parseInt(values.otros),
+      checkpago = parseInt(values.efectivo) + parseInt(values.tarjeta)+parseInt(values.otros);
 
     if (checkpago >= cuenta.total) {
       const newCta = {
         ...cuenta,
         efectivo: parseInt(values.efectivo),
         tarjeta: parseInt(values.tarjeta),
+        otro_medio: parseInt(values.otros),
         estado: "cerrado",
         cambio,
         closedAt: fechaISO(),
@@ -80,7 +82,7 @@ function PagarCuentaModal(props) {
               <span>
                 {parseInt(values.efectivo) -
                   cuenta.total +
-                  parseInt(values.tarjeta)}
+                  parseInt(values.tarjeta)+parseInt(values.otros)}
               </span>
             </h3>
           </div>
@@ -127,6 +129,21 @@ function PagarCuentaModal(props) {
                     onChange={handleValues}
                     className="form-control form-control-lg"
                     value={values.tarjeta}
+                    autoComplete="off"
+                  />
+                  <span className="input-group-text">.00</span>
+                </div>
+              </div>
+              <div className="mb-3">
+                <label>Otro Medio:</label>
+                <div className="input-group input-group-lg">
+                  <span className="input-group-text">$</span>
+                  <input
+                    type="number"
+                    name="otros"
+                    onChange={handleValues}
+                    className="form-control form-control-lg"
+                    value={values.otros}
                     autoComplete="off"
                   />
                   <span className="input-group-text">.00</span>
