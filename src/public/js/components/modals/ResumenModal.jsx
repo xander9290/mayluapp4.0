@@ -1,5 +1,6 @@
 function ResumenModal(props) {
-  const { servicios, cancelados, descuentos, caja, tarjetas, otroMedio } = props;
+  const { servicios, cancelados, descuentos, caja, tarjetas, otroMedio } =
+    props;
   const { commit } = useContext(AppContext);
 
   const setImpresion = () => {
@@ -58,8 +59,7 @@ function ResumenModal(props) {
             {servicios.comedor.ctas.length})
           </h4>
           <h4>
-            -para llevar: ${servicios.pll.total} ({servicios.pll.ctas.length}
-            )
+            -para llevar: ${servicios.pll.total} ({servicios.pll.ctas.length})
           </h4>
           <h4>
             -domicilio: ${servicios.domicilio.total} (
@@ -108,7 +108,7 @@ function ResumenModal(props) {
             {tarjetas.qty.map((cuenta, i) => (
               <div key={i * 4}>
                 <h4>
-                  -orden: {cuenta.orden} total: ${cuenta.tarjeta}.00
+                  -orden: {cuenta.orden} total: ${cuenta.tarjeta}
                   <p style={{ margin: "0", padding: "0" }}>
                     <small>{formatoFecha(cuenta.createdAt)[0]}</small>
                   </p>
@@ -121,17 +121,14 @@ function ResumenModal(props) {
           </div>
           <div
             style={{
-              display: tarjetas.qty.length > 0 ? "block" : "none",
+              display: otroMedio.qty.length > 0 ? "block" : "none",
             }}
           >
             <h3>pagos con otros medios</h3>
-            {otroMedio.qty.map((cuenta, i) => (
+            {otroMedio.list.map((medio, i) => (
               <div key={i * 5}>
                 <h4>
-                  -orden: {cuenta.orden} total: ${cuenta.otro_medio}
-                  <p style={{ margin: "0", padding: "0" }}>
-                    <small>{formatoFecha(cuenta.createdAt)[0]}</small>
-                  </p>
+                  -{medio.name} ({medio.qty}) total: ${medio.total}
                 </h4>
               </div>
             ))}
@@ -146,7 +143,8 @@ function ResumenModal(props) {
               servicios.domicilio.total +
               caja.depositos.total -
               caja.gastos.total -
-              tarjetas.total-otroMedio.total}
+              tarjetas.total -
+              otroMedio.total}
           </h2>
           <div style={{ display: descuentos.length > 0 ? "block" : "none" }}>
             <hr></hr>

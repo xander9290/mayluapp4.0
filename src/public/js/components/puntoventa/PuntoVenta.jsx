@@ -7,6 +7,7 @@ function PuntoVenta() {
     sellarCuenta,
     editarCuenta,
     commit,
+    otrosMedios,
   } = useContext(AppContext);
   const [abrirComedorModal, setAbrirComedorModal] = useState(false);
   const [abrirParallevarModal, setAbrirParallevarModal] = useState(false);
@@ -20,6 +21,7 @@ function PuntoVenta() {
   const [abrirMonitorModal, setAbrirMonitorModal] = useState(false);
   const [abrirInfoModal, setAbrirInfoModal] = useState(false);
   const [abrirDescuentoModal, setAbrirDescuentoModal] = useState(false);
+  const [medios, setMedios] = useState([]);
 
   useEffect(() => {
     if (cuenta.id) {
@@ -31,6 +33,18 @@ function PuntoVenta() {
       }, 200);
     }
   }, [cuenta]);
+
+  useEffect(() => {
+    setMedios(otrosMedios);
+    // const name = prompt("nuevo Medio: ");
+    // if (!name) return;
+    // const newMedio = {
+    //   name,
+    // };
+    // createMedio(newMedio, (res) => {
+    //   if (res !== "error") alert("Agragegado con éxito");
+    // });
+  }, [otrosMedios]);
 
   const openCapturaModal = () => {
     if (cuenta.id) {
@@ -364,7 +378,7 @@ function PuntoVenta() {
         </div>
         <button
           onClick={openPagar}
-          disabled={cuenta.estado==="cerrado"?true:false}
+          disabled={cuenta.estado === "cerrado" ? true : false}
           type="button"
           className="btn btn-warning btn-lg fw-bold text-uppercase py-3 mb-2"
         >
@@ -490,6 +504,7 @@ function PuntoVenta() {
       <PagarCuentaModal
         show={abrirPagarCuentaModal}
         onHide={() => setAbrirPagarCuentaModal(false)}
+        medios={medios}
       />
       <MonitorModal
         show={abrirMonitorModal}

@@ -45,6 +45,15 @@ function Admin() {
         >
           operadores
         </button>
+        <button
+          type="button"
+          className="nav-link border border-light text-light text-uppercase h6"
+          data-bs-toggle="pill"
+          data-bs-target="#general"
+          aria-selected="false"
+        >
+          general
+        </button>
       </nav>
       <div
         style={{ width: "100%", backgroundColor: "#4b4b4b" }}
@@ -76,6 +85,11 @@ function Admin() {
             <div className="col-md-7">
               <Logs />
             </div>
+          </div>
+        </div>
+        <div className="tab-pane p-1" id="general">
+          <div className="row">
+            <General />
           </div>
         </div>
       </div>

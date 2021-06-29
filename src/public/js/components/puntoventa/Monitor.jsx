@@ -1,5 +1,10 @@
 function Monitor(props) {
-  const { cuentas, cajas, productos: ps } = useContext(AppContext);
+  const {
+    cuentas,
+    cajas,
+    productos: ps,
+    otrosMedios: md,
+  } = useContext(AppContext);
 
   const [fecha, setFecha] = useState({
     fecha1: fechaActual(Date.now()),
@@ -22,7 +27,7 @@ function Monitor(props) {
   // TARJETAS
   const [tarjetas, setTarjetas] = useState({ total: 0, qty: [] });
   //otros medios de pago
-  const [otroMedio, setOtroMedio] = useState({ total: 0, qty: [] });
+  const [otroMedio, setOtroMedio] = useState({ total: 0, qty: [], list: [] });
   // PRODUCTOS
   const [productosDetallado, setProductosDetallados] = useState({
     items: [],
@@ -92,7 +97,7 @@ function Monitor(props) {
     );
     procesarServicios(cuentasContables, cuentasCanceladas);
     procesarTarjetas(cuentasContables);
-    procesarOtrosMedios(cuentasContables)
+    procesarOtrosMedios(cuentasContables);
     procesarProductos(cuentasContables);
   };
 
@@ -270,18 +275,41 @@ function Monitor(props) {
     setTarjetas(tarjetas);
   };
 
-  const procesarOtrosMedios =(ctas)=>{
-    const cuentasOtros = ctas.filter((cuenta) => cuenta.otro_medio > 0);
-    let totalOtros = 0;
+  const procesarOtrosMedios = (ctas) => {
+    const cuentasOtros = ctas.filter((cuenta) => cuenta.otro_medio[1] > 0);
+    let totalOtros = 0,
+      listaMedios = [],
+      list = [];
     cuentasOtros.map((cuenta) => {
-      totalOtros += cuenta.otro_medio;
+      totalOtros += cuenta.otro_medio[1];
+      listaMedios.push({
+        name: cuenta.otro_medio[0],
+        importe: cuenta.otro_medio[1],
+      });
+    });
+    md.map((medios) => {
+      const mds = listaMedios.filter((item) => item.name === medios.name);
+      if (mds.length > 0) {
+        let total = 0;
+        mds.map((items) => {
+          total += items.importe;
+        });
+        const newListaMedios = {
+          name: mds[0].name,
+          total,
+          qty: mds.length,
+        };
+        list.push(newListaMedios);
+      }
     });
     const otrosMedios = {
       total: totalOtros,
       qty: cuentasOtros,
+      list,
     };
+    console.log(otrosMedios);
     setOtroMedio(otrosMedios);
-  }
+  };
   return (
     <div className="col-md-12">
       <div className="card bg-dark">
@@ -394,19 +422,23 @@ function Monitor(props) {
               </span>
             </li>
             <h5 className="text-uppercase text-center text-light">
-              pagos con tarjeta
+              pagos con tarjeta y otros medios
             </h5>
-            <li className="list-group-item text-uppercase h5">
-              <span className="fw-bold">tarjetas: </span>
-              <span>${tarjetas.total}</span>
-              <span className="badge bg-primary ms-1">
-                {tarjetas.qty.length}
-              </span>
-              <span className="fw-bold ms-1">otros medios: </span>
-              <span>${otroMedio.total}</span>
-              <span className="badge bg-primary ms-1">
-                {otroMedio.qty.length}
-              </span>
+            <li className="list-group-item text-uppercase h5 d-flex justify-content-between">
+              <div>
+                <span className="fw-bold">tarjetas: </span>
+                <span>${tarjetas.total}</span>
+                <span className="badge bg-primary ms-1">
+                  {tarjetas.qty.length}
+                </span>
+              </div>
+              <div>
+                <span className="fw-bold">otros: </span>
+                <span>${otroMedio.total}</span>
+                <span className="badge bg-primary ms-1">
+                  {otroMedio.qty.length}
+                </span>
+              </div>
             </li>
             <li className="list-group-item text-uppercase bg-info h5">
               <span className="fw-bold">total efectivo: </span>
@@ -417,7 +449,8 @@ function Monitor(props) {
                   servicios.domicilio.total +
                   caja.depositos.total -
                   caja.gastos.total -
-                  tarjetas.total-otroMedio.total}
+                  tarjetas.total -
+                  otroMedio.total}
               </span>
             </li>
           </ul>

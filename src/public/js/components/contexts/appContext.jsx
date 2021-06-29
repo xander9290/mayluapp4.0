@@ -58,6 +58,7 @@ function AppProvider({ children }) {
   } = useCuentas();
 
   const { cajas, createCaja, delCaja } = useCaja();
+  const { otrosMedios, createMedio, delMedio } = useOtrosMedios();
 
   const data = {
     // Categorias
@@ -112,6 +113,10 @@ function AppProvider({ children }) {
     cajas,
     createCaja,
     delCaja,
+    // OTROS MEDIOS
+    otrosMedios,
+    createMedio,
+    delMedio,
   };
   return <AppContext.Provider value={data}>{children}</AppContext.Provider>;
 }
