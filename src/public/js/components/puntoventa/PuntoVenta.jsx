@@ -125,9 +125,14 @@ function PuntoVenta() {
         return;
       }
       if (!window.confirm("confirmar acción".toUpperCase())) return;
+      let motivoCancelado = prompt(
+        "especifíca motivo de la cancelación".toUpperCase()
+      );
+      if (!motivoCancelado) motivoCancelado = "sin especificar";
       const newCta = {
         ...cuenta,
         estado: "cancelado",
+        motivoCancelado,
         closedAt: fechaISO(),
         time: timeAgo(new Date(cuenta.createdAt)),
       };

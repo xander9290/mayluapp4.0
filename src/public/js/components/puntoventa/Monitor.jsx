@@ -307,7 +307,6 @@ function Monitor(props) {
       qty: cuentasOtros,
       list,
     };
-    console.log(otrosMedios);
     setOtroMedio(otrosMedios);
   };
   return (

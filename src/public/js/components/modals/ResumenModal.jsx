@@ -55,15 +55,15 @@ function ResumenModal(props) {
           <hr></hr>
           <h3>cuentas por servicio</h3>
           <h4>
-            -comedor: ${servicios.comedor.total} (
-            {servicios.comedor.ctas.length})
+            -comedor ({servicios.comedor.ctas.length}): $
+            {servicios.comedor.total}
           </h4>
           <h4>
-            -para llevar: ${servicios.pll.total} ({servicios.pll.ctas.length})
+            -para llevar ({servicios.pll.ctas.length}): ${servicios.pll.total}
           </h4>
           <h4>
-            -domicilio: ${servicios.domicilio.total} (
-            {servicios.domicilio.ctas.length})
+            -domicilio ({servicios.domicilio.ctas.length}): $
+            {servicios.domicilio.total}
           </h4>
           <h2>
             venta total: $
@@ -169,7 +169,10 @@ function ResumenModal(props) {
             {cancelados.map((cuenta, i) => (
               <div key={i * 6}>
                 <h4>
-                  -orden: {cuenta.orden} total: ${cuenta.total}.00
+                  -orden: {cuenta.orden} total: ${cuenta.total}
+                  <p>
+                    -motivo: {cuenta.motivoCancelado && cuenta.motivoCancelado}
+                  </p>
                   <p style={{ margin: "0", padding: "0" }}>
                     <small>{formatoFecha(cuenta.createdAt)[0]}</small>
                   </p>

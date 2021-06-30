@@ -20,8 +20,9 @@ function FormLogin() {
     e.preventDefault();
     login(operador, (res) => {
       if (res.response) {
-        sessionStorage.setItem("operador", operador.name);
-        sessionStorage.setItem("operadorRol", operador.rol);
+        console.log(res.operador);
+        sessionStorage.setItem("operador", res.operador.name);
+        sessionStorage.setItem("operadorRol", res.operador.rol);
         commit("ha iniciado sesión", operador.name);
         window.location.href = window.location.href;
       } else {

@@ -16,6 +16,7 @@ const initialCuenta = {
     id: null,
   },
   estado: "abierto",
+  motivoCancelado: "",
   impreso: false,
   items: [],
   importe: 0,
