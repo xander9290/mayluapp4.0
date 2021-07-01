@@ -54,7 +54,8 @@ function OperadorInfo() {
   const logOut = () => {
     sessionStorage.clear();
     commit("ha cerrado sesión", operadorSession);
-    window.location.href = window.location.href;
+    // window.location.href = window.location.href;
+    window.location.reload();
   };
 
   return (

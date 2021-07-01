@@ -86,6 +86,32 @@ function NotaClienteModal(props) {
     return true;
   };
 
+  const [areas, setAreas] = useState([]);
+
+  useEffect(() => {
+    if (cuenta.id) {
+      ordenarItems();
+    }
+  }, [cuenta]);
+
+  const ordenarItems = () => {
+    const items = [];
+    const getItems = cuenta.items.filter((items) => items.cancelado === false);
+    getItems.map((item) => {
+      items.push(item);
+    });
+
+    const a1 = items.filter((item) => item.area_nota === "area1");
+    const a2 = items.filter((item) => item.area_nota === "area2");
+    const a3 = items.filter((item) => item.area_nota === "area3");
+    const a4 = items.filter((item) => item.area_nota === "area4");
+
+    // setArea1([...a1]);
+    // setArea2([...a2]);
+    // setArea3([...a3]);
+    setAreas([...a1, ...a2, ...a3, ...a4]);
+  };
+
   return (
     <Modal
       onHide={props.onHide}
@@ -147,30 +173,28 @@ function NotaClienteModal(props) {
               </tr>
             </thead>
             <tbody>
-              {!cuenta.items
-                ? null
-                : cuenta.items.map((item, i) => (
-                    <tr
-                      style={{
-                        display: item.cancelado ? "none" : "",
-                      }}
-                      key={i}
-                    >
-                      <td valign="top">{item.cant}</td>
-                      <td>
-                        <p>{item.name}</p>
-                        <small>
-                          {item.modificadores.map((m, i) => (
-                            <p key={i}>
-                              {">>"}
-                              {m.name} {m.price > 0 ? "$" + m.price : ""}
-                            </p>
-                          ))}
-                        </small>
-                      </td>
-                      <td valign="top">${item.importe}</td>
-                    </tr>
-                  ))}
+              {areas.map((item, i) => (
+                <tr
+                  style={{
+                    display: item.cancelado ? "none" : "",
+                  }}
+                  key={i}
+                >
+                  <td valign="top">{item.cant}</td>
+                  <td>
+                    <p>{item.name}</p>
+                    <small>
+                      {item.modificadores.map((m, i) => (
+                        <p key={i}>
+                          {">>"}
+                          {m.name} {m.price > 0 ? "$" + m.price : ""}
+                        </p>
+                      ))}
+                    </small>
+                  </td>
+                  <td valign="top">${item.importe}</td>
+                </tr>
+              ))}
             </tbody>
           </table>
           <hr></hr>

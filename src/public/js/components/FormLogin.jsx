@@ -24,7 +24,8 @@ function FormLogin() {
         sessionStorage.setItem("operador", res.operador.name);
         sessionStorage.setItem("operadorRol", res.operador.rol);
         commit("ha iniciado sesión", operador.name);
-        window.location.href = window.location.href;
+        // window.location.href = window.location.href;
+        window.location.reload();
       } else {
         setError("acceso denegado");
       }

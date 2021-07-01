@@ -36,31 +36,7 @@ function PuntoVenta() {
 
   useEffect(() => {
     setMedios(otrosMedios);
-    // const name = prompt("nuevo Medio: ");
-    // if (!name) return;
-    // const newMedio = {
-    //   name,
-    // };
-    // createMedio(newMedio, (res) => {
-    //   if (res !== "error") alert("Agragegado con éxito");
-    // });
   }, [otrosMedios]);
-
-  const openCapturaModal = () => {
-    if (cuenta.id) {
-      setAbrirCapturaModal(true);
-    } else {
-      alert("Selecciona una cuenta para continuar".toUpperCase());
-    }
-  };
-
-  const openVista = () => {
-    if (cuenta.id) {
-      setAbrirVistaCuenta(true);
-    } else {
-      alert("Selecciona una cuenta para continuar".toUpperCase());
-    }
-  };
 
   const openNotalLocal = () => {
     if (cuenta.id) {
@@ -75,6 +51,22 @@ function PuntoVenta() {
       setAbrirNotaClienteModal(true);
     } else {
       alert("selecciona una cuenta para continuar".toUpperCase());
+    }
+  };
+
+  const openCapturaModal = () => {
+    if (cuenta.id) {
+      setAbrirCapturaModal(true);
+    } else {
+      alert("Selecciona una cuenta para continuar".toUpperCase());
+    }
+  };
+
+  const openVista = () => {
+    if (cuenta.id) {
+      setAbrirVistaCuenta(true);
+    } else {
+      alert("Selecciona una cuenta para continuar".toUpperCase());
     }
   };
 
@@ -194,6 +186,7 @@ function PuntoVenta() {
     <div
       style={{ height: "628px", overflow: "hidden" }}
       className="d-flex aling-items-start logotipo"
+      tabIndex="0"
     >
       <nav
         style={{ width: "11%" }}

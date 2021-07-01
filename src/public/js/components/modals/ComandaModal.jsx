@@ -179,27 +179,6 @@ function ComandaModal(props) {
               </tr>
             </thead>
             <tbody>
-              {/* {itemsAnexos.map((item, i) => (
-                <tr
-                  style={{
-                    display: item.cancelado ? "none" : "",
-                  }}
-                  key={i}
-                >
-                  <td valign="top">{item.cant}</td>
-                  <td>
-                    <p>{item.name}</p>
-                    <small>
-                      {item.modificadores.map((m, i) => (
-                        <p key={i}>
-                          {">>"}
-                          {m.name} {m.price > 0 ? "$" + m.price : ""}
-                        </p>
-                      ))}
-                    </small>
-                  </td>
-                </tr>
-              ))} */}
               {area1.length === 0 ? null : (
                 <tr>
                   <td colSpan="2">
