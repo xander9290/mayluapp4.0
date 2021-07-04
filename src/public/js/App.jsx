@@ -12,6 +12,10 @@ const { Modal } = ReactBootstrap;
 
 function App() {
   return (
-    <AppProvider>{operadorSession ? <Interfaz /> : <FormLogin />}</AppProvider>
+    <AppProvider>
+      <SettingsProvider>
+        {operadorSession ? <Interfaz /> : <FormLogin />}
+      </SettingsProvider>
+    </AppProvider>
   );
 }

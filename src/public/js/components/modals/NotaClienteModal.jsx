@@ -1,5 +1,6 @@
 function NotaClienteModal(props) {
   const { cuenta } = props;
+  const { settings } = useContext(SettingsContext);
 
   const setVista = () => {
     props.onHide();
@@ -22,7 +23,7 @@ function NotaClienteModal(props) {
                   color: white;
                   border-radius: 6px;
                   text-align: center;
-                  width: 42%;
+                  width: 50%;
                   margin: 0 auto;
                   padding: 8px;
           }
@@ -121,17 +122,58 @@ function NotaClienteModal(props) {
       keyboard="true"
     >
       <div id="comandaVista">
-        <div id="logoContainer">
+        <div
+          style={{
+            display: settings.notaCliente.logoTitle === "" ? "none" : "block",
+          }}
+          id="logoContainer"
+        >
           <div id="logo">
-            <h3 id="logoNameTitle">maylu</h3>
-            <h5 id="logoSubName">sushi</h5>
+            <h3 id="logoNameTitle">{settings.notaCliente.logoTitle}</h3>
+            <h5 id="logoSubName">{settings.notaCliente.logoSubtitle}</h5>
           </div>
         </div>
         <div id="infoEmpresa">
-          <p>manuel mena #3870</p>
-          <p>colonia polanco, c.p. 44960</p>
-          <p id="tel">tel: 3333675283</p>
-          <p id="wsap">whatsapp: 3311327036</p>
+          <p
+            style={{
+              display:
+                settings.notaCliente.infoAddress1 === "" ? "none" : "block",
+            }}
+          >
+            {settings.notaCliente.infoAddress1}
+          </p>
+          <p
+            style={{
+              display:
+                settings.notaCliente.infoAddress2 === "" ? "none" : "block",
+            }}
+          >
+            {settings.notaCliente.infoAddress2}
+          </p>
+          <p
+            style={{
+              display:
+                settings.notaCliente.infoAddress3 === "" ? "none" : "block",
+            }}
+          >
+            {settings.notaCliente.infoAddress3}
+          </p>
+          <p
+            id="tel"
+            style={{
+              display: settings.notaCliente.infoTel === "" ? "none" : "block",
+            }}
+          >
+            tel: {settings.notaCliente.infoTel}
+          </p>
+          <p
+            id="wsap"
+            style={{
+              display: settings.notaCliente.infoWapp === "" ? "none" : "block",
+            }}
+          >
+            whatsapp: {settings.notaCliente.infoWapp}
+          </p>
         </div>
         <div id="infoCuenta">
           <strong>
@@ -234,9 +276,29 @@ function NotaClienteModal(props) {
           </small>
           <hr></hr>
           <div id="footer">
-            <p>**gracias por su compra**</p>
-            <small>
-              <p>consulte nuestro menú por whatsapp</p>
+            <p
+              style={{
+                display:
+                  settings.notaCliente.footerMsg1 === "" ? "none" : "block",
+              }}
+            >
+              {settings.notaCliente.footerMsg1}
+            </p>
+            <small
+              style={{
+                display:
+                  settings.notaCliente.footerMsg2 === "" ? "none" : "block",
+              }}
+            >
+              <p>{settings.notaCliente.footerMsg2}</p>
+            </small>
+            <small
+              style={{
+                display:
+                  settings.notaCliente.footerMsg3 === "" ? "none" : "block",
+              }}
+            >
+              <p>{settings.notaCliente.footerMsg3}</p>
             </small>
           </div>
         </div>

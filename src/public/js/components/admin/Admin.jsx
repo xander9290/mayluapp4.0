@@ -88,9 +88,7 @@ function Admin() {
           </div>
         </div>
         <div className="tab-pane p-1" id="general">
-          <div className="row">
-            <General />
-          </div>
+          <General />
         </div>
       </div>
     </div>
