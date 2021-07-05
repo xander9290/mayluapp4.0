@@ -9,21 +9,38 @@ function VistaCuenta(props) {
   const cancelarItem = (idx) => {
     if (!window.confirm("Confrimar Acción")) return;
     const list = cuenta.items;
-    let cant = list[idx].cant;
+    const cant = list[idx].cant;
     if (cant > 1) {
-      cant = window.prompt(
+      const _cant = window.prompt(
         "CANTIDAD A CANCELAR DE " + cant + " " + list[idx].name.toUpperCase(),
         cant
       );
-      if (cant === null) return;
-      const nvaCant = list[idx].cant - parseInt(cant);
+      if (_cant === null) return;
+      const nvaCant = list[idx].cant - parseInt(_cant);
       list[idx].cant = nvaCant;
       const price = list[idx].price;
       const nvoImporte = price * nvaCant;
       list[idx].importe = nvoImporte;
+      let motivo = prompt("motivo de la cancelación".toUpperCase());
+      if (motivo === null) motivo = "sin especificar";
+      if (cant !== parseInt(_cant)) {
+        const productoCancelado = {
+          ...list[idx],
+          motivo,
+          cancelado: true,
+          cant: parseInt(_cant),
+          orden: cuenta.orden,
+          hora: fechaISO(),
+        };
+        list.push(productoCancelado);
+      }
+      list[idx].motivo = motivo;
+      list[idx].hora = fechaISO();
       if (nvaCant === 0) {
         list[idx].cancelado = true;
         list[idx].cant = parseInt(cant);
+        list[idx].motivo = motivo;
+        list[idx].hora = fechaISO();
       }
       const { importe, totalConDscto } = procesarItems(list, cuenta.dscto);
       const newCta = {
@@ -36,6 +53,9 @@ function VistaCuenta(props) {
         console.log(res);
       });
     } else {
+      let motivo = prompt("motivo de la cancelación".toUpperCase());
+      if (motivo === null) motivo = "sin especificar";
+      list[idx].motivo = motivo;
       list[idx].cancelado = true;
       const { importe, totalConDscto } = procesarItems(list, cuenta.dscto);
       const newCta = {
@@ -139,11 +159,11 @@ function VistaCuenta(props) {
           <table className="table table-bordered border-dark">
             <thead>
               <tr className="text-uppercase text-center bg-secondary text-light">
-                {cuenta.estado !== "abierto" ? null : (
-                  <th scope="col">
+                <th scope="col">
+                  {cuenta.estado !== "abierto" ? null : (
                     <i className="bi bi-x-circle"></i>
-                  </th>
-                )}
+                  )}
+                </th>
                 <th scope="col">
                   <i className="bi bi-printer"></i>
                 </th>
@@ -168,34 +188,38 @@ function VistaCuenta(props) {
                       itemsIdx === i ? "bg-info" : ""
                     } ${item.cancelado ? "bg-danger" : ""} `}
                   >
-                    {cuenta.impreso === true ? null : (
-                      <th scope="row" className="text-center">
-                        <button
-                          disabled={item.cancelado ? true : false}
-                          onClick={() => cancelarItem(i)}
-                          title="CANCELAR"
-                          type="button"
-                          className="btn btn-danger btn-sm"
-                        >
-                          <i className="bi bi-x-circle"></i>
-                        </button>
-                      </th>
-                    )}
+                    <th scope="row" className="text-center">
+                      <button
+                        disabled={
+                          item.cancelado
+                            ? true
+                            : false || cuenta.impreso
+                            ? true
+                            : false
+                        }
+                        onClick={() => cancelarItem(i)}
+                        title="CANCELAR"
+                        type="button"
+                        className="btn btn-danger btn-sm"
+                      >
+                        <i className="bi bi-x-circle"></i>
+                      </button>
+                    </th>
                     <th scope="row" className="text-center">
                       {item.impreso && <i className="bi bi-check-square"></i>}
                     </th>
                     <th scope="row" className="text-center">
-                      {
-                        item.cancelado?null:(<button
-                          disabled={cuenta.impreso?true:false}
-                            onClick={() => descontarProducto(i)}
-                            title="DESCONTAR"
-                            type="button"
-                            className="btn btn-primary btn-sm"
-                          >
-                            -%
-                          </button>)
-                      }
+                      {item.cancelado ? null : (
+                        <button
+                          disabled={cuenta.impreso ? true : false}
+                          onClick={() => descontarProducto(i)}
+                          title="DESCONTAR"
+                          type="button"
+                          className="btn btn-primary btn-sm"
+                        >
+                          -%
+                        </button>
+                      )}
                     </th>
                     <td className="text-center fs-5">{item.cant}</td>
                     <td>

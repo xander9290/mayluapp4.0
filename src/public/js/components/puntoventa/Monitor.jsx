@@ -19,6 +19,7 @@ function Monitor(props) {
   });
   const [descuentos, setDescuentos] = useState([]);
   const [cancelados, setCancelados] = useState([]);
+  const [productosCancelados, setProductosCancelados] = useState([]);
   // CAJA
   const [caja, setCaja] = useState({
     gastos: { total: 0, qty: [] },
@@ -104,6 +105,7 @@ function Monitor(props) {
   // PRODUCTOS
   const procesarProductos = (ctas) => {
     const _items = [];
+    let itemsCancelados = [];
     const list = [];
 
     // se vacian los productos vendidos
@@ -114,6 +116,9 @@ function Monitor(props) {
     });
     // se obtienen los productos contables
     const itemsContables = _items.filter((item) => item.contable === true);
+    // se obtienen los productos cancelados
+    itemsCancelados = itemsContables.filter((item) => item.cancelado === true);
+    setProductosCancelados(itemsCancelados);
     // se filtran los productos cancelados
     const itemsVisibles = itemsContables.filter(
       (item) => item.cancelado === false
@@ -460,6 +465,7 @@ function Monitor(props) {
         onHide={() => setAbrirResumenModal(false)}
         servicios={servicios}
         cancelados={cancelados}
+        productosCancelados={productosCancelados}
         descuentos={descuentos}
         caja={caja}
         tarjetas={tarjetas}

@@ -1,6 +1,13 @@
 function ResumenModal(props) {
-  const { servicios, cancelados, descuentos, caja, tarjetas, otroMedio } =
-    props;
+  const {
+    servicios,
+    cancelados,
+    productosCancelados,
+    descuentos,
+    caja,
+    tarjetas,
+    otroMedio,
+  } = props;
   const { commit } = useContext(AppContext);
 
   const setImpresion = () => {
@@ -175,6 +182,29 @@ function ResumenModal(props) {
                   </p>
                   <p style={{ margin: "0", padding: "0" }}>
                     <small>{formatoFecha(cuenta.createdAt)[0]}</small>
+                  </p>
+                </h4>
+                <p>-------------------------------------</p>
+              </div>
+            ))}
+          </div>
+          <div
+            style={{
+              display: productosCancelados.length > 0 ? "block" : "none",
+            }}
+          >
+            <hr></hr>
+            <h3>productos cancelados</h3>
+            {productosCancelados.map((p, i) => (
+              <div key={i * 7}>
+                <h4>
+                  <p>
+                    {p.cant} {p.name}
+                  </p>
+                  <p>-orden: {p.orden && p.orden}</p>
+                  <p>-motivo: {p.motivo && p.motivo}</p>
+                  <p style={{ margin: "0", padding: "0" }}>
+                    <small>{p.hora && formatoFecha(p.hora)[0]}</small>
                   </p>
                 </h4>
                 <p>-------------------------------------</p>

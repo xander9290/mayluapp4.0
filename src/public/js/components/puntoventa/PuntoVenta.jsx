@@ -137,10 +137,13 @@ function PuntoVenta() {
 
   const openEditarCliente = () => {
     if (!cuenta.id) {
-      alert("selecciona una cuenta para continuar".toUpperCase());
+      alert("selecciona o abre una cuenta para continuar".toUpperCase());
       return;
     }
-    if (cuenta.impreso) return;
+    if (cuenta.impreso) {
+      alert("no se puede modificar; cuenta impresa".toUpperCase());
+      return;
+    }
     if (cuenta.servicio !== "domicilio") {
       alert("no disponible para este servicio".toUpperCase());
       return;
@@ -150,10 +153,13 @@ function PuntoVenta() {
 
   const openEditarTorreta = () => {
     if (!cuenta.id) {
-      alert("selecciona una cuenta para continuar".toUpperCase());
+      alert("selecciona o abre una cuenta para continuar".toUpperCase());
       return;
     }
-    if (cuenta.impreso) return;
+    if (cuenta.impreso) {
+      alert("no se puede modificar; cuenta impresa".toUpperCase());
+      return;
+    }
     if (cuenta.servicio === "domicilio") {
       alert("no disponible para este servicio".toUpperCase());
       return;
@@ -162,7 +168,11 @@ function PuntoVenta() {
     if (cuenta.servicio === "pll") setAbrirParallevarModal(true);
   };
 
-  const openInfoCuenta = () => {
+  const openInfoDomicilio = () => {
+    if (cuenta.cliente.tel === "") {
+      alert("no hay información para mostrar".toUpperCase());
+      return;
+    }
     if (cuenta.id) {
       setAbrirInfoModal(true);
     } else {
@@ -427,12 +437,12 @@ function PuntoVenta() {
             <li className="text-center">
               <a
                 onClick={(e) => {
-                  e.preventDefault(), openInfoCuenta();
+                  e.preventDefault(), openInfoDomicilio();
                 }}
                 className="dropdown-item text-uppercase h4 py-4"
                 href="#"
               >
-                Ver Info
+                Info domicilio
               </a>
             </li>
             <li className="text-center">
