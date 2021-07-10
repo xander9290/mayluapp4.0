@@ -22,7 +22,7 @@ function DetalladoModal(props) {
                 width: 100%;
             }
             table tbody tr td {
-                font-size: 18px;
+                font-size: 17px;
             }
             table tbody tr {
                 padding: 0;
@@ -110,7 +110,7 @@ function DetalladoModal(props) {
             </tbody>
           </table>
           <hr></hr>
-          <h3>Total de ventas: ${total}.00</h3>
+          <h3>Total de venta: ${total}</h3>
         </div>
       </Modal.Body>
     </Modal>

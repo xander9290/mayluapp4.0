@@ -52,7 +52,7 @@ function NotalLocalModal(props) {
                     width: 100%;
                 }
                 table tbody tr td {
-                    font-size: 18px;
+                    font-size: 17px;
                 }
                 table tbody tr {
                     padding: 0;

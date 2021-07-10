@@ -60,11 +60,11 @@ function Monitor(props) {
   // TRIGGER BUSQUEDA
   const handleSubmitFecha = (e) => {
     e.preventDefault();
-    getAllCuentas()
+    getAllCuentas(fecha.fecha1, fecha.fecha2)
       .then((data) => {
         procesarDetallado(data);
       })
-      .catch((err) => console.log(err));
+      .catch((err) => console.error(err));
 
     const cjs = cajas.filter((caja) => {
       return caja.fecha >= fecha.fecha1 && caja.fecha <= fecha.fecha2;
@@ -73,11 +73,11 @@ function Monitor(props) {
   };
 
   const procesarDetallado = (data) => {
-    const result = data.filter((cuenta) => {
-      return cuenta.fecha >= fecha.fecha1 && cuenta.fecha <= fecha.fecha2;
-    });
-    if (result.length > 0) {
-      procesarCuentas(result);
+    // const result = data.filter((cuenta) => {
+    //   return cuenta.fecha >= fecha.fecha1 && cuenta.fecha <= fecha.fecha2;
+    // });
+    if (data.length > 0) {
+      procesarCuentas(data);
     } else {
       alert("no se encontraron datos".toUpperCase());
       procesarCuentas([]);
@@ -281,7 +281,9 @@ function Monitor(props) {
   };
 
   const procesarOtrosMedios = (ctas) => {
-    const cuentasOtros = ctas.filter((cuenta) => cuenta.otro_medio[1] > 0);
+    const cuentasOtros = ctas.filter((cuenta) => {
+      if (cuenta.otro_medio) return cuenta.otro_medio[1] > 0;
+    });
     let totalOtros = 0,
       listaMedios = [],
       list = [];
@@ -481,8 +483,8 @@ function Monitor(props) {
   );
 }
 
-const getAllCuentas = async () => {
-  const res = await fetch("/cuentas");
+const getAllCuentas = async (f1, f2) => {
+  const res = await fetch(`/cuentas/fecha1/${f1}/fecha2/${f2}`);
   if (!res.ok) {
     const { url, status, statusText } = res;
     throw Error(`${status} ${statusText} ${url}`);

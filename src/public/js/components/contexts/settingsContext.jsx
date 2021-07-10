@@ -1,13 +1,11 @@
 const SettingsContext = createContext();
 
 function SettingsProvider({ children }) {
-  const { settings, changeNotaNegocioSettings, changeNotaClienteSettings } =
-    useTickets();
+  const { settings, changeSettings } = useTickets();
 
   const data = {
     settings,
-    changeNotaNegocioSettings,
-    changeNotaClienteSettings,
+    changeSettings,
   };
 
   return (

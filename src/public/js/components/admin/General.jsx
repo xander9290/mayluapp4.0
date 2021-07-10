@@ -4,18 +4,155 @@ function General() {
       <div className="col-md-3">
         <MediosDePago />
       </div>
-      <div className="col-md-3">
+      <div className="col-md-4">
         <NotaNegocio />
       </div>
-      <div className="col-md-4">
-        <NotaCliente />
-      </div>
+      <div className="col-md-3"></div>
     </div>
   );
 }
 
+function NotaResumenVenta() {
+  const { changeSettings } = useContext(SettingsContext);
+
+  const [values, setValues] = useState({
+    resumenServicios: true,
+    ventaTotal: true,
+    movimientosCaja: true,
+    pagosTarjeta: true,
+    otrosMedios: true,
+    totalEfectivo: true,
+    descuentoCuentas: true,
+    canceladoCuentas: true,
+    canceladoProductos: true,
+  });
+
+  useEffect(() => {
+    if (localStorage.getItem("settings")) {
+      const parseSettings = JSON.parse(localStorage.getItem("settings"));
+      setValues({ ...parseSettings.resumenVenta });
+    }
+  }, []);
+
+  const handleValues = (e) => {
+    setValues({ ...values, [e.target.name]: e.target.checked });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!confirm("confirmar cambios".toUpperCase())) return;
+    const newSettings = {
+      resumenVenta: values,
+    };
+    changeSettings(newSettings);
+  };
+
+  return (
+    <form id="resumen" onSubmit={handleSubmit}>
+      <fieldset>
+        <legend>Resumen de Venta</legend>
+        <div className="mb-2">
+          <div className="form-check form-check-inline form-switch">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              name="resumenServicios"
+              checked={values.resumenServicios}
+              onChange={handleValues}
+            />
+            <label>Servicios</label>
+          </div>
+          <div className="form-check form-check-inline form-switch">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              name="ventaTotal"
+              checked={values.ventaTotal}
+              onChange={handleValues}
+            />
+            <label>V-Total</label>
+          </div>
+          <div className="form-check form-check-inline form-switch">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              name="movimientosCaja"
+              checked={values.movimientosCaja}
+              onChange={handleValues}
+            />
+            <label>Mov. Caja</label>
+          </div>
+          <div className="form-check form-check-inline form-switch">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              name="pagosTarjeta"
+              checked={values.pagosTarjeta}
+              onChange={handleValues}
+            />
+            <label>Tarjetas</label>
+          </div>
+          <div className="form-check form-check-inline form-switch">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              name="otrosMedios"
+              checked={values.otrosMedios}
+              onChange={handleValues}
+            />
+            <label>Otros M.</label>
+          </div>
+          <div className="form-check form-check-inline form-switch">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              name="totalEfectivo"
+              checked={values.totalEfectivo}
+              onChange={handleValues}
+            />
+            <label>T-Efectivo</label>
+          </div>
+          <div className="form-check form-check-inline form-switch">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              name="descuentoCuentas"
+              checked={values.descuentoCuentas}
+              onChange={handleValues}
+            />
+            <label>Descuentos</label>
+          </div>
+          <div className="form-check form-check-inline form-switch">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              name="canceladoCuentas"
+              checked={values.canceladoCuentas}
+              onChange={handleValues}
+            />
+            <label>Órdenes (X)</label>
+          </div>
+          <div className="form-check form-check-inline form-switch">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              name="canceladoProductos"
+              checked={values.canceladoProductos}
+              onChange={handleValues}
+            />
+            <label>Productos (X)</label>
+          </div>
+        </div>
+      </fieldset>
+      <button className="btn btn-primary btn-sm mb-3" type="submit">
+        Guardar
+      </button>
+    </form>
+  );
+}
+
 function NotaCliente() {
-  const { changeNotaClienteSettings } = useContext(SettingsContext);
+  const { changeSettings } = useContext(SettingsContext);
 
   const [values, setValues] = useState({
     logoTitle: "",
@@ -44,132 +181,125 @@ function NotaCliente() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!confirm("confirmar cambios".toUpperCase())) return;
-    changeNotaClienteSettings(values);
+    const newSettings = {
+      notaCliente: values,
+    };
+    changeSettings(newSettings);
   };
 
   return (
-    <div className="card text-dark">
-      <div className="card-header">
-        <h4 className="card-title">Tickets</h4>
-      </div>
-      <div
-        style={{ height: "400px", overflowY: "scroll" }}
-        className="card-body py-0"
-      >
-        <form onSubmit={handleSubmit}>
-          <fieldset>
-            <legend>Nota Cliente</legend>
-            <div className="mb-2">
-              <h6>Logotipo</h6>
-              <label>Título de logotipo</label>
-              <input
-                type="text"
-                className="form-control"
-                name="logoTitle"
-                value={values.logoTitle}
-                onChange={handleValues}
-                autoComplete="off"
-              />
-              <label>Subtítulo de logotipo</label>
-              <input
-                type="text"
-                className="form-control"
-                name="logoSubtitle"
-                value={values.logoSubtitle}
-                onChange={handleValues}
-                autoComplete="off"
-              />
-            </div>
-            <div className="mb-2">
-              <h6>Dirección y Contacto</h6>
-              <label>Dirección 1</label>
-              <input
-                type="text"
-                className="form-control"
-                name="infoAddress1"
-                value={values.infoAddress1}
-                onChange={handleValues}
-                autoComplete="off"
-              />
-              <label>Dirección 2</label>
-              <input
-                type="text"
-                className="form-control"
-                name="infoAddress2"
-                value={values.infoAddress2}
-                onChange={handleValues}
-                autoComplete="off"
-              />
-              <label>Dirección 3</label>
-              <input
-                type="text"
-                className="form-control"
-                name="infoAddress3"
-                value={values.infoAddress3}
-                onChange={handleValues}
-                autoComplete="off"
-              />
-              <label>Teléfono(s)</label>
-              <input
-                type="text"
-                className="form-control"
-                name="infoTel"
-                value={values.infoTel}
-                onChange={handleValues}
-                autoComplete="off"
-              />
-              <label>WhatsApp</label>
-              <input
-                type="text"
-                className="form-control"
-                name="infoWapp"
-                value={values.infoWapp}
-                onChange={handleValues}
-                autoComplete="off"
-              />
-            </div>
-            <div className="mb-2">
-              <h6>Pie de Nota</h6>
-              <label>Leyenda 1</label>
-              <input
-                type="text"
-                className="form-control"
-                name="footerMsg1"
-                value={values.footerMsg1}
-                onChange={handleValues}
-                autoComplete="off"
-              />
-              <label>Leyenda 2</label>
-              <input
-                type="text"
-                className="form-control"
-                name="footerMsg2"
-                value={values.footerMsg2}
-                onChange={handleValues}
-                autoComplete="off"
-              />
-              <label>Leyenda 3</label>
-              <input
-                type="text"
-                className="form-control"
-                name="footerMsg3"
-                value={values.footerMsg3}
-                onChange={handleValues}
-                autoComplete="off"
-              />
-            </div>
-          </fieldset>
-          <button type="submit" className="btn btn-primary btn-sm mb-3">
-            Guardar
-          </button>
-        </form>
-      </div>
-    </div>
+    <form id="cliente" onSubmit={handleSubmit}>
+      <fieldset>
+        <legend>Nota Cliente</legend>
+        <div className="mb-2">
+          <h6>Logotipo</h6>
+          <label>Título de logotipo</label>
+          <input
+            type="text"
+            className="form-control"
+            name="logoTitle"
+            value={values.logoTitle}
+            onChange={handleValues}
+            autoComplete="off"
+          />
+          <label>Subtítulo de logotipo</label>
+          <input
+            type="text"
+            className="form-control"
+            name="logoSubtitle"
+            value={values.logoSubtitle}
+            onChange={handleValues}
+            autoComplete="off"
+          />
+        </div>
+        <div className="mb-2">
+          <h6>Dirección y Contacto</h6>
+          <label>Dirección 1</label>
+          <input
+            type="text"
+            className="form-control"
+            name="infoAddress1"
+            value={values.infoAddress1}
+            onChange={handleValues}
+            autoComplete="off"
+          />
+          <label>Dirección 2</label>
+          <input
+            type="text"
+            className="form-control"
+            name="infoAddress2"
+            value={values.infoAddress2}
+            onChange={handleValues}
+            autoComplete="off"
+          />
+          <label>Dirección 3</label>
+          <input
+            type="text"
+            className="form-control"
+            name="infoAddress3"
+            value={values.infoAddress3}
+            onChange={handleValues}
+            autoComplete="off"
+          />
+          <label>Teléfono(s)</label>
+          <input
+            type="text"
+            className="form-control"
+            name="infoTel"
+            value={values.infoTel}
+            onChange={handleValues}
+            autoComplete="off"
+          />
+          <label>WhatsApp</label>
+          <input
+            type="text"
+            className="form-control"
+            name="infoWapp"
+            value={values.infoWapp}
+            onChange={handleValues}
+            autoComplete="off"
+          />
+        </div>
+        <div className="mb-2">
+          <h6>Pie de Nota</h6>
+          <label>Leyenda 1</label>
+          <input
+            type="text"
+            className="form-control"
+            name="footerMsg1"
+            value={values.footerMsg1}
+            onChange={handleValues}
+            autoComplete="off"
+          />
+          <label>Leyenda 2</label>
+          <input
+            type="text"
+            className="form-control"
+            name="footerMsg2"
+            value={values.footerMsg2}
+            onChange={handleValues}
+            autoComplete="off"
+          />
+          <label>Leyenda 3</label>
+          <input
+            type="text"
+            className="form-control"
+            name="footerMsg3"
+            value={values.footerMsg3}
+            onChange={handleValues}
+            autoComplete="off"
+          />
+        </div>
+      </fieldset>
+      <button type="submit" className="btn btn-primary btn-sm mb-3">
+        Guardar
+      </button>
+    </form>
   );
 }
 
 function NotaNegocio() {
-  const { changeNotaNegocioSettings } = useContext(SettingsContext);
+  const { changeSettings } = useContext(SettingsContext);
 
   const [checkNegocioAreas, setCheckNegocioAreas] = useState({
     area1: true,
@@ -213,19 +343,50 @@ function NotaNegocio() {
     e.preventDefault();
     if (!confirm("confirmar cambios".toUpperCase())) return;
     const newSettings = {
-      areasVisibles: checkNegocioAreas,
-      totalInfo: checkNegocioTotal,
+      notaNegocio: {
+        areasVisibles: checkNegocioAreas,
+        totalInfo: checkNegocioTotal,
+      },
     };
-    changeNotaNegocioSettings(newSettings);
+    changeSettings(newSettings);
   };
 
   return (
     <div className="card text-dark">
       <div className="card-header">
         <h4 className="card-title">Tickets</h4>
+        <div
+          style={{ overflowX: "auto" }}
+          id="tickets"
+          className="list-group list-group-horizontal"
+        >
+          <a href="#cliente" className="list-group-item list-group-item-action">
+            Cliente
+          </a>
+          <a href="#negocio" className="list-group-item list-group-item-action">
+            Negocio
+          </a>
+          <a href="#resumen" className="list-group-item list-group-item-action">
+            Resumen
+          </a>
+          <a
+            href="#detallado"
+            className="list-group-item list-group-item-action"
+          >
+            Detallado
+          </a>
+        </div>
       </div>
-      <div className="card-body py-0">
-        <form onSubmit={handleSubmitNegocio}>
+      <div
+        data-bs-spy="scroll"
+        data-bs-offset="0"
+        data-bs-target="#tickets"
+        className="card-body py-0"
+        style={{ height: "460px", overflowY: "scroll" }}
+        tabIndex="0"
+      >
+        <NotaCliente />
+        <form id="negocio" onSubmit={handleSubmitNegocio}>
           <fieldset>
             <legend>Nota Negocio</legend>
             <div className="mb-2">
@@ -339,6 +500,7 @@ function NotaNegocio() {
             Guardar
           </button>
         </form>
+        <NotaResumenVenta />
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 const initialCuenta = {
-  folio: null,
-  orden: null,
+  folio: 0,
+  orden: 0,
   torreta: "",
   personas: 1,
   servicio: "",
@@ -31,6 +31,7 @@ const initialCuenta = {
   createdBy: operadorSession,
   closedAt: null,
   time: "",
+  obs: "",
   fecha: fechaActual(Date.now()),
   id: null,
 };
