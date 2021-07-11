@@ -52,7 +52,7 @@ function NotaClienteModal(props) {
                     width: 100%;
                 }
                 table tbody tr td {
-                    font-size: 17px;
+                    font-size: 18px;
                 }
                 table tbody tr {
                     padding: 0;
@@ -260,15 +260,11 @@ function NotaClienteModal(props) {
                 Pago con tarjeta +{cuenta.comision && cuenta.comision[0]}%: $
                 {cuenta.comision && cuenta.comision[2]}
               </li>
-              {cuenta.otro_medio && (
-                <li
-                  style={{
-                    display: cuenta.otro_medio[1] > 0 ? "block" : "none",
-                  }}
-                >
-                  {cuenta.otro_medio[0]}: ${cuenta.otro_medio[1]}
-                </li>
-              )}
+              <li
+                style={{ display: cuenta.otro_medio[1] > 0 ? "block" : "none" }}
+              >
+                {cuenta.otro_medio[0]}: ${cuenta.otro_medio[1]}
+              </li>
               <li style={{ display: cuenta.cambio > 0 ? "block" : "none" }}>
                 cambio: ${cuenta.cambio}
               </li>

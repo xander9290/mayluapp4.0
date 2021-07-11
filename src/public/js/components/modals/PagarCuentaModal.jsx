@@ -9,7 +9,7 @@ function PagarCuentaModal(props) {
     efectivo: 0,
     tarjeta: 0,
     otros: 0,
-    medioName: "",
+    medioName: null,
   });
   const [comision, setComision] = useState({
     porcentaje: 0,
@@ -72,7 +72,7 @@ function PagarCuentaModal(props) {
 
     const medios = [values.medioName, parseInt(values.otros)];
 
-    if (values.otros > 0 && values.medioName === "") {
+    if (values.otros > 0 && values.medioName === null) {
       setError("no ha especificado medio de pago".toUpperCase());
       return;
     }

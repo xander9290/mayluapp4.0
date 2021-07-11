@@ -119,40 +119,38 @@ function VistaCuenta(props) {
     >
       <div className="card text-dark">
         <div className="card-header">
-          <div className="d-flex justify-content-start">
-            <h5 className="card-title">
-              Detalle de la Orden {cuenta.orden} {cuenta.servicio}
-            </h5>
-          </div>
-          <div className="d-flex justify-content-between">
-            <ul className="list-group list-group-horizontal text-uppercase">
-              <li className="list-group-item">
-                <span className="fw-bolder">torreta: </span>
-                {cuenta.torreta}
-              </li>
-              <li className="list-group-item">
-                <span className="fw-bolder">folio: </span>
-                {cuenta.folio}
-              </li>
+          <h5 className="card-title">
+            Detalle de la Orden {cuenta.orden} {cuenta.servicio}
+          </h5>
+          <ul className="list-group list-group-horizontal text-uppercase">
+            <li className="list-group-item">
+              <span className="fw-bolder">torreta: </span>
+              {cuenta.torreta}
+            </li>
+            <li className="list-group-item">
+              <span className="fw-bolder">folio: </span>
+              {cuenta.folio}
+            </li>
+            <li className="list-group-item px-1">
+              <span className="fw-bolder">apertura: </span>
+              {formatoFecha(cuenta.createdAt)[1]}
+            </li>
+            {cuenta.closedAt && (
               <li className="list-group-item px-1">
-                <span className="fw-bolder">apertura: </span>
-                {formatoFecha(cuenta.createdAt)[1]}
+                <span className="fw-bolder">cierre: </span>
+                {formatoFecha(cuenta.closedAt)[1]}
               </li>
-              {cuenta.closedAt && (
-                <li className="list-group-item px-1">
-                  <span className="fw-bolder">cierre: </span>
-                  {formatoFecha(cuenta.closedAt)[1]}
-                </li>
-              )}
-              <li className="list-group-item">
-                <span className="fw-bolder">operador: </span>
-                {cuenta.createdBy}
-              </li>
-            </ul>
-            <button onClick={props.onHide} className="btn btn-danger">
-              CERRAR
-            </button>
-          </div>
+            )}
+            <li className="list-group-item">
+              <span className="fw-bolder">operador: </span>
+              {cuenta.createdBy}
+            </li>
+            <li className="list-group-item border-0">
+              <button onClick={props.onHide} className="btn btn-danger">
+                CERRAR
+              </button>
+            </li>
+          </ul>
         </div>
         <div
           style={{ height: "465px", overflow: "scroll", whiteSpace: "nowrap" }}
@@ -266,10 +264,6 @@ function VistaCuenta(props) {
                 ))}
             </tbody>
           </table>
-        </div>
-        <div className="alert alert-dark p-2 mb-1" role="alert">
-          <span className="fw-bold">OBS: </span>
-          {cuenta.obs && cuenta.obs}
         </div>
         <div className="card-footer p-2 d-flex justify-content-end">
           {cuenta.estado !== "abierto" ? null : (

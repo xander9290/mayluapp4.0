@@ -1,6 +1,12 @@
 function CapturaModal(props) {
-  const { cuenta, categorias, subcategorias, productos, editarCuenta, setIdx } =
-    useContext(AppContext);
+  const {
+    cuenta,
+    categorias,
+    subcategorias,
+    productos,
+    editarCuenta,
+    setIdx,
+  } = useContext(AppContext);
   // const { cuenta } = props;
 
   const [obs, setObs] = useState({ obs: "" });
@@ -392,7 +398,7 @@ function CapturaModal(props) {
             <div className="card-body p-0 d-flex flex-column justify-content-between">
               <div
                 ref={scrollRef}
-                style={{ height: "380px", overflow: "scroll" }}
+                style={{ height: "379px", overflow: "scroll" }}
               >
                 <table className="table table-sm table-bordered border-dark">
                   <thead>
@@ -522,7 +528,7 @@ function CapturaModal(props) {
               </div>
             </div>
             <div
-              style={{ height: "390px", overflowY: "auto" }}
+              style={{ height: "374px", overflowY: "auto" }}
               className="card-body p-1"
             >
               <div>

@@ -27,17 +27,6 @@ const initialSettings = {
     footerMsg2: "",
     footerMsg3: "",
   },
-  resumenVenta: {
-    resumenServicios: true,
-    ventaTotal: true,
-    movimientosCaja: true,
-    pagosTarjeta: true,
-    otrosMedios: true,
-    totalEfectivo: true,
-    descuentoCuentas: true,
-    canceladoCuentas: true,
-    canceladoProductos: true,
-  },
 };
 function useTickets() {
   const [settings, setSettings] = useState(initialSettings);
@@ -55,15 +44,28 @@ function useTickets() {
     }
   };
 
-  const changeSettings = (newSettings) => {
+  const changeNotaClienteSettings = (newSettings) => {
     const parseSettings = JSON.parse(localStorage.getItem("settings"));
     const newData = {
       ...parseSettings,
-      ...newSettings,
+      notaCliente: newSettings,
     };
     localStorage.setItem("settings", JSON.stringify(newData));
     setSettings({ ...newData });
   };
 
-  return { settings, changeSettings };
+  const changeNotaNegocioSettings = (newSettings) => {
+    const parseSettings = JSON.parse(localStorage.getItem("settings"));
+    const newData = {
+      ...parseSettings,
+      notaNegocio: {
+        areasVisibles: newSettings.areasVisibles,
+        totalInfo: newSettings.totalInfo,
+      },
+    };
+    localStorage.setItem("settings", JSON.stringify(newData));
+    setSettings({ ...newData });
+  };
+
+  return { settings, changeNotaNegocioSettings, changeNotaClienteSettings };
 }
