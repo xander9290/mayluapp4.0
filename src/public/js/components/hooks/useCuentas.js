@@ -1,6 +1,6 @@
 const initialCuenta = {
-  folio: null,
-  orden: null,
+  folio: 1,
+  orden: 1,
   torreta: "",
   personas: 1,
   servicio: "",

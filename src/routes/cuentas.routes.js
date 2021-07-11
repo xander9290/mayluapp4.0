@@ -32,8 +32,12 @@ router.post("/cuentas", (req, res) => {
   res.json(newCuenta);
 });
 
-router.get("/cuentas", (req, res) => {
-  const cuentas = getConnection().get("cuentas").value();
+router.get("/cuentas/fecha1/:gte/fecha2/:lte", (req, res) => {
+  const { gte, lte } = req.params;
+  const cuentas = getConnection()
+    .get("cuentas")
+    .filter((cuenta) => cuenta.fecha >= gte && cuenta.fecha <= lte)
+    .value();
   res.json(cuentas);
 });
 

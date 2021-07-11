@@ -4,11 +4,8 @@ function General() {
       <div className="col-md-3">
         <MediosDePago />
       </div>
-      <div className="col-md-3">
-        <NotaNegocio />
-      </div>
       <div className="col-md-4">
-        <NotaCliente />
+        <NotaNegocio />
       </div>
     </div>
   );
@@ -48,123 +45,113 @@ function NotaCliente() {
   };
 
   return (
-    <div className="card text-dark">
-      <div className="card-header">
-        <h4 className="card-title">Tickets</h4>
-      </div>
-      <div
-        style={{ height: "400px", overflowY: "scroll" }}
-        className="card-body py-0"
-      >
-        <form onSubmit={handleSubmit}>
-          <fieldset>
-            <legend>Nota Cliente</legend>
-            <div className="mb-2">
-              <h6>Logotipo</h6>
-              <label>Título de logotipo</label>
-              <input
-                type="text"
-                className="form-control"
-                name="logoTitle"
-                value={values.logoTitle}
-                onChange={handleValues}
-                autoComplete="off"
-              />
-              <label>Subtítulo de logotipo</label>
-              <input
-                type="text"
-                className="form-control"
-                name="logoSubtitle"
-                value={values.logoSubtitle}
-                onChange={handleValues}
-                autoComplete="off"
-              />
-            </div>
-            <div className="mb-2">
-              <h6>Dirección y Contacto</h6>
-              <label>Dirección 1</label>
-              <input
-                type="text"
-                className="form-control"
-                name="infoAddress1"
-                value={values.infoAddress1}
-                onChange={handleValues}
-                autoComplete="off"
-              />
-              <label>Dirección 2</label>
-              <input
-                type="text"
-                className="form-control"
-                name="infoAddress2"
-                value={values.infoAddress2}
-                onChange={handleValues}
-                autoComplete="off"
-              />
-              <label>Dirección 3</label>
-              <input
-                type="text"
-                className="form-control"
-                name="infoAddress3"
-                value={values.infoAddress3}
-                onChange={handleValues}
-                autoComplete="off"
-              />
-              <label>Teléfono(s)</label>
-              <input
-                type="text"
-                className="form-control"
-                name="infoTel"
-                value={values.infoTel}
-                onChange={handleValues}
-                autoComplete="off"
-              />
-              <label>WhatsApp</label>
-              <input
-                type="text"
-                className="form-control"
-                name="infoWapp"
-                value={values.infoWapp}
-                onChange={handleValues}
-                autoComplete="off"
-              />
-            </div>
-            <div className="mb-2">
-              <h6>Pie de Nota</h6>
-              <label>Leyenda 1</label>
-              <input
-                type="text"
-                className="form-control"
-                name="footerMsg1"
-                value={values.footerMsg1}
-                onChange={handleValues}
-                autoComplete="off"
-              />
-              <label>Leyenda 2</label>
-              <input
-                type="text"
-                className="form-control"
-                name="footerMsg2"
-                value={values.footerMsg2}
-                onChange={handleValues}
-                autoComplete="off"
-              />
-              <label>Leyenda 3</label>
-              <input
-                type="text"
-                className="form-control"
-                name="footerMsg3"
-                value={values.footerMsg3}
-                onChange={handleValues}
-                autoComplete="off"
-              />
-            </div>
-          </fieldset>
-          <button type="submit" className="btn btn-primary btn-sm mb-3">
-            Guardar
-          </button>
-        </form>
-      </div>
-    </div>
+    <form id="notaCliente" onSubmit={handleSubmit}>
+      <fieldset>
+        <legend>Nota Cliente</legend>
+        <div className="mb-2">
+          <h6>Logotipo</h6>
+          <label>Título de logotipo</label>
+          <input
+            type="text"
+            className="form-control"
+            name="logoTitle"
+            value={values.logoTitle}
+            onChange={handleValues}
+            autoComplete="off"
+          />
+          <label>Subtítulo de logotipo</label>
+          <input
+            type="text"
+            className="form-control"
+            name="logoSubtitle"
+            value={values.logoSubtitle}
+            onChange={handleValues}
+            autoComplete="off"
+          />
+        </div>
+        <div className="mb-2">
+          <h6>Dirección y Contacto</h6>
+          <label>Dirección 1</label>
+          <input
+            type="text"
+            className="form-control"
+            name="infoAddress1"
+            value={values.infoAddress1}
+            onChange={handleValues}
+            autoComplete="off"
+          />
+          <label>Dirección 2</label>
+          <input
+            type="text"
+            className="form-control"
+            name="infoAddress2"
+            value={values.infoAddress2}
+            onChange={handleValues}
+            autoComplete="off"
+          />
+          <label>Dirección 3</label>
+          <input
+            type="text"
+            className="form-control"
+            name="infoAddress3"
+            value={values.infoAddress3}
+            onChange={handleValues}
+            autoComplete="off"
+          />
+          <label>Teléfono(s)</label>
+          <input
+            type="text"
+            className="form-control"
+            name="infoTel"
+            value={values.infoTel}
+            onChange={handleValues}
+            autoComplete="off"
+          />
+          <label>WhatsApp</label>
+          <input
+            type="text"
+            className="form-control"
+            name="infoWapp"
+            value={values.infoWapp}
+            onChange={handleValues}
+            autoComplete="off"
+          />
+        </div>
+        <div className="mb-2">
+          <h6>Pie de Nota</h6>
+          <label>Leyenda 1</label>
+          <input
+            type="text"
+            className="form-control"
+            name="footerMsg1"
+            value={values.footerMsg1}
+            onChange={handleValues}
+            autoComplete="off"
+          />
+          <label>Leyenda 2</label>
+          <input
+            type="text"
+            className="form-control"
+            name="footerMsg2"
+            value={values.footerMsg2}
+            onChange={handleValues}
+            autoComplete="off"
+          />
+          <label>Leyenda 3</label>
+          <input
+            type="text"
+            className="form-control"
+            name="footerMsg3"
+            value={values.footerMsg3}
+            onChange={handleValues}
+            autoComplete="off"
+          />
+        </div>
+      </fieldset>
+      <button type="submit" className="btn btn-primary btn-sm mb-3">
+        Guardar
+      </button>
+    </form>
   );
 }
 
@@ -223,9 +210,47 @@ function NotaNegocio() {
     <div className="card text-dark">
       <div className="card-header">
         <h4 className="card-title">Tickets</h4>
+        <div
+          style={{ overflowX: "scroll" }}
+          id="menu-tickets"
+          className="list-group list-group-horizontal"
+        >
+          <a
+            className="list-group-item list-group-item-action"
+            href="#notaCliente"
+          >
+            Cliente
+          </a>
+          <a
+            className="list-group-item list-group-item-action"
+            href="#notaNegocio"
+          >
+            Negocio
+          </a>
+          <a
+            className="list-group-item list-group-item-action"
+            href="#notaResumen"
+          >
+            Resumen
+          </a>
+          <a
+            className="list-group-item list-group-item-action"
+            href="#notaDetallado"
+          >
+            Detallado
+          </a>
+        </div>
       </div>
-      <div className="card-body py-0">
-        <form onSubmit={handleSubmitNegocio}>
+      <div
+        data-bs-spy="scroll"
+        data-bs-target="#menu-tickets"
+        data-bs-offset="0"
+        style={{ height: "450px", overflowY: "scroll" }}
+        className="card-body py-0"
+        tabIndex="0"
+      >
+        <NotaCliente />
+        <form id="notaNegocio" onSubmit={handleSubmitNegocio}>
           <fieldset>
             <legend>Nota Negocio</legend>
             <div className="mb-2">

@@ -192,6 +192,23 @@ function PuntoVenta() {
     }
   };
 
+  const setObservaciones = () => {
+    if (!cuenta.id) {
+      alert("selecciona una cuenta para continuar".toUpperCase());
+      return;
+    }
+    let obs = prompt("Escribe una observación para esta orden:");
+    if (obs === null) return;
+    if (cuenta.observaciones) obs = cuenta.observaciones + " " + obs;
+    const newCta = {
+      ...cuenta,
+      observaciones: obs,
+    };
+    editarCuenta(cuenta.id, newCta, (res) => {
+      console.log(res);
+    });
+  };
+
   return (
     <div
       style={{ height: "628px", overflow: "hidden" }}
@@ -432,6 +449,17 @@ function PuntoVenta() {
                 href="#"
               >
                 editar torreta
+              </a>
+            </li>
+            <li className="text-center">
+              <a
+                onClick={(e) => {
+                  e.preventDefault(), setObservaciones();
+                }}
+                className="dropdown-item text-uppercase h4 py-4"
+                href="#"
+              >
+                Observaciones
               </a>
             </li>
             <li className="text-center">
