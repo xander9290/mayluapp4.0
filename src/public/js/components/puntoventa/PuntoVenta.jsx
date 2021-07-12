@@ -426,7 +426,7 @@ function PuntoVenta() {
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            acciones
+            opciones
           </button>
           <ul className="dropdown-menu dropdown-menu-dark">
             <li className="text-center">

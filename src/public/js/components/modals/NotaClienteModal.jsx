@@ -191,17 +191,17 @@ function NotaClienteModal(props) {
           </p>
         </div>
         {cuenta.servicio === "comedor" ? null : !cuenta.cliente.id ? null : (
-          <div id="clienteInfo">
+          <div style={{ paddingLeft: "10px" }} id="clienteInfo">
             <hr></hr>
-            <strong>
-              <p>{cuenta.cliente.address.calle}</p>
-              <p>{cuenta.cliente.address.cruces}</p>
-              <p>{cuenta.cliente.address.colonia}</p>
-            </strong>
-            <p>tel: {cuenta.cliente.tel}</p>
-            {cuenta.cliente.address.obs && (
-              <p>obs: {cuenta.cliente.address.obs}</p>
-            )}
+            <p>{cuenta.cliente.address.calle}</p>
+            <p>{cuenta.cliente.address.cruces}</p>
+            <p>{cuenta.cliente.address.colonia}</p>
+            <small>
+              <p>tel: {cuenta.cliente.tel}</p>
+              {cuenta.cliente.address.obs && (
+                <p>obs: {cuenta.cliente.address.obs}</p>
+              )}
+            </small>
           </div>
         )}
         <hr></hr>

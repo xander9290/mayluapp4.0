@@ -35,7 +35,7 @@ function PagarCuentaModal(props) {
   };
 
   const handleExited = () => {
-    setvalues({ efectivo: 0, tarjeta: 0, otros: 0, medioName: null });
+    setvalues({ efectivo: 0, tarjeta: 0, otros: 0, medioName: "" });
     setComision({ porcentaje: 0, importe: 0 });
     setError("");
     setRecibo(true);
@@ -79,6 +79,12 @@ function PagarCuentaModal(props) {
     if (values.tarjeta > cuenta.total) {
       setError(
         "la cantidad en tarjeta no debe superar al total de la orden".toUpperCase()
+      );
+      return;
+    }
+    if (values.otros > cuenta.total) {
+      setError(
+        "la cantidad en este medio no debe superar al total de la orden".toUpperCase()
       );
       return;
     }
@@ -134,10 +140,10 @@ function PagarCuentaModal(props) {
                   parseInt(values.otros)}
               </span>
             </h2>
+            <small className="form-text text-danger fw-bold">{error}</small>
           </div>
           <div className="card-body">
             <form onSubmit={handleSubmitPago}>
-              <small className="form-text text-danger">{error}</small>
               <div className="mb-3">
                 <label className="form-label">Total a pagar:</label>
                 <div className="input-group input-group-lg">
