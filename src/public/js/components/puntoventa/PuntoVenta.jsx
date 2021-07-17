@@ -443,6 +443,17 @@ function PuntoVenta() {
             <li className="text-center">
               <a
                 onClick={(e) => {
+                  e.preventDefault(), abrirCajon();
+                }}
+                className="dropdown-item text-uppercase h4 py-4"
+                href="#"
+              >
+                abrir cajón
+              </a>
+            </li>
+            <li className="text-center">
+              <a
+                onClick={(e) => {
                   e.preventDefault(), openEditarTorreta();
                 }}
                 className="dropdown-item text-uppercase h4 py-4"

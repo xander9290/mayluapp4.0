@@ -31,6 +31,7 @@ function Caja() {
       createdBy: operadorSession,
     };
     createCaja(newCaja, (res) => {
+      abrirCajon()
       setCaja(res);
     });
     cancelar();
