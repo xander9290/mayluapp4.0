@@ -2,6 +2,22 @@ const { Router } = require("express");
 const router = Router();
 const { getConnection } = require("../database");
 const { v4 } = require("uuid");
+const fs = require("fs");
+const path = require("path");
+
+router.get("/respaldodb", (req, res) => {
+  const pathToFile = path.join(__dirname, "../../maylu.json");
+  const pathToNewDestination = path.join(
+    __dirname,
+    `../../buckup/maylu-${fechaActual(Date.now())}.json`
+  );
+  try {
+    fs.copyFileSync(pathToFile, pathToNewDestination);
+    res.json({ res: true });
+  } catch (error) {
+    res.json({ res: false, error });
+  }
+});
 
 router.post("/cuentas", (req, res) => {
   const cuentas = getConnection().get("cuentas").value();

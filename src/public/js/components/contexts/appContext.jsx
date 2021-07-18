@@ -55,6 +55,7 @@ function AppProvider({ children }) {
     createCuenta,
     editarCuenta,
     sellarCuenta,
+    respaldodb,
   } = useCuentas();
 
   const { cajas, createCaja, delCaja } = useCaja();
@@ -109,6 +110,7 @@ function AppProvider({ children }) {
     createCuenta,
     editarCuenta,
     sellarCuenta,
+    respaldodb,
     // CAJAS
     cajas,
     createCaja,

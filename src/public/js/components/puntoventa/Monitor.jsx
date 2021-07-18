@@ -4,7 +4,18 @@ function Monitor(props) {
     cajas,
     productos: ps,
     otrosMedios: md,
+    respaldodb,
   } = useContext(AppContext);
+
+  const respaldar = () => {
+    respaldodb((res) => {
+      if (res.res) {
+        alert("La base de datos se ha respaldado con éxito".toUpperCase());
+      } else {
+        alert("!ERROR! error al respaldar la base de datos".toUpperCase());
+      }
+    });
+  };
 
   const [fecha, setFecha] = useState({
     fecha1: fechaActual(Date.now()),
@@ -374,10 +385,17 @@ function Monitor(props) {
           </button>
           <button
             onClick={() => setAbrirDetallados(true)}
-            className="btn btn-primary"
+            className="btn btn-primary me-2"
             type="button"
           >
             Imprimir Detallado
+          </button>
+          <button
+            onClick={() => respaldar()}
+            className="btn btn-warning"
+            type="button"
+          >
+            Respaldo
           </button>
         </div>
         <div className="card-footer p-2">

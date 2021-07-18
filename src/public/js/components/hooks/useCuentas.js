@@ -94,6 +94,14 @@ function useCuentas() {
       .catch((err) => console.log(err));
   };
 
+  const respaldodb = (cb) => {
+    backupdb()
+      .then((data) => {
+        cb(data);
+      })
+      .catch((err) => cb(err));
+  };
+
   return {
     initialCuenta,
     cuentas,
@@ -107,6 +115,7 @@ function useCuentas() {
     createCuenta,
     editarCuenta,
     sellarCuenta,
+    respaldodb,
   };
 }
 
@@ -146,6 +155,16 @@ const newCuenta = async (newCuenta) => {
 
 const getCuentas = async () => {
   const res = await fetch("/cuentas/actuales/" + fechaActual(Date.now()));
+  if (!res.ok) {
+    const { url, status, statusText } = res;
+    throw Error(`${status} ${statusText} ${url}`);
+  }
+  const data = await res.json();
+  return data;
+};
+
+const backupdb = async () => {
+  const res = await fetch("/respaldodb");
   if (!res.ok) {
     const { url, status, statusText } = res;
     throw Error(`${status} ${statusText} ${url}`);

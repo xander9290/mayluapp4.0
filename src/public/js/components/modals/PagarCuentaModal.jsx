@@ -109,7 +109,7 @@ function PagarCuentaModal(props) {
       sellarCuenta(cuenta.id, newCta);
       setCuenta(initialCuenta);
       document.title = "MAyLu";
-      if (cambio > 0) {
+      if (values.efectivo > 0) {
         await abrirCajon();
       }
       setImprimir(recibo);
