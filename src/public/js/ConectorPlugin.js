@@ -16,7 +16,7 @@ const ConectorPlugin = (() => {
 
     class ConectorPlugin {
 
-        static URL_PLUGIN_POR_DEFECTO = "http://localhost:8000";
+        static URL_PLUGIN_POR_DEFECTO = "http://localhost:8080?impresora=maylu_sushi";
         static OperacionTicket = Operacion;
         static Constantes = {
             AccionTextoConAcentos: "textoacentos",

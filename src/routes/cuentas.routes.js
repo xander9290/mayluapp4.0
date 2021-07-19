@@ -9,7 +9,7 @@ router.get("/respaldodb", (req, res) => {
   const pathToFile = path.join(__dirname, "../../maylu.json");
   const pathToNewDestination = path.join(
     __dirname,
-    `../../buckup/maylu-${fechaActual(Date.now())}.json`
+    `../../backup/maylu-${fechaActual(Date.now())}.json`
   );
   try {
     fs.copyFileSync(pathToFile, pathToNewDestination);

@@ -1,20 +1,13 @@
-const $estado = document.querySelector("#estado"),
-    $listaDeImpresoras = document.querySelector("#listaDeImpresoras"),
-    $btnLimpiarLog = document.querySelector("#btnLimpiarLog"),
-    $btnImprimir = document.querySelector("#btnImprimir");
+const puerto = "8080",
+    nombreImpresora = "maylu_printer";
 
-
-const abrirCajon=async () => {
-    let nombreImpresora = "maylu_printer";
-    if (!nombreImpresora) return loguear("Selecciona una impresora");
-    const conector = new ConectorPlugin()
-    conector
-        .abrirCajon() 
-    const respuestaAlImprimir = await conector.imprimirEn(nombreImpresora);
-    if (respuestaAlImprimir === true) {
-        console.log("Impreso correctamente");
+const abrirCajon = async () => {
+    const respuesta = await fetch(`http://localhost:${puerto}/?impresora=${nombreImpresora}`);
+    const respuestaDecodificada = await respuesta.json();
+    if (respuesta.status === 200) {
+        console.log("Cajón abierto");
     } else {
-        console.log("Error. La respuesta es: " + respuestaAlImprimir);
+        console.log("Error abriendo: " + respuestaDecodificada);
     }
 };
 
