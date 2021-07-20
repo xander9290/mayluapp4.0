@@ -175,7 +175,7 @@ const backupdb = async () => {
 };
 
 const cajonServidor = async () => {
-  const res = await fetch("/cuentas/cajonplugin");
+  const res = await fetch("/cajas/cajonplugin");
   if (!res.ok) {
     const { url, status, statusText } = res;
     throw Error(`${status} ${statusText} ${url}`);
