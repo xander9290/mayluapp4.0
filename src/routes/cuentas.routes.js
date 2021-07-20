@@ -111,8 +111,8 @@ router.put("/cuentas/:id", async (req, res) => {
   res.json(result);
 });
 
-router.get("/cajas/cajonservidor", (req, res) => {
-  const ls = spawn("cmd.exe", ["/c", "cajonserver.bat"]);
+router.get("/cuentas/cajonplugin", (req, res) => {
+  const ls = spawn("cmd.exe", ["/c", "cajonplugin.bat"]);
   ls.stdout.on("data", (data) => {
     console.log("stdout: " + data);
   });
