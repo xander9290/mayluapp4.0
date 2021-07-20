@@ -102,7 +102,6 @@ function PagarCuentaModal(props) {
         estado: "cerrado",
         cambio,
         closedAt: fechaISO(),
-        time: timeAgo(new Date(cuenta.createdAt)),
       };
       setCuentaPagada(newCta);
       await commit("ha cobrado la orden " + cuenta.orden, operadorSession);
@@ -112,7 +111,9 @@ function PagarCuentaModal(props) {
       if (values.efectivo > 0) {
         await abrirCajon();
       }
-      setImprimir(recibo);
+      if (cuenta.servicio !== "domicilio") {
+        setImprimir(recibo);
+      }
       props.onHide();
     } else {
       setError("MONTO INCORRECTO");

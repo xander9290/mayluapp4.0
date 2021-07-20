@@ -20,7 +20,6 @@ function FormLogin() {
     e.preventDefault();
     login(operador, (res) => {
       if (res.response) {
-        console.log(res.operador);
         sessionStorage.setItem("operador", res.operador.name);
         sessionStorage.setItem("operadorRol", res.operador.rol);
         commit("ha iniciado sesión", operador.name);

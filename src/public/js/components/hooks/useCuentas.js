@@ -29,6 +29,7 @@ const initialCuenta = {
   cambio: 0,
   createdAt: null,
   createdBy: operadorSession,
+  repartidor: "",
   closedAt: null,
   time: "",
   fecha: fechaActual(Date.now()),

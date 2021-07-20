@@ -17,6 +17,8 @@ function PuntoVenta() {
   const [abrirNotaLocalModal, setAbrirNotaLocalModal] = useState(false);
   const [abrirNotaClienteModal, setAbrirNotaClienteModal] = useState(false);
   const [abrirComandaModal, setAbrirComandaModal] = useState(false);
+  const [abrirCambioDomicilioModal, setAbrirCambioDomicilioModal] =
+    useState(false);
   const [abrirPagarCuentaModal, setAbrirPagarCuentaModal] = useState(false);
   const [abrirMonitorModal, setAbrirMonitorModal] = useState(false);
   const [abrirInfoModal, setAbrirInfoModal] = useState(false);
@@ -91,9 +93,22 @@ function PuntoVenta() {
         );
         return;
       }
-      setAbrirPagarCuentaModal(true);
+      canalizarPagoServicio();
     } else {
       alert("selecciona una cuenta para continuar".toUpperCase());
+    }
+  };
+
+  const canalizarPagoServicio = () => {
+    if (cuenta.servicio === "domicilio") {
+      if (cuenta.estado !== "pendiente") {
+        setAbrirCambioDomicilioModal(true);
+        //cambiar estado a pendiente
+      } else {
+        setAbrirPagarCuentaModal(true);
+      }
+    } else {
+      setAbrirPagarCuentaModal(true);
     }
   };
 
@@ -547,6 +562,10 @@ function PuntoVenta() {
         show={abrirComandaModal}
         onHide={() => setAbrirComandaModal(false)}
         closeVista={() => setAbrirVistaCuenta(false)}
+      />
+      <CambioDomicilioModal
+        show={abrirCambioDomicilioModal}
+        onHide={() => setAbrirCambioDomicilioModal(false)}
       />
       <PagarCuentaModal
         show={abrirPagarCuentaModal}

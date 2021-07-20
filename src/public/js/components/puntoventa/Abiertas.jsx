@@ -1,19 +1,13 @@
 function Abiertas() {
-  const {
-    cuentas,
-    setCuenta,
-    initialCuenta,
-    selectCuenta,
-    setIdx,
-    idx,
-  } = useContext(AppContext);
+  const { cuentas, setCuenta, initialCuenta, selectCuenta, setIdx, idx } =
+    useContext(AppContext);
 
   const [cuentasAbiertas, setCuentasAbiertas] = useState([]);
 
   useEffect(() => {
     if (cuentas.length > 0) {
       const ctaAbiertas = cuentas.filter(
-        (cuenta) => cuenta.estado === "abierto"
+        (cuenta) => cuenta.estado !== "cerrado"
       );
       setCuentasAbiertas(ctaAbiertas);
     }
@@ -82,7 +76,9 @@ const CuentasCard = ({ cta, selectCuenta, idx }) => {
         onClick={(e) => {
           e.stopPropagation(), selectCuenta(cta.id);
         }}
-        className="card text-dark"
+        className={`card text-dark ${
+          cta.estado === "pendiente" ? "bg-warning" : ""
+        }`}
         role="button"
       >
         <div className="card-header">

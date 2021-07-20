@@ -9,9 +9,8 @@ const initialOperador = {
 };
 
 function Operadores() {
-  const { operadores, crearOperador, editarOperador, delOperador } = useContext(
-    AppContext
-  );
+  const { operadores, crearOperador, editarOperador, delOperador } =
+    useContext(AppContext);
   const [operador, setOperador] = useState(initialOperador);
   const [idx, setIdx] = useState("");
   const [error, setError] = useState(null);

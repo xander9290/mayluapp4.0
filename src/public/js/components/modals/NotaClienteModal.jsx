@@ -44,6 +44,10 @@ function NotaClienteModal(props) {
                 #infoCuenta {
                     text-align: center;
                 }
+                #repartoTel {
+                  display: flex;
+                  justify-content: space-between;
+                }
                 strong {
                     font-size: 20px;
                     font-weight: bold;
@@ -193,11 +197,18 @@ function NotaClienteModal(props) {
         {cuenta.servicio === "comedor" ? null : !cuenta.cliente.id ? null : (
           <div style={{ paddingLeft: "10px" }} id="clienteInfo">
             <hr></hr>
-            <p>{cuenta.cliente.address.calle}</p>
-            <p>{cuenta.cliente.address.cruces}</p>
-            <p>{cuenta.cliente.address.colonia}</p>
+            <strong>
+              <p>
+                {cuenta.cliente.address.calle}, entre:
+                {cuenta.cliente.address.cruces}, col:{" "}
+                {cuenta.cliente.address.colonia}
+              </p>
+            </strong>
+            <small id="repartoTel">
+              <span>tel: {cuenta.cliente.tel}</span>
+              {cuenta.repartidor && <span>Reparto: {cuenta.repartidor}</span>}
+            </small>
             <small>
-              <p>tel: {cuenta.cliente.tel}</p>
               {cuenta.cliente.address.obs && (
                 <p>obs: {cuenta.cliente.address.obs}</p>
               )}

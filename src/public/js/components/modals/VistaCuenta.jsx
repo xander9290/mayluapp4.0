@@ -146,6 +146,10 @@ function VistaCuenta(props) {
                 <span className="fw-bolder">operador: </span>
                 {cuenta.createdBy}
               </li>
+              <li className="list-group-item">
+                <span className="fw-bolder">Rep: </span>
+                {cuenta.repartidor && cuenta.repartidor}
+              </li>
             </ul>
             <button onClick={props.onHide} className="btn btn-danger">
               CERRAR
