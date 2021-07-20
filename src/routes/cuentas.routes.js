@@ -4,6 +4,7 @@ const { getConnection } = require("../database");
 const { v4 } = require("uuid");
 const fs = require("fs");
 const path = require("path");
+const spawn = require("child_process").spawn;
 
 router.get("/respaldodb", (req, res) => {
   const pathToFile = path.join(__dirname, "../../maylu.json");
@@ -108,6 +109,17 @@ router.put("/cuentas/:id", async (req, res) => {
     .assign(req.body)
     .write();
   res.json(result);
+});
+
+router.get("/cajas/cajonservidor", (req, res) => {
+  const ls = spawn("cmd.exe", ["/c", "cajonserver.bat"]);
+  ls.stdout.on("data", (data) => {
+    console.log("stdout: " + data);
+  });
+  ls.stderr.on("data", (data) => {
+    console.log("stderr: " + data);
+  });
+  res.json({ status: "done" });
 });
 
 const fechaActual = (d) => {

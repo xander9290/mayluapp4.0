@@ -40,8 +40,9 @@ function useCuentas() {
   const [cuenta, setCuenta] = useState(initialCuenta);
   const [idx, setIdx] = useState("");
 
-  useEffect(() => {
+  useEffect(async () => {
     fetchCuentas();
+    await cajonServidor();
   }, []);
 
   const selectCuenta = (id) => {
@@ -165,6 +166,16 @@ const getCuentas = async () => {
 
 const backupdb = async () => {
   const res = await fetch("/respaldodb");
+  if (!res.ok) {
+    const { url, status, statusText } = res;
+    throw Error(`${status} ${statusText} ${url}`);
+  }
+  const data = await res.json();
+  return data;
+};
+
+const cajonServidor = async () => {
+  const res = await fetch("/cajas/cajonservidor");
   if (!res.ok) {
     const { url, status, statusText } = res;
     throw Error(`${status} ${statusText} ${url}`);
