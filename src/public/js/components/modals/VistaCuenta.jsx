@@ -41,6 +41,8 @@ function VistaCuenta(props) {
         list[idx].cant = parseInt(cant);
         list[idx].motivo = motivo;
         list[idx].hora = fechaISO();
+        list[idx].orden=cuenta.orden
+
       }
       const { importe, totalConDscto } = procesarItems(list, cuenta.dscto);
       const newCta = {
@@ -48,6 +50,7 @@ function VistaCuenta(props) {
         items: list,
         importe,
         total: totalConDscto,
+
       };
       editarCuenta(cuenta.id, newCta, (res) => {
         console.log(res);
@@ -57,6 +60,7 @@ function VistaCuenta(props) {
       if (motivo === null) motivo = "sin especificar";
       list[idx].motivo = motivo;
       list[idx].cancelado = true;
+      list[idx].orden=cuenta.orden
       const { importe, totalConDscto } = procesarItems(list, cuenta.dscto);
       const newCta = {
         ...cuenta,
