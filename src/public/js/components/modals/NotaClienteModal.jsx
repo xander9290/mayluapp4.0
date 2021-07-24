@@ -48,6 +48,9 @@ function NotaClienteModal(props) {
                   display: flex;
                   justify-content: space-between;
                 }
+                #reparto {
+                  margin-right: 15px;
+                }
                 strong {
                     font-size: 20px;
                     font-weight: bold;
@@ -61,8 +64,12 @@ function NotaClienteModal(props) {
                 table tbody tr {
                     padding: 0;
                 }
-                td:first-child, td:last-child {
+                td:first-child {
                     text-align: center
+                }
+                td:last-child p {
+                  width: 55%;
+                  text-align: right;
                 }
                 #totalInfo {
                    padding-right: 40px;
@@ -206,7 +213,9 @@ function NotaClienteModal(props) {
             </strong>
             <small id="repartoTel">
               <span>tel: {cuenta.cliente.tel}</span>
-              {cuenta.repartidor && <span>Reparto: {cuenta.repartidor}</span>}
+              {cuenta.repartidor && (
+                <span id="reparto">Reparto: {cuenta.repartidor}</span>
+              )}
             </small>
             <small>
               {cuenta.cliente.address.obs && (
@@ -245,7 +254,9 @@ function NotaClienteModal(props) {
                       ))}
                     </small>
                   </td>
-                  <td valign="top">${item.importe}</td>
+                  <td valign="top">
+                    <p>${item.importe}</p>
+                  </td>
                 </tr>
               ))}
             </tbody>

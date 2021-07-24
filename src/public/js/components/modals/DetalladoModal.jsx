@@ -27,8 +27,12 @@ function DetalladoModal(props) {
             table tbody tr {
                 padding: 0;
             }
-            td:first-child, td:last-child {
+            td:first-child {
                 text-align: center
+            }
+            td:last-child p {
+              width: 55%;
+              text-align: right;
             }
           </style>`);
     w.document.write(printContents);
@@ -103,7 +107,9 @@ function DetalladoModal(props) {
                   <tr key={i + 3}>
                     <td valign="top">{m.cant}</td>
                     <td>{m.name}</td>
-                    <td valign="top">${m.importe}</td>
+                    <td valign="top">
+                      <p>${m.importe}</p>
+                    </td>
                   </tr>
                 );
               })}

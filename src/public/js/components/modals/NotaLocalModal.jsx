@@ -57,8 +57,12 @@ function NotalLocalModal(props) {
                 table tbody tr {
                     padding: 0;
                 }
-                td:first-child, td:last-child {
+                td:first-child {
                     text-align: center
+                }
+                td:last-child p {
+                  width: 55%;
+                  text-align: right;
                 }
                 #totalInfo {
                    padding-right: 40px;
@@ -157,7 +161,9 @@ function NotalLocalModal(props) {
                   ))}
                 </small>
               </td>
-              <td valign="top">${item.importe}</td>
+              <td valign="top">
+                <p>${item.importe}</p>
+              </td>
             </tr>
           ))}
         </Fragment>
@@ -194,7 +200,9 @@ function NotalLocalModal(props) {
                   ))}
                 </small>
               </td>
-              <td valign="top">${item.importe}</td>
+              <td valign="top">
+                <p>${item.importe}</p>
+              </td>
             </tr>
           ))}
         </Fragment>
@@ -231,7 +239,9 @@ function NotalLocalModal(props) {
                   ))}
                 </small>
               </td>
-              <td valign="top">${item.importe}</td>
+              <td valign="top">
+                <p>${item.importe}</p>
+              </td>
             </tr>
           ))}
         </Fragment>
