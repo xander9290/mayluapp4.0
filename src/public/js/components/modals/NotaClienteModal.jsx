@@ -28,10 +28,12 @@ function NotaClienteModal(props) {
                   padding: 8px;
           }
                 #logoNameTitle {
-                    font-size: 42px;
+                    font-size: 40px;
+                    font-family: "Lucida Console" !important;
                 }
                 #logoSubName {
-                    font-size: 25px;
+                    font-size: 23px;
+                    font-family: "Lucida Console" !important;
                 }
                 #logo {
                     border: 3px dashed white;
