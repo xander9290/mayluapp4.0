@@ -57,9 +57,6 @@ const FormConfirm = ({ onHide, inputPswdRef, setShowMonitor }) => {
           ...values,
           pswd: "",
         });
-        alert(
-          "recordatorio: hacer respaldo después de terminar el turno".toUpperCase()
-        );
         commit("ha hecho una consulta al monitor de ventas", operadorSession);
       } else {
         alert("acceso denegado".toUpperCase());

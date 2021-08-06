@@ -30,6 +30,7 @@ function Monitor(props) {
   });
   const [descuentos, setDescuentos] = useState([]);
   const [cancelados, setCancelados] = useState([]);
+  const [porPagar, setPorPagar] = useState(0);
   const [productosCancelados, setProductosCancelados] = useState([]);
   // CAJA
   const [caja, setCaja] = useState({
@@ -170,7 +171,16 @@ function Monitor(props) {
 
   const procesarServicios = (ctas, ctasC) => {
     const ctasCanceladas = [];
+    let ctasPorPagar = 0;
     const ctasDscto = [];
+    // cuentas por Abiertas Por Pagar
+    ctas
+      .filter((cuenta) => {
+        return cuenta.estado === "abierto" || cuenta.estado === "pendiente";
+      })
+      .map((cuenta) => {
+        ctasPorPagar += cuenta.total;
+      });
     // COMEDOR
     const cuentasComedor = ctas.filter(
       (cuenta) => cuenta.servicio === "comedor"
@@ -248,6 +258,7 @@ function Monitor(props) {
       pll,
       domicilio,
     });
+    setPorPagar(ctasPorPagar);
     setCancelados(ctasCanceladas);
     setDescuentos(ctasDscto);
   };
@@ -431,21 +442,29 @@ function Monitor(props) {
               </span>
             </li>
             <h5 className="text-uppercase text-center text-light">
-              movientos en caja
+              movientos en caja y ordenes por pagar
             </h5>
-            <li className="list-group-item text-uppercase h5">
-              <span className="fw-bold">retiros: </span>
-              <span>-${caja.gastos.total}</span>
-              <span className="badge bg-primary ms-1">
-                {caja.gastos.qty.length}
-              </span>
+            <li className="list-group-item text-uppercase h5 d-flex justify-content-between">
+              <div>
+                <span className="fw-bold">retiros: </span>
+                <span>-${caja.gastos.total}</span>
+                <span className="badge bg-primary ms-1">
+                  {caja.gastos.qty.length}
+                </span>
+              </div>
+              <div>
+                <span className="fw-bold">depósitos: </span>
+                <span>+${caja.depositos.total}</span>
+                <span className="badge bg-primary ms-1">
+                  {caja.depositos.qty.length}
+                </span>
+              </div>
             </li>
             <li className="list-group-item text-uppercase h5">
-              <span className="fw-bold">depósitos: </span>
-              <span>+${caja.depositos.total}</span>
-              <span className="badge bg-primary ms-1">
-                {caja.depositos.qty.length}
-              </span>
+              <div>
+                <span className="fw-bold">Por pagar: </span>
+                <span>${porPagar}</span>
+              </div>
             </li>
             <h5 className="text-uppercase text-center text-light">
               pagos con tarjeta y otros medios
@@ -476,7 +495,8 @@ function Monitor(props) {
                   caja.depositos.total -
                   caja.gastos.total -
                   tarjetas.total -
-                  otroMedio.total}
+                  otroMedio.total -
+                  porPagar}
               </span>
             </li>
           </ul>

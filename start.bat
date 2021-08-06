@@ -1,4 +1,4 @@
 @echo off
-cd C:\Users\Alexander\Desktop\mayluapp4.0
+cd C:\Users\Alex\Desktop\mayluapp4.0
 node src/index
 PAUSE

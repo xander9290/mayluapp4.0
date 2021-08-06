@@ -1,12 +1,6 @@
 function CapturaModal(props) {
-  const {
-    cuenta,
-    categorias,
-    subcategorias,
-    productos,
-    editarCuenta,
-    setIdx,
-  } = useContext(AppContext);
+  const { cuenta, categorias, subcategorias, productos, editarCuenta, setIdx } =
+    useContext(AppContext);
   // const { cuenta } = props;
 
   const [obs, setObs] = useState({ obs: "" });
@@ -132,25 +126,6 @@ function CapturaModal(props) {
       setObs({ obs: "" });
     }
   };
-
-  // SEPARADOR
-  // const insertarSeparador = () => {
-  //   const data = {
-  //     cant: 0,
-  //     name: "----------------",
-  //     importe: 0,
-  //     price: 0,
-  //     dscto: 0,
-  //     modificadores: [],
-  //     producto_id: null,
-  //     area_nota: "area" + items[items.length - 1].area_nota.substr(4),
-  //     contable: false,
-  //     impreso: false,
-  //     createdAt: fechaISO(),
-  //     createdBy: operadorSession,
-  //   };
-  //   setItems([...items, data]);
-  // };
 
   // DESCUENTO
   const handleDscto = (e) => {
@@ -283,20 +258,7 @@ function CapturaModal(props) {
             <span className="fw-bold">orden: </span>
             {cuenta.orden}
           </li>
-          {/* <li className="list-group-item text-nowrap">
-            <span className="fw-bold">cte: </span>
-            {cuenta.torreta}
-          </li> */}
         </ul>
-        {/* SEPARADOR Y ELIMINAR ITEM */}
-        {/* <button
-          onClick={insertarSeparador}
-          title="SEPARADOR"
-          type="button"
-          className="btn btn-warning btn-lg ms-3 me-2"
-        >
-          {"---"}
-        </button> */}
         <button
           onClick={eliminarItem}
           title="ELIMINAR ITEM"
@@ -380,6 +342,7 @@ function CapturaModal(props) {
           onClick={aceptar}
           type="button"
           className="btn btn-success btn-lg ms-4 me-2"
+          disabled={items.length > 0 ? false : true}
         >
           Aceptar
         </button>
@@ -493,7 +456,10 @@ function CapturaModal(props) {
         </div>
         {/* CONTENEDOR DE CATEGORIAS */}
         <div
-          style={{ width: "14%", overflowY: "auto" }}
+          style={{
+            width: "12%",
+            overflowY: "auto",
+          }}
           className="d-flex flex-column p-1"
         >
           {categorias.map((categoria) => (
@@ -508,10 +474,13 @@ function CapturaModal(props) {
           ))}
         </div>
         {/* CONTENEDOR DE SUBCATEGORIAS, PRODUCTOS Y MODIFICADORES */}
-        <div style={{ width: "59%" }} className="border">
+        <div style={{ width: "61%" }} className="border">
           <div className="card text-dark">
             <div
-              style={{ height: "96px", overflowX: "auto" }}
+              style={{
+                height: "96px",
+                overflowX: "auto",
+              }}
               className="card-header p-1"
             >
               <div style={{ whiteSpace: "nowrap" }}>
@@ -528,7 +497,10 @@ function CapturaModal(props) {
               </div>
             </div>
             <div
-              style={{ height: "374px", overflowY: "auto" }}
+              style={{
+                height: "395px",
+                overflowY: "auto",
+              }}
               className="card-body p-1"
             >
               <div>
@@ -545,7 +517,10 @@ function CapturaModal(props) {
               </div>
             </div>
             <div
-              style={{ height: "96px", overflowX: "auto" }}
+              style={{
+                height: "100px",
+                overflowX: "auto",
+              }}
               className="card-footer p-1"
             >
               <div style={{ whiteSpace: "nowrap" }}>

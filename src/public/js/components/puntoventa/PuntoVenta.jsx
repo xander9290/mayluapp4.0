@@ -12,11 +12,10 @@ function PuntoVenta() {
   const [abrirComedorModal, setAbrirComedorModal] = useState(false);
   const [abrirParallevarModal, setAbrirParallevarModal] = useState(false);
   const [abrirDomicilioModal, setAbrirDomicilioModal] = useState(false);
-  const [abrirCapturaModal, setAbrirCapturaModal] = useState(false);
+  const [abrirCapturaModal, setAbrirCapturaModal] = useState(true);
   const [abrirVistaCuenta, setAbrirVistaCuenta] = useState(false);
   const [abrirNotaLocalModal, setAbrirNotaLocalModal] = useState(false);
   const [abrirNotaClienteModal, setAbrirNotaClienteModal] = useState(false);
-  const [abrirComandaModal, setAbrirComandaModal] = useState(false);
   const [abrirCambioDomicilioModal, setAbrirCambioDomicilioModal] =
     useState(false);
   const [abrirPagarCuentaModal, setAbrirPagarCuentaModal] = useState(false);
@@ -69,19 +68,6 @@ function PuntoVenta() {
       setAbrirVistaCuenta(true);
     } else {
       alert("Selecciona una cuenta para continuar".toUpperCase());
-    }
-  };
-
-  const openComanda = () => {
-    if (cuenta.id) {
-      const checkItems = cuenta.items.filter((item) => item.impreso === false);
-      if (checkItems.length === 0) {
-        alert("no hay productos anexados".toUpperCase());
-        return;
-      }
-      setAbrirComandaModal(true);
-    } else {
-      alert("selecciona una cuenta para continuar".toUpperCase());
     }
   };
 
@@ -222,6 +208,15 @@ function PuntoVenta() {
     editarCuenta(cuenta.id, newCta, (res) => {
       console.log(res);
     });
+  };
+
+  const cambiarRepartidor = () => {
+    if (cuenta.repartidor === "") {
+      alert("No tiene repartidor asignado aún".toUpperCase());
+      return;
+    } else {
+      setAbrirCambioDomicilioModal(true);
+    }
   };
 
   return (
@@ -403,17 +398,6 @@ function PuntoVenta() {
                 cliente
               </a>
             </li>
-            <li className="text-center">
-              <a
-                onClick={(e) => {
-                  e.preventDefault(), openComanda();
-                }}
-                className="dropdown-item text-uppercase h4 py-4"
-                href="#"
-              >
-                comanda
-              </a>
-            </li>
           </ul>
         </div>
         <button
@@ -443,13 +427,13 @@ function PuntoVenta() {
           >
             opciones
           </button>
-          <ul className="dropdown-menu dropdown-menu-dark">
+          <ul className="dropdown-menu dropdown-menu-light">
             <li className="text-center">
               <a
                 onClick={(e) => {
                   e.preventDefault(), openEditarCliente();
                 }}
-                className="dropdown-item text-uppercase h4 py-4"
+                className="dropdown-item text-uppercase h5 py-3"
                 href="#"
               >
                 cambiar cliente
@@ -458,20 +442,9 @@ function PuntoVenta() {
             <li className="text-center">
               <a
                 onClick={(e) => {
-                  e.preventDefault(), abrirCajon();
-                }}
-                className="dropdown-item text-uppercase h4 py-4"
-                href="#"
-              >
-                abrir cajón
-              </a>
-            </li>
-            <li className="text-center">
-              <a
-                onClick={(e) => {
                   e.preventDefault(), openEditarTorreta();
                 }}
-                className="dropdown-item text-uppercase h4 py-4"
+                className="dropdown-item text-uppercase h5 py-3"
                 href="#"
               >
                 editar torreta
@@ -480,9 +453,31 @@ function PuntoVenta() {
             <li className="text-center">
               <a
                 onClick={(e) => {
+                  e.preventDefault(), cambiarRepartidor();
+                }}
+                className="dropdown-item text-uppercase h5 py-3"
+                href="#"
+              >
+                cambiar Repartidor
+              </a>
+            </li>
+            <li className="text-center">
+              <a
+                onClick={(e) => {
+                  e.preventDefault(), abrirCajon();
+                }}
+                className="dropdown-item text-uppercase h5 py-3"
+                href="#"
+              >
+                abrir cajón
+              </a>
+            </li>
+            <li className="text-center">
+              <a
+                onClick={(e) => {
                   e.preventDefault(), setObservaciones();
                 }}
-                className="dropdown-item text-uppercase h4 py-4"
+                className="dropdown-item text-uppercase h5 py-3"
                 href="#"
               >
                 Observaciones
@@ -493,7 +488,7 @@ function PuntoVenta() {
                 onClick={(e) => {
                   e.preventDefault(), openInfoDomicilio();
                 }}
-                className="dropdown-item text-uppercase h4 py-4"
+                className="dropdown-item text-uppercase h5 py-3"
                 href="#"
               >
                 Info domicilio
@@ -504,7 +499,7 @@ function PuntoVenta() {
                 onClick={(e) => {
                   e.preventDefault(), openDescuento();
                 }}
-                className="dropdown-item text-uppercase h4 py-4"
+                className="dropdown-item text-uppercase h5 py-3"
                 href="#"
               >
                 Aplicar Descuento
@@ -546,7 +541,6 @@ function PuntoVenta() {
         show={abrirVistaCuenta}
         onHide={() => setAbrirVistaCuenta(false)}
         openCaptura={() => setAbrirCapturaModal(true)}
-        openComanda={openComanda}
         openNotaLocal={openNotalLocal}
       />
       <NotalLocalModal
@@ -557,11 +551,6 @@ function PuntoVenta() {
         show={abrirNotaClienteModal}
         onHide={() => setAbrirNotaClienteModal(false)}
         cuenta={cuenta}
-      />
-      <ComandaModal
-        show={abrirComandaModal}
-        onHide={() => setAbrirComandaModal(false)}
-        closeVista={() => setAbrirVistaCuenta(false)}
       />
       <CambioDomicilioModal
         show={abrirCambioDomicilioModal}

@@ -8,6 +8,7 @@ function CambioDomicilioModal(props) {
     repartidor: "",
     efectivo: 0,
   });
+  const [cambioRepartidor, setCambioRepartidor] = useState(false);
   const [error, setError] = useState(null);
   const [imprimir, setImprimir] = useState(false);
   const [cuentaPagada, setCuentaPagada] = useState(initialCuenta);
@@ -19,32 +20,55 @@ function CambioDomicilioModal(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const cambio = parseInt(values.efectivo) - cuenta.total;
-    if (values.efectivo >= cuenta.total) {
+    if (cuenta.repartidor === "") {
+      const cambio = parseInt(values.efectivo) - cuenta.total;
+      if (values.efectivo >= cuenta.total) {
+        const newCta = {
+          ...cuenta,
+          efectivo: parseInt(values.efectivo),
+          cambio,
+          estado: "pendiente",
+          repartidor: values.repartidor,
+          time: timeAgo(new Date(cuenta.createdAt)),
+        };
+        setCuentaPagada(newCta);
+        editarCuenta(cuenta.id, newCta, async (res) => {
+          if (res) {
+            // newCta.cambio > 0 ? await abrirCajon() : null;
+            setImprimir(true);
+            props.onHide();
+          }
+        });
+      } else {
+        setError("MONTO INCORRECTO");
+        inputEfectivo.current.focus();
+      }
+    } else {
       const newCta = {
         ...cuenta,
-        efectivo: parseInt(values.efectivo),
-        cambio,
-        estado: "pendiente",
         repartidor: values.repartidor,
-        time: timeAgo(new Date(cuenta.createdAt)),
       };
-      setCuentaPagada(newCta);
       editarCuenta(cuenta.id, newCta, async (res) => {
         if (res) {
-          newCta.cambio > 0 ? await abrirCajon() : null;
-          setImprimir(true);
           props.onHide();
         }
       });
-    } else {
-      setError("MONTO INCORRECTO");
-      inputEfectivo.current.focus();
+    }
+  };
+
+  const checkIfCambiarRepartidor = () => {
+    if (cuenta.repartidor !== "") {
+      setValues({
+        repartidor: cuenta.repartidor,
+        efectivo: cuenta.efectivo,
+      });
+      setCambioRepartidor(true);
     }
   };
 
   const handleShow = () => {
     inputEfectivo.current.focus();
+    checkIfCambiarRepartidor();
   };
   const handleExited = () => {
     setValues({
@@ -66,7 +90,9 @@ function CambioDomicilioModal(props) {
       <Modal.Body>
         <div className="card bg-warning">
           <div className="card-header">
-            <h5 className="card-title">Asignar Repartidor</h5>
+            <h5 className="card-title">
+              {cambioRepartidor ? "Cambio de Repartidor" : "Asignar Repartidor"}
+            </h5>
             <h2>
               CAMBIO: $<span>{parseInt(values.efectivo) - cuenta.total}</span>
             </h2>
@@ -99,6 +125,7 @@ function CambioDomicilioModal(props) {
                     onChange={handleValues}
                     required
                     autoComplete="off"
+                    readOnly={cambioRepartidor}
                   />
                   <span className="input-group-text">.00</span>
                 </div>
@@ -114,7 +141,7 @@ function CambioDomicilioModal(props) {
                   <option value="">Repartidor</option>
                   {operadores.map((operador, i) => (
                     <option
-                      className="fw-bold h4"
+                      className="fw-bold h4 text-uppercase"
                       key={i}
                       value={operador.name}
                     >
@@ -124,9 +151,15 @@ function CambioDomicilioModal(props) {
                 </select>
               </div>
               <div className="mb-3">
-                <button type="submit" className="btn btn-secondary btn-lg">
-                  Imprimir
-                </button>
+                {cambioRepartidor ? (
+                  <button type="submit" className="btn btn-primary btn-lg">
+                    Aceptar
+                  </button>
+                ) : (
+                  <button type="submit" className="btn btn-secondary btn-lg">
+                    Imprimir
+                  </button>
+                )}
                 <button
                   onClick={() => props.onHide()}
                   type="reset"
