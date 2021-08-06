@@ -12,7 +12,7 @@ function PuntoVenta() {
   const [abrirComedorModal, setAbrirComedorModal] = useState(false);
   const [abrirParallevarModal, setAbrirParallevarModal] = useState(false);
   const [abrirDomicilioModal, setAbrirDomicilioModal] = useState(false);
-  const [abrirCapturaModal, setAbrirCapturaModal] = useState(true);
+  const [abrirCapturaModal, setAbrirCapturaModal] = useState(false);
   const [abrirVistaCuenta, setAbrirVistaCuenta] = useState(false);
   const [abrirNotaLocalModal, setAbrirNotaLocalModal] = useState(false);
   const [abrirNotaClienteModal, setAbrirNotaClienteModal] = useState(false);

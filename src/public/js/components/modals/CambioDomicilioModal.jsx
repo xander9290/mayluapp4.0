@@ -34,7 +34,7 @@ function CambioDomicilioModal(props) {
         setCuentaPagada(newCta);
         editarCuenta(cuenta.id, newCta, async (res) => {
           if (res) {
-            // newCta.cambio > 0 ? await abrirCajon() : null;
+            newCta.cambio > 0 ? await abrirCajon() : null;
             setImprimir(true);
             props.onHide();
           }

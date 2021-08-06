@@ -340,6 +340,24 @@ function Monitor(props) {
     };
     setOtroMedio(otrosMedios);
   };
+
+  const imprimirResumen = async () => {
+    if (porPagar > 0) {
+      if (
+        !confirm(
+          "::::::::::::::::::::!atención!::::::::::::::::::::\n>hay cuentas abiertas o pendientes por pagar\n>¿Deseas continuar?".toUpperCase()
+        )
+      ) {
+      } else {
+        await abrirCajon();
+        setAbrirResumenModal(true);
+      }
+    } else {
+      await abrirCajon();
+      setAbrirResumenModal(true);
+    }
+  };
+
   return (
     <div className="col-md-12">
       <div className="card bg-dark">
@@ -388,7 +406,7 @@ function Monitor(props) {
         </div>
         <div className="card-body p-1 text-center">
           <button
-            onClick={() => setAbrirResumenModal(true)}
+            onClick={imprimirResumen}
             className="btn btn-primary me-2"
             type="button"
           >
@@ -495,8 +513,7 @@ function Monitor(props) {
                   caja.depositos.total -
                   caja.gastos.total -
                   tarjetas.total -
-                  otroMedio.total -
-                  porPagar}
+                  otroMedio.total}
               </span>
             </li>
           </ul>
