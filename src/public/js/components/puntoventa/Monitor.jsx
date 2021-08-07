@@ -341,7 +341,7 @@ function Monitor(props) {
     setOtroMedio(otrosMedios);
   };
 
-  const imprimirResumen = async () => {
+  const imprimirResumen =() => {
     if (porPagar > 0) {
       if (
         !confirm(
@@ -349,11 +349,11 @@ function Monitor(props) {
         )
       ) {
       } else {
-        await abrirCajon();
+      abrirCajon();
         setAbrirResumenModal(true);
       }
     } else {
-      await abrirCajon();
+      abrirCajon();
       setAbrirResumenModal(true);
     }
   };
