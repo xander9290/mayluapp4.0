@@ -23,17 +23,17 @@ function NotaClienteModal(props) {
                   color: white;
                   border-radius: 6px;
                   text-align: center;
-                  width: 50%;
+                  width: 61%;
                   margin: 0 auto;
                   padding: 8px;
           }
                 #logoNameTitle {
                     font-size: 40px;
-                    font-family: "Lucida Console" !important;
+                    font-family: China !important;
                 }
                 #logoSubName {
                     font-size: 23px;
-                    font-family: "Lucida Console" !important;
+                    font-family: China !important;
                 }
                 #logo {
                     border: 3px dashed white;
