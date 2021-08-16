@@ -23,16 +23,16 @@ function NotaClienteModal(props) {
                   color: white;
                   border-radius: 6px;
                   text-align: center;
-                  width: 61%;
+                  width: 58%;
                   margin: 0 auto;
                   padding: 8px;
           }
                 #logoNameTitle {
-                    font-size: 40px;
+                    font-size: 35px;
                     font-family: China !important;
                 }
                 #logoSubName {
-                    font-size: 23px;
+                    font-size: 18px;
                     font-family: China !important;
                 }
                 #logo {
