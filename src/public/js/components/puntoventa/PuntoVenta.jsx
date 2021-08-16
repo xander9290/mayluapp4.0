@@ -428,6 +428,28 @@ function PuntoVenta() {
             opciones
           </button>
           <ul className="dropdown-menu dropdown-menu-light">
+          <li className="text-center">
+              <a
+                onClick={(e) => {
+                  e.preventDefault(), abrirCajon();
+                }}
+                className="dropdown-item text-uppercase h5 py-3"
+                href="#"
+              >
+                abrir cajón
+              </a>
+            </li>
+            <li className="text-center">
+              <a
+                onClick={(e) => {
+                  e.preventDefault(), openInfoDomicilio();
+                }}
+                className="dropdown-item text-uppercase h5 py-3"
+                href="#"
+              >
+                Info domicilio
+              </a>
+            </li>
             <li className="text-center">
               <a
                 onClick={(e) => {
@@ -464,34 +486,12 @@ function PuntoVenta() {
             <li className="text-center">
               <a
                 onClick={(e) => {
-                  e.preventDefault(), abrirCajon();
-                }}
-                className="dropdown-item text-uppercase h5 py-3"
-                href="#"
-              >
-                abrir cajón
-              </a>
-            </li>
-            <li className="text-center">
-              <a
-                onClick={(e) => {
                   e.preventDefault(), setObservaciones();
                 }}
                 className="dropdown-item text-uppercase h5 py-3"
                 href="#"
               >
                 Observaciones
-              </a>
-            </li>
-            <li className="text-center">
-              <a
-                onClick={(e) => {
-                  e.preventDefault(), openInfoDomicilio();
-                }}
-                className="dropdown-item text-uppercase h5 py-3"
-                href="#"
-              >
-                Info domicilio
               </a>
             </li>
             <li className="text-center">
