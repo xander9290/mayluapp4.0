@@ -129,8 +129,9 @@ function PuntoVenta() {
         closedAt: fechaISO(),
         time: timeAgo(new Date(cuenta.createdAt)),
       };
-      sellarCuenta(cuenta.id, newCta);
-      commit("Ha cancelado la orden " + cuenta.orden, operadorSession);
+      editarCuenta(cuenta.id, newCta, (res) => {
+        commit("Ha cancelado la orden " + cuenta.orden, operadorSession);
+      });
     } else {
       alert("selecciona una cuenta para continuar".toUpperCase());
     }
@@ -428,7 +429,7 @@ function PuntoVenta() {
             opciones
           </button>
           <ul className="dropdown-menu dropdown-menu-light">
-          <li className="text-center">
+            <li className="text-center">
               <a
                 onClick={(e) => {
                   e.preventDefault(), abrirCajon();

@@ -29,7 +29,6 @@ function CambioDomicilioModal(props) {
           cambio,
           estado: "pendiente",
           repartidor: values.repartidor,
-          time: timeAgo(new Date(cuenta.createdAt)),
         };
         setCuentaPagada(newCta);
         editarCuenta(cuenta.id, newCta, async (res) => {

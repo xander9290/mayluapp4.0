@@ -52,7 +52,9 @@ function Cerradas() {
   }, [cuentas]);
 
   const getCeuntasCerradas = (c) => {
-    const ctaCerradas = c.filter((cuenta) => cuenta.estado === "cerrado");
+    const ctaCerradas = c.filter(
+      (cuenta) => cuenta.estado === "cerrado" || cuenta.estado === "cancelado"
+    );
     setCuentasCerradas(ctaCerradas);
   };
 

@@ -102,6 +102,7 @@ function PagarCuentaModal(props) {
         estado: "cerrado",
         cambio,
         closedAt: fechaISO(),
+        time: timeAgo(new Date(cuenta.createdAt)),
       };
       setCuentaPagada(newCta);
       await commit("ha cobrado la orden " + cuenta.orden, operadorSession);

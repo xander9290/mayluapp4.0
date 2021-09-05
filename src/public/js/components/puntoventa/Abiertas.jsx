@@ -7,7 +7,7 @@ function Abiertas() {
   useEffect(() => {
     if (cuentas.length > 0) {
       const ctaAbiertas = cuentas.filter(
-        (cuenta) => cuenta.estado !== "cerrado"
+        (cuenta) => cuenta.estado === "abierto" || cuenta.estado === "pendiente"
       );
       setCuentasAbiertas(ctaAbiertas);
     }
