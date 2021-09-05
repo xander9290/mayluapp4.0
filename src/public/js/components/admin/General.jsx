@@ -5,6 +5,57 @@ function General() {
         <MediosDePago />
       </div>
       <div className="col-md-4">
+        <Tickets />
+      </div>
+    </div>
+  );
+}
+
+function Tickets() {
+  return (
+    <div className="card text-dark">
+      <div className="card-header">
+        <h4 className="card-title">Tickets</h4>
+        <div
+          style={{ overflowX: "scroll" }}
+          id="menu-tickets"
+          className="list-group list-group-horizontal"
+        >
+          <a
+            className="list-group-item list-group-item-action"
+            href="#notaCliente"
+          >
+            Cliente
+          </a>
+          <a
+            className="list-group-item list-group-item-action"
+            href="#notaNegocio"
+          >
+            Negocio
+          </a>
+          <a
+            className="list-group-item list-group-item-action"
+            href="#notaResumen"
+          >
+            Resumen
+          </a>
+          <a
+            className="list-group-item list-group-item-action"
+            href="#notaDetallado"
+          >
+            Detallado
+          </a>
+        </div>
+      </div>
+      <div
+        data-bs-spy="scroll"
+        data-bs-target="#menu-tickets"
+        data-bs-offset="0"
+        style={{ height: "450px", overflowY: "scroll" }}
+        className="card-body py-0"
+        tabIndex="0"
+      >
+        <NotaCliente />
         <NotaNegocio />
       </div>
     </div>
@@ -205,167 +256,241 @@ function NotaNegocio() {
     };
     changeNotaNegocioSettings(newSettings);
   };
-
   return (
-    <div className="card text-dark">
-      <div className="card-header">
-        <h4 className="card-title">Tickets</h4>
-        <div
-          style={{ overflowX: "scroll" }}
-          id="menu-tickets"
-          className="list-group list-group-horizontal"
-        >
-          <a
-            className="list-group-item list-group-item-action"
-            href="#notaCliente"
-          >
-            Cliente
-          </a>
-          <a
-            className="list-group-item list-group-item-action"
-            href="#notaNegocio"
-          >
-            Negocio
-          </a>
-          <a
-            className="list-group-item list-group-item-action"
-            href="#notaResumen"
-          >
-            Resumen
-          </a>
-          <a
-            className="list-group-item list-group-item-action"
-            href="#notaDetallado"
-          >
-            Detallado
-          </a>
+    <form id="notaNegocio" onSubmit={handleSubmitNegocio}>
+      <fieldset>
+        <legend>Nota Negocio</legend>
+        <div className="mb-2">
+          <h6>Áreas Visibles</h6>
+          <div className="form-check form-check-inline form-switch">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              name="area1"
+              checked={checkNegocioAreas.area1}
+              onChange={handleCheckNegocioAreas}
+            />
+            <label>Area 1</label>
+          </div>
+          <div className="form-check form-check-inline form-switch">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              name="area2"
+              checked={checkNegocioAreas.area2}
+              onChange={handleCheckNegocioAreas}
+            />
+            <label>Area 2</label>
+          </div>
+          <div className="form-check form-check-inline form-switch">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              name="area3"
+              checked={checkNegocioAreas.area3}
+              onChange={handleCheckNegocioAreas}
+            />
+            <label>Area 3</label>
+          </div>
+          <div className="form-check form-check-inline form-switch">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              name="area4"
+              checked={checkNegocioAreas.area4}
+              onChange={handleCheckNegocioAreas}
+            />
+            <label>Area 4</label>
+          </div>
         </div>
-      </div>
-      <div
-        data-bs-spy="scroll"
-        data-bs-target="#menu-tickets"
-        data-bs-offset="0"
-        style={{ height: "450px", overflowY: "scroll" }}
-        className="card-body py-0"
-        tabIndex="0"
-      >
-        <NotaCliente />
-        <form id="notaNegocio" onSubmit={handleSubmitNegocio}>
-          <fieldset>
-            <legend>Nota Negocio</legend>
-            <div className="mb-2">
-              <h6>Áreas Visibles</h6>
-              <div className="form-check form-check-inline form-switch">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  name="area1"
-                  checked={checkNegocioAreas.area1}
-                  onChange={handleCheckNegocioAreas}
-                />
-                <label>Area 1</label>
-              </div>
-              <div className="form-check form-check-inline form-switch">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  name="area2"
-                  checked={checkNegocioAreas.area2}
-                  onChange={handleCheckNegocioAreas}
-                />
-                <label>Area 2</label>
-              </div>
-              <div className="form-check form-check-inline form-switch">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  name="area3"
-                  checked={checkNegocioAreas.area3}
-                  onChange={handleCheckNegocioAreas}
-                />
-                <label>Area 3</label>
-              </div>
-              <div className="form-check form-check-inline form-switch">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  name="area4"
-                  checked={checkNegocioAreas.area4}
-                  onChange={handleCheckNegocioAreas}
-                />
-                <label>Area 4</label>
-              </div>
-            </div>
-            <div className="mb-2">
-              <h6>Información Totales</h6>
-              <div className="form-check form-check-inline form-switch">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  name="subtotal"
-                  checked={checkNegocioTotal.subtotal}
-                  onChange={handleCheckNegocioTotal}
-                />
-                <label>Subtotal</label>
-              </div>
-              <div className="form-check form-check-inline form-switch">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  name="descuento"
-                  checked={checkNegocioTotal.descuento}
-                  onChange={handleCheckNegocioTotal}
-                />
-                <label>Descuento</label>
-              </div>
-              <div className="form-check form-check-inline form-switch">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  name="total"
-                  checked={checkNegocioTotal.total}
-                  onChange={handleCheckNegocioTotal}
-                />
-                <label>Total</label>
-              </div>
-              <div className="form-check form-check-inline form-switch">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  name="efectivo"
-                  checked={checkNegocioTotal.efectivo}
-                  onChange={handleCheckNegocioTotal}
-                />
-                <label>Efectivo</label>
-              </div>
-              <div className="form-check form-check-inline form-switch">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  name="tarjeta"
-                  checked={checkNegocioTotal.tarjeta}
-                  onChange={handleCheckNegocioTotal}
-                />
-                <label>Tarjeta</label>
-              </div>
-              <div className="form-check form-check-inline form-switch">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  name="cambio"
-                  checked={checkNegocioTotal.cambio}
-                  onChange={handleCheckNegocioTotal}
-                />
-                <label>Cambio</label>
-              </div>
-            </div>
-          </fieldset>
-          <button className="btn btn-primary btn-sm mb-3" type="submit">
-            Guardar
-          </button>
-        </form>
-      </div>
-    </div>
+        <div className="mb-2">
+          <h6>Información Totales</h6>
+          <div className="form-check form-check-inline form-switch">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              name="subtotal"
+              checked={checkNegocioTotal.subtotal}
+              onChange={handleCheckNegocioTotal}
+            />
+            <label>Subtotal</label>
+          </div>
+          <div className="form-check form-check-inline form-switch">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              name="descuento"
+              checked={checkNegocioTotal.descuento}
+              onChange={handleCheckNegocioTotal}
+            />
+            <label>Descuento</label>
+          </div>
+          <div className="form-check form-check-inline form-switch">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              name="total"
+              checked={checkNegocioTotal.total}
+              onChange={handleCheckNegocioTotal}
+            />
+            <label>Total</label>
+          </div>
+          <div className="form-check form-check-inline form-switch">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              name="efectivo"
+              checked={checkNegocioTotal.efectivo}
+              onChange={handleCheckNegocioTotal}
+            />
+            <label>Efectivo</label>
+          </div>
+          <div className="form-check form-check-inline form-switch">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              name="tarjeta"
+              checked={checkNegocioTotal.tarjeta}
+              onChange={handleCheckNegocioTotal}
+            />
+            <label>Tarjeta</label>
+          </div>
+          <div className="form-check form-check-inline form-switch">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              name="cambio"
+              checked={checkNegocioTotal.cambio}
+              onChange={handleCheckNegocioTotal}
+            />
+            <label>Cambio</label>
+          </div>
+        </div>
+      </fieldset>
+      <button className="btn btn-primary btn-sm mb-3" type="submit">
+        Guardar
+      </button>
+    </form>
+  );
+}
+
+function NotaResumen() {
+  const handleSubmitResumen = () => {};
+  return (
+    <form id="notaResumen" onSubmit={handleSubmitResumen}>
+      <fieldset>
+        <legend>Resumen</legend>
+        <div className="mb-2">
+          <h6>Áreas Visibles</h6>
+          <div className="form-check form-check-inline form-switch">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              name="area1"
+              checked={checkNegocioAreas.area1}
+              onChange={handleCheckNegocioAreas}
+            />
+            <label>Area 1</label>
+          </div>
+          <div className="form-check form-check-inline form-switch">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              name="area2"
+              checked={checkNegocioAreas.area2}
+              onChange={handleCheckNegocioAreas}
+            />
+            <label>Area 2</label>
+          </div>
+          <div className="form-check form-check-inline form-switch">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              name="area3"
+              checked={checkNegocioAreas.area3}
+              onChange={handleCheckNegocioAreas}
+            />
+            <label>Area 3</label>
+          </div>
+          <div className="form-check form-check-inline form-switch">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              name="area4"
+              checked={checkNegocioAreas.area4}
+              onChange={handleCheckNegocioAreas}
+            />
+            <label>Area 4</label>
+          </div>
+        </div>
+        <div className="mb-2">
+          <h6>Información Totales</h6>
+          <div className="form-check form-check-inline form-switch">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              name="subtotal"
+              checked={checkNegocioTotal.subtotal}
+              onChange={handleCheckNegocioTotal}
+            />
+            <label>Subtotal</label>
+          </div>
+          <div className="form-check form-check-inline form-switch">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              name="descuento"
+              checked={checkNegocioTotal.descuento}
+              onChange={handleCheckNegocioTotal}
+            />
+            <label>Descuento</label>
+          </div>
+          <div className="form-check form-check-inline form-switch">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              name="total"
+              checked={checkNegocioTotal.total}
+              onChange={handleCheckNegocioTotal}
+            />
+            <label>Total</label>
+          </div>
+          <div className="form-check form-check-inline form-switch">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              name="efectivo"
+              checked={checkNegocioTotal.efectivo}
+              onChange={handleCheckNegocioTotal}
+            />
+            <label>Efectivo</label>
+          </div>
+          <div className="form-check form-check-inline form-switch">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              name="tarjeta"
+              checked={checkNegocioTotal.tarjeta}
+              onChange={handleCheckNegocioTotal}
+            />
+            <label>Tarjeta</label>
+          </div>
+          <div className="form-check form-check-inline form-switch">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              name="cambio"
+              checked={checkNegocioTotal.cambio}
+              onChange={handleCheckNegocioTotal}
+            />
+            <label>Cambio</label>
+          </div>
+        </div>
+      </fieldset>
+      <button className="btn btn-primary btn-sm mb-3" type="submit">
+        Guardar
+      </button>
+    </form>
   );
 }
 

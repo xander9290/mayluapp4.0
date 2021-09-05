@@ -27,6 +27,7 @@ const initialSettings = {
     footerMsg2: "",
     footerMsg3: "",
   },
+  notaResumen: {},
 };
 function useTickets() {
   const [settings, setSettings] = useState(initialSettings);

@@ -341,7 +341,7 @@ function Monitor(props) {
     setOtroMedio(otrosMedios);
   };
 
-  const imprimirResumen =() => {
+  const imprimirResumen = () => {
     if (porPagar > 0) {
       if (
         !confirm(
@@ -349,7 +349,7 @@ function Monitor(props) {
         )
       ) {
       } else {
-      abrirCajon();
+        abrirCajon();
         setAbrirResumenModal(true);
       }
     } else {
