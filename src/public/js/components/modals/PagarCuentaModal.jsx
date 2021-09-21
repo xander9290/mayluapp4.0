@@ -182,8 +182,8 @@ function PagarCuentaModal(props) {
               <div className="mb-3">
                 <label>
                   Tarjeta:{" "}
-                  <span className="fw-bold h5">
-                    ${cuenta.total} + {comision.porcentaje}% = $
+                  <span className="fw-bold h6">
+                    ${cuenta.total + comision.porcentaje}% = $
                     {comision.importe + cuenta.total}
                   </span>
                 </label>
