@@ -281,7 +281,8 @@ function NotaClienteModal(props) {
                 efectivo: ${cuenta.efectivo}
               </li>
               <li style={{ display: cuenta.tarjeta > 0 ? "block" : "none" }}>
-                Pago con tarjeta +{cuenta.comision && cuenta.comision[0]}%: $
+                Pago con tarjeta ${cuenta.tarjeta} +
+                {cuenta.comision && cuenta.comision[0]}%: $
                 {cuenta.comision && cuenta.comision[2]}
               </li>
               <li

@@ -11,6 +11,7 @@ function PagarCuentaModal(props) {
     otros: 0,
     medioName: "",
   });
+  const [cambio, setCambio] = useState(0);
   const [comision, setComision] = useState({
     porcentaje: 0,
     importe: 0,
@@ -25,6 +26,16 @@ function PagarCuentaModal(props) {
     setvalues({ ...values, [e.target.name]: e.target.value });
     setError(null);
   };
+
+  useEffect(() => {
+    let salida =
+      parseInt(values.efectivo) -
+      cuenta.total +
+      parseInt(values.tarjeta) +
+      parseInt(values.otros);
+    console.log(salida);
+    setCambio(salida);
+  }, [values]);
 
   const onRecibo = () => {
     setRecibo(!recibo);
@@ -60,15 +71,15 @@ function PagarCuentaModal(props) {
 
   const handleSubmitPago = async (e) => {
     e.preventDefault();
-    const cambio =
-        parseInt(values.efectivo) -
-        cuenta.total +
-        parseInt(values.tarjeta) +
-        parseInt(values.otros),
-      checkpago =
-        parseInt(values.efectivo) +
-        parseInt(values.tarjeta) +
-        parseInt(values.otros);
+    // const cambio =
+    //     parseInt(values.efectivo) -
+    //     cuenta.total +
+    //     parseInt(values.tarjeta) +
+    //     parseInt(values.otros),
+    //   checkpago =
+    //     parseInt(values.efectivo) +
+    //     parseInt(values.tarjeta) +
+    //     parseInt(values.otros);
 
     const medios = [values.medioName, parseInt(values.otros)];
 
@@ -88,38 +99,39 @@ function PagarCuentaModal(props) {
       );
       return;
     }
-    if (checkpago >= cuenta.total) {
-      const newCta = {
-        ...cuenta,
-        efectivo: parseInt(values.efectivo),
-        tarjeta: parseInt(values.tarjeta),
-        comision: [
-          parseInt(comision.porcentaje),
-          parseInt(comision.importe),
-          parseInt(comision.total) + cuenta.total,
-        ],
-        otro_medio: medios,
-        estado: "cerrado",
-        cambio,
-        closedAt: fechaISO(),
-        time: timeAgo(new Date(cuenta.createdAt)),
-      };
-      setCuentaPagada(newCta);
-      await commit("ha cobrado la orden " + cuenta.orden, operadorSession);
-      sellarCuenta(cuenta.id, newCta);
-      setCuenta(initialCuenta);
-      document.title = "MAyLu";
-      if (values.efectivo > 0) {
-        await abrirCajon();
-      }
-      if (cuenta.servicio !== "domicilio") {
-        setImprimir(recibo);
-      }
-      props.onHide();
-    } else {
+    if (cambio < 0) {
       setError("MONTO INCORRECTO");
       inputEfectivo.current.focus();
+      return;
     }
+
+    const newCta = {
+      ...cuenta,
+      efectivo: parseInt(values.efectivo),
+      tarjeta: parseInt(values.tarjeta),
+      comision: [
+        parseInt(comision.porcentaje),
+        parseInt(comision.importe),
+        parseInt(comision.total) + cuenta.total,
+      ],
+      otro_medio: medios,
+      estado: "cerrado",
+      cambio,
+      closedAt: fechaISO(),
+      time: timeAgo(new Date(cuenta.createdAt)),
+    };
+    setCuentaPagada(newCta);
+    await commit("ha cobrado la orden " + cuenta.orden, operadorSession);
+    sellarCuenta(cuenta.id, newCta);
+    setCuenta(initialCuenta);
+    document.title = "MAyLu";
+    if (values.efectivo > 0) {
+      await abrirCajon();
+    }
+    if (cuenta.servicio !== "domicilio") {
+      setImprimir(recibo);
+    }
+    props.onHide();
   };
 
   return (
@@ -137,13 +149,7 @@ function PagarCuentaModal(props) {
           <div className="card-header">
             <h5 className="card-title">Pagar cuenta</h5>
             <h2>
-              CAMBIO: $
-              <span>
-                {parseInt(values.efectivo) -
-                  cuenta.total +
-                  parseInt(values.tarjeta) +
-                  parseInt(values.otros)}
-              </span>
+              CAMBIO: $<span>{cambio}</span>
             </h2>
             <small className="form-text text-danger fw-bold">{error}</small>
           </div>
@@ -183,7 +189,7 @@ function PagarCuentaModal(props) {
                 <label>
                   Tarjeta:{" "}
                   <span className="fw-bold h6">
-                    ${cuenta.total + comision.porcentaje}% = $
+                    ${cuenta.total}+{comision.porcentaje}% = $
                     {comision.importe + cuenta.total}
                   </span>
                 </label>
