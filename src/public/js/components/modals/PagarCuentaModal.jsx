@@ -33,7 +33,6 @@ function PagarCuentaModal(props) {
       cuenta.total +
       parseInt(values.tarjeta) +
       parseInt(values.otros);
-    console.log(salida);
     setCambio(salida);
   }, [values]);
 
